@@ -8,37 +8,26 @@ Questions highlighting the social and economic characteristics of every person w
 
 ## 2 - Users identification
 ### Public Affairs Research Analyst -
-Background - A public affairs research analyst may work for government agencies, think tanks, and other organizations focused on areas such as defense, health care, energy, or environmental protection. A person in this role applies political, economic, and scientific research techniques to determine the benefits and drawbacks of current and proposed public policies. They advise legislators, government leaders, and industry executives on policy matters. They collect and analyze information to draw meaningful insights for presentation to decision-makers.
-
-Motivations - To provide visualization aid in the form of a year-end report to the higher officials.
-
-Tasks - To draw insightful conclusions from the data and provide in-depth analysis on government policies. Also, to get a comprehensive view of the pulse of the households in a particular region.
-
-Context of use - After performing an exploratory analysis on the data, the user will then determine which snapshots of information they wish to present as a sequential data story.
-
-Challenges - The analyst would be constrained in conveying insights from their exploratory analysis by only using a concise report.
+  Background - 
+  A public affairs research analyst may work for government agencies, think tanks, and other organizations focused on areas such as defense, health care, energy, or environmental protection. A person in this role applies political, economic, and scientific research techniques to determine the benefits and drawbacks of current and proposed public policies. They advise legislators, government leaders, and industry executives on policymatters. They collect and analyze information to draw meaningful insights for presentation to decision-makers.
+  Motivations - To provide visualization aid in the form of a year-end report to the higher officials.
+  Tasks - To draw insightful conclusions from the data and provide in-depth analysis on government policies. Also, to get a comprehensive view of the pulse of the households in a particular region.
+  Context of use - After performing an exploratory analysis on the data, the user will then determine which snapshots of information they wish to present as a sequential data story.
+  Challenges - The analyst would be constrained in conveying insights from their exploratory analysis by only using a concise report.
 
 ### A worker being transferred to US as part of their job - 
-Background - An individual who’s recently shifting to the United States and wants to compare the housing rates, taxes, safety, etc of various regions.
-
-Motivations - To find the best possible housing options (according to his needs) that are not only within his budget but also sound from a safety point of view. 
-
-Tasks - To extract variations in the housing prices across different regions over the years. Also, to study the various factors that might influence the individual in buying a house in that region.
-
-Context of use - After studying the visualizations, the individual decides whether they would consider moving to that region. This visualization would help them in deciding without having to spend a lot of time researching ideal housing options on several websites.
-
-Challenges - Might be a bit difficult for the individual to initially draw understanding from the visualizations as he/they might not be very familiar with data visualizations.
+  Background - An individual who’s recently shifting to the United States and wants to compare the housing rates, taxes, safety, etc of various regions.
+  Motivations - To find the best possible housing options (according to his needs) that are not only within his budget but also sound from a safety point of view.
+  Tasks - To extract variations in the housing prices across different regions over the years. Also, to study the various factors that might influence the individual in buying a house in that region.
+  Context of use - After studying the visualizations, the individual decides whether they would consider moving to that region. This visualization would help them in deciding without having to spend a lot of time researching ideal housing options on several websites.
+  Challenges - Might be a bit difficult for the individual to initially draw understanding from the visualizations as he/they might not be very familiar with data visualizations.
 
 ### Real Estate Analyst
-Background - A Real estate analyst would manage the real estate investments of organizations. A person in this role would monitor the changes in the market and decide whether to buy or sell in a particular region. 
-
-Motivations - To maximize the profit by investing in a property with a prospect of attracting more buyers.
-
-Tasks - sell the properties which are showing a stagnant/ reducing prices
-
-Context of use - The analyst would consult visualizations to make informed decisions concerning real estate transactions with an aim to increase their profitability.
-
-Challenges - Forecasting always carries the risk of uncertainty, hence the analyst would benefit from not merely relying only on the visualizations.
+  Background - A Real estate analyst would manage the real estate investments of organizations. A person in this role would monitor the changes in the market and decide whether to buy or sell in a particular region.
+  Motivations - To maximize the profit by investing in a property with a prospect of attracting more buyers.
+  Tasks - sell the properties which are showing a stagnant/ reducing prices
+  Context of use - The analyst would consult visualizations to make informed decisions concerning real estate transactions with an aim to increase their profitability.
+  Challenges - Forecasting always carries the risk of uncertainty, hence the analyst would benefit from not merely relying only on the visualizations.
 
 ## 3 - Task identification
 ### Public Affairs Research Analyst -
