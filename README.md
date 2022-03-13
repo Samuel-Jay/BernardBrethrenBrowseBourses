@@ -55,86 +55,86 @@ See Project Proposal for mapping
 #### User 1 : Public Affairs Research Analyst -
 1) Gain an understanding of poverty rate trends over the years.
   - Do we need a chart for this?
-    -- We would need a chart to answer this question
+    - We would need a chart to answer this question
   - What columns in dataset needed to answer question?
-    -- GESTFIPS, H_YEAR, PERLIS, FAMLIS would be needed to answer this question
+    - GESTFIPS, H_YEAR, PERLIS, FAMLIS would be needed to answer this question
   - Is any extra data or transformation needed?
-    -- We would not need any extra data or transformation for this in addition to the currently presented data
+    - We would not need any extra data or transformation for this in addition to the currently presented data
   - What's the Munzner taxonomy classification of the tasks?
-    -- Munzner’s taxonomy - This question can be mapped to ‘Lookup Poverty Bucket’ and ‘Compare Trends’
+    - Munzner’s taxonomy - This question can be mapped to ‘Lookup Poverty Bucket’ and ‘Compare Trends’
 2) Study the correlation between income and expenditure
   - Do we need a chart for this?
-    -- We would need a chart to answer this question
+    - We would need a chart to answer this question
   - What columns in dataset needed to answer question?
-    -- GESTFIPS, H_YEAR, HEARNVAL, HPROP_VAL, FEARNVAL, FHIP_VAL, FMOOP, FMOOP2, PTOTVAL, MOOP, MOOP2, PHIP_VAL, PHIP_VAL2, PMED_VAL, POTC_VAL, SPM_Poor
+    - GESTFIPS, H_YEAR, HEARNVAL, HPROP_VAL, FEARNVAL, FHIP_VAL, FMOOP, FMOOP2, PTOTVAL, MOOP, MOOP2, PHIP_VAL, PHIP_VAL2, PMED_VAL, POTC_VAL, SPM_Poor
   - Is any extra data or transformation needed?
-    -- The data that we have is sufficient to answer the question but it would be also useful to have all miscellaneous expenses as well
+    - The data that we have is sufficient to answer the question but it would be also useful to have all miscellaneous expenses as well
   - What's the Munzner taxonomy classification of the tasks?
-    -- Munzner’s taxonomy - This question can be mapped to ‘Lookup Income and Expenditure related columns’, ‘Summarize Expenditure’, and ‘Compare Trends’
+    - Munzner’s taxonomy - This question can be mapped to ‘Lookup Income and Expenditure related columns’, ‘Summarize Expenditure’, and ‘Compare Trends’
 3) Distribution of people across different education levels
   - Do we need a chart for this?
-    -- We would need a chart to answer this question
+    - We would need a chart to answer this question
   - What columns in dataset needed to answer question?
-    -- GESTFIPS, H_YEAR, A_HGA
+    - GESTFIPS, H_YEAR, A_HGA
   - Is any extra data or transformation needed?
-    -- We would not need any extra data or transformation for this in addition to the currently presented data
+    - We would not need any extra data or transformation for this in addition to the currently presented data
   - What's the Munzner taxonomy classification of the tasks?
-    -- Munzner’s taxonomy - This question can be mapped to ‘Lookup Education Levels’, ‘Explore Distribution’
+    - Munzner’s taxonomy - This question can be mapped to ‘Lookup Education Levels’, ‘Explore Distribution’
 
 #### User 2 : A worker being transferred to US as part of their job - 
 1) Identify candidate areas suited to comfortably live with their current income
   - Do we need a chart for this?
-    -- We would need a chart to answer this question
+    - We would need a chart to answer this question
   - What columns in dataset needed to answer question?
-    -- GESTFIPS, H_YEAR, PTOTVAL, HEARNVAL, MIG_ST, SPM_Poor, PERLIS, FAMLIS, HPROP_VAL
+    - GESTFIPS, H_YEAR, PTOTVAL, HEARNVAL, MIG_ST, SPM_Poor, PERLIS, FAMLIS, HPROP_VAL
   - Is any extra data or transformation needed?
-    -- The data that we have is sufficient to answer the question but it would be also useful to have all miscellaneous expenses as well
+    - The data that we have is sufficient to answer the question but it would be also useful to have all miscellaneous expenses as well
   - What's the Munzner taxonomy classification of the tasks?
-    -- Munzner’s taxonomy - This question can be mapped to ‘Lookup Income, Poverty Bucket’, ‘Lookup Expenditure’, ’Lookup Property Rates’, ‘Summarize Expenditure’, ‘Compare Trends’
+    - Munzner’s taxonomy - This question can be mapped to ‘Lookup Income, Poverty Bucket’, ‘Lookup Expenditure’, ’Lookup Property Rates’, ‘Summarize Expenditure’, ‘Compare Trends’
 2) Is it more economic to buy a house or instead rent a house, in the long run
   - Do we need a chart for this?
-    -- We would need a chart to answer this question
+    - We would need a chart to answer this question
   - What columns in dataset needed to answer question?
-    -- GESTFIPS, H_YEAR, H_LIVQRT, HPROP_VAL
+    - GESTFIPS, H_YEAR, H_LIVQRT, HPROP_VAL
   - Is any extra data or transformation needed?
-    -- We would not need any extra data or transformation for this in addition to the currently presented data
+    - We would not need any extra data or transformation for this in addition to the currently presented data
   - What's the Munzner taxonomy classification of the tasks?
-    -- Munzner’s taxonomy - This question can be mapped to ‘Lookup Property Rates’, ‘Lookup Residence Types’, ‘Query Trends’
+    - Munzner’s taxonomy - This question can be mapped to ‘Lookup Property Rates’, ‘Lookup Residence Types’, ‘Query Trends’
 3) For each state, what is the most frequent reason for a person to move from their current locality
   - Do we need a chart for this?
-    -- We would need a chart to answer this question 
+    - We would need a chart to answer this question 
   - What columns in dataset needed to answer question?
-    -- GESTFIPS, H_YEAR, NXTRES
+    - GESTFIPS, H_YEAR, NXTRES
   - Is any extra data or transformation needed?
-    -- We would not need any extra data or transformation for this in addition to the currently presented data
+    - We would not need any extra data or transformation for this in addition to the currently presented data
   - What's the Munzner taxonomy classification of the tasks?
-    -- Munzner’s taxonomy - This question can be mapped to ‘Lookup Migration Reason’, ‘Identify Frequency distribution’ and ‘Locate Extremes’
+    - Munzner’s taxonomy - This question can be mapped to ‘Lookup Migration Reason’, ‘Identify Frequency distribution’ and ‘Locate Extremes’
 
 #### User 3: Real Estate Analyst - 
 1) Examine the price of properties in a region over the years, to decide whether to sell a property or not
   - Do we need a chart for this?
-    -- We would need a chart to answer this question
+    - We would need a chart to answer this question
   - What columns in dataset needed to answer question?
-    -- GEREG, H_YEAR, HPROP_VAL
+    - GEREG, H_YEAR, HPROP_VAL
   - Is any extra data or transformation needed?
-    -- We would need no extra data or transformation for this data in addition to currently presented data
+    - We would need no extra data or transformation for this data in addition to currently presented data
   - What's the Munzner taxonomy classification of the tasks?
-    -- Munzner’s taxonomy - This question can be mapped to ‘Lookup Property Rates’, ‘Identify Trends’
+    - Munzner’s taxonomy - This question can be mapped to ‘Lookup Property Rates’, ‘Identify Trends’
 2) Check if there is a correlation between the income, income tax and housing prices
   - Do we need a chart for this?
-    -- We would need a chart to answer this question
+    - We would need a chart to answer this question
   - What columns in dataset needed to answer question?
-    -- GESTFIPS, H_YEAR, FEARNVAL, HEARNVAL, PTOTVAL, HPROP_VAL
+    - GESTFIPS, H_YEAR, FEARNVAL, HEARNVAL, PTOTVAL, HPROP_VAL
   - Is any extra data or transformation needed?
-    -- We would need no extra data or transformation for this data in addition to currently presented data
+    - We would need no extra data or transformation for this data in addition to currently presented data
   - What's the Munzner taxonomy classification of the tasks?
-    -- Munzner’s taxonomy - This question can be mapped to ‘Lookup Property Rates’, ‘Lookup Income’, ‘Lookup Income Tax’, and ‘Derive Dependency’
+    - Munzner’s taxonomy - This question can be mapped to ‘Lookup Property Rates’, ‘Lookup Income’, ‘Lookup Income Tax’, and ‘Derive Dependency’
 3) To analyze the number of people migrating from a region so as to avoid investing much in such regions
   - Do we need a chart for this?
-    -- We would need a chart to answer this question
+    - We would need a chart to answer this question
   - What columns in dataset needed to answer question?
-    -- GESTFIPS, H_YEAR, HPROP_VAL, MIG_ST
+    - GESTFIPS, H_YEAR, HPROP_VAL, MIG_ST
   - Is any extra data or transformation needed?
-    -- We would not need any extra data or transformation for this data in addition to currently presented data
+    - We would not need any extra data or transformation for this data in addition to currently presented data
   - What's the Munzner taxonomy classification of the tasks?
-    -- Munzner’s taxonomy - This question can be mapped to ‘Lookup Migration’, ‘Lookup Property Rates’, ‘Identify Trends’
+    - Munzner’s taxonomy - This question can be mapped to ‘Lookup Migration’, ‘Lookup Property Rates’, ‘Identify Trends’
