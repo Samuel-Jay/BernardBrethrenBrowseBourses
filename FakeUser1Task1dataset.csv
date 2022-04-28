@@ -1,9 +1,51 @@
-﻿GESTFIPS,H_YEAR,PERLIS,FAMLIS
-Alabama,1960,2,2
-Alabama,2000,1,1
-Massachusetts,1960,0,0
-Massachusetts,2000,1,0
-Pennsylvania,1960,0,0
-Pennsylvania,2000,1,1,
-West Virginia,1960,1,1
-West Virginia,2000,3,2
+﻿state,visited
+Alabama,0
+Alaska,1
+Arkansas,0
+Arizona,2
+California,2
+Colorado,2
+Connecticut,2
+Delaware,1
+Florida,2
+Georgia,2
+Hawaii,2
+Iowa,1
+Idaho,1
+Illinois,1
+Indiana,0
+Kansas,0
+Kentucky,0
+Louisiana,0
+Maine,1
+Maryland,1
+Massachusetts,2
+Michigan,1
+Minnesota,1
+Missouri,0
+Mississippi,0
+Montana,0
+North Carolina,1
+North Dakota,0
+Nebraska,0
+New Hampshire,1
+New Jersey,2
+New Mexico,1
+Nevada,1
+New York,2
+Ohio,1
+Oklahoma,0
+Oregon,1
+Pennsylvania,1
+Rhode Island,1
+South Carolina,1
+South Dakota,0
+Tennessee,1
+Texas,2
+Utah,0
+Virginia,1
+Vermont,1
+Washington,2
+Wisconsin,1
+West Virginia,0
+Wyoming,0

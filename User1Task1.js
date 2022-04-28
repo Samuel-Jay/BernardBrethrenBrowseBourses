@@ -1,141 +1,149 @@
-var margin_choropleth = {
-  top: 10,
-  left: 10,
-  bottom: 10,
-  right: 10
-},
-width_choropleth = 857,
-width_choropleth = width_choropleth - margin_choropleth.left - margin_choropleth.right,
-mapRatio = .5,
-height_choropleth = width_choropleth * mapRatio;
+//Width and height of map
+var width = 960;
+var height = 500;
 
 // D3 Projection
-var projection = d3.geoAlbersUsa()
-   .scale(width_choropleth)
-   .translate([width_choropleth / 2, height_choropleth / 2]);
-
+var projection = d3.geo.albersUsa()
+				   .translate([width/2, height/2])    // translate to center of screen
+				   .scale([1000]);          // scale things down so see entire US
+        
 // Define path generator
-var path = d3.geoPath()
-   .projection(projection);
+var path = d3.geo.path()               // path generator that will convert GeoJSON to SVG paths
+		  	 .projection(projection);  // tell path generator to use albersUsa projection
 
-var viewboxwidth = width_choropleth * 1;
-var viewboxheight = height_choropleth - 20;
+		
+// Define linear scale for output
+var color = d3.scale.linear()
+			  .range(["rgb(255,0,0)","rgb(128,0,0)","rgb(64,0,0)","rgb(0,0,0)"]);
 
+var legendText = ["Poor af", "You aight", "Rich af", "Sure! I guess?"];
+
+//Create SVG element and append map to the SVG
+var svg = d3.select("body")
+			.append("svg")
+			.attr("width", width)
+			.attr("height", height);
+        
+// Append Div for tooltip to SVG
+var div = d3.select("body")
+		    .append("div")   
+    		.attr("class", "tooltip")               
+    		.style("opacity", 0);
+
+// Load in my states data!
+d3.csv("FakeUser1Task1dataset.csv", function(data) {
+color.domain([0,1,2,3]); // setting the range of the input data
+
+// Load GeoJSON data and merge with states data
 d3.json("us-states.json", function(json) {
-   var centered;
-   var formatComma = d3.format(',');
-   var fill = d3.scaleLog()
-       .domain([10, 500])
-       .range(["brown", "steelblue"]);
 
-   var svg_choropleth = d3.select("#usamap")
-       .append("svg")
-       .attr("preserveAspectRatio", "xMidYMid meet")
-       .attr("viewBox", "0 0 " + viewboxwidth + " " + viewboxheight + "");
+// Loop through each state data value in the .csv file
+for (var i = 0; i < data.length; i++) {
 
-   var map = svg_choropleth.append("g")
-       .attr("id", "states")
-       .selectAll("path")
-       .data(json.features)
-       .enter()
-       .append("path")
-       .attr("d", path)
-       .style("stroke", "#fff")
-       .style("stroke-width", "0.1")
-       .style("fill", function(d) {
-           return fill(path.area(d));
-       })
-       .on("click", clicked);
+	// Grab State Name
+	var dataState = data[i].state;
 
+	// Grab data value 
+	var dataValue = data[i].visited;
 
-   function clicked(d) {
+	// Find the corresponding state inside the GeoJSON
+	for (var j = 0; j < json.features.length; j++)  {
+		var jsonState = json.features[j].properties.name;
 
-       var x, y, k;
+		if (dataState == jsonState) {
 
-       if (d && centered !== d) {
-           var centroid = path.centroid(d);
-           x = centroid[0];
-           y = centroid[1];
-           k = 4;
-           centered = d;
+		// Copy the data value into the JSON
+		json.features[j].properties.visited = dataValue; 
 
-       } else {
-           x = viewboxwidth / 2;
-           y = viewboxheight / 2;
-           k = 1;
-           centered = null;
-       }
+		// Stop looking through the JSON
+		break;
+		}
+	}
+}
+		
+// Bind the data to the SVG and create one path per GeoJSON feature
+svg.selectAll("path")
+	.data(json.features)
+	.enter()
+	.append("path")
+	.attr("d", path)
+	.style("stroke", "#fff")
+	.style("stroke-width", "1")
+	.style("fill", function(data) {
 
-       map.selectAll('path')
-           .classed('active', centered && function(d) {
-               return d === centered;
-           });
+	// Get data value
+	var value = data.visited;
 
-       map.transition()
-           .duration(750)
-           .attr('transform', 'translate(' + viewboxwidth / 2 + ',' + viewboxheight / 2 + ')scale(' + k + ')translate(' + -x + ',' + -y + ')');
+	if (value) {
+	//If value exists…
+	return color(value);
+	} else {
+	//If value is undefined…
+	return "rgb(213,222,217)";
+	}
+});
+
+		 
+// Map the cities I have lived in!
+d3.csv("FakeUser1Task2dataset.csv", function(data) {
+
+svg.selectAll("circle")
+	.data(data)
+	.enter()
+	.append("circle")
+	.attr("cx", function(d) {
+		return projection([d.lon, d.lat])[0];
+	})
+	.attr("cy", function(d) {
+		return projection([d.lon, d.lat])[1];
+	})
+	.attr("r", function(d) {
+		return Math.sqrt(d.years) * 4;
+	})
+		.style("fill", "rgb(217,91,67)")	
+		.style("opacity", 0.85)	
+
+	// Modification of custom tooltip code provided by Malcolm Maclean, "D3 Tips and Tricks" 
+	// http://www.d3noob.org/2013/01/adding-tooltips-to-d3js-graph.html
+	.on("mouseover", function(d) {      
+    	div.transition()        
+      	   .duration(200)      
+           .style("opacity", .9);      
+           div.text(d.place)
+           .style("left", (d3.event.pageX) + "px")     
+           .style("top", (d3.event.pageY - 28) + "px");    
+	})   
+
+    // fade out tooltip on mouse out               
+    .on("mouseout", function(d) {       
+        div.transition()        
+           .duration(500)      
+           .style("opacity", 0);   
+    });
+});  
         
-        var xScale = d3.scaleLinear().domain([0, 100]).range([0, width]);
-        var yScale = d3.scaleLinear().domain([0, 200]).range([height, 0]);
-        
-        // Title
-        svg_choropleth.append('text')
-        .attr('x', viewboxwidth/2 + 100)
-        .attr('y', viewboxheight/8)
-        .attr('text-anchor', 'middle')
-        .style('font-family', 'Helvetica')
-        .style('font-size', 10)
-        .text('Line Chart');
-        
-        // X label
-        svg_choropleth.append('text')
-        .attr('x', viewboxwidth/2 + 100)
-        .attr('y', viewboxheight - 15 + 150)
-        .attr('text-anchor', 'middle')
-        .style('font-family', 'Helvetica')
-        .style('font-size', 10)
-        .text('Independant');
-        
-        // Y label
-        svg_choropleth.append('text')
-        .attr('text-anchor', 'middle')
-        .attr('transform', 'translate(60,' + height + ')rotate(-90)')
-        .style('font-family', 'Helvetica')
-        .style('font-size', 10)
-        .text('Dependant');
+// Modified Legend Code from Mike Bostock: http://bl.ocks.org/mbostock/3888852
+var legend = d3.select("body").append("svg")
+      			.attr("class", "legend")
+     			.attr("width", 140)
+    			.attr("height", 200)
+   				.selectAll("g")
+   				.data(color.domain().slice().reverse())
+   				.enter()
+   				.append("g")
+     			.attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
-        g.append("g")
-         .attr("transform", "translate(0," + height + ")")
-         .call(d3.axisBottom(xScale));
-        
-        g.append("g")
-         .call(d3.axisLeft(yScale));
+  	legend.append("rect")
+   		  .attr("width", 18)
+   		  .attr("height", 18)
+   		  .style("fill", color);
 
-        d3.csv("FakeUser1Task1dataset.csv", function (data) {
-          svg_choropleth.append('g')
-          .selectAll("dot")
-          .data("FakeUser1Task1dataset.csv")
-          .enter()
-          .append("circle")
-          .attr("cx", function (d) { return xScale(d[1]); } )
-          .attr("cy", function (d) { return yScale(d[2]); } )
-          .attr("r", 3)
-          .attr("transform", "translate(" + 100 + "," + 100 + ")")
-          .style("fill", "#CC0000");
+  	legend.append("text")
+  		  .data(legendText)
+      	  .attr("x", 24)
+      	  .attr("y", 9)
+      	  .attr("dy", ".35em")
+      	  .text(function(d) { return d; });
+	});
 
-          var line = d3.line()
-          .x(function(d) { return xScale(d[1]); }) 
-          .y(function(d) { return yScale(d[2]); }) 
-          .curve(d3.curveMonotoneX)
-
-          svg_choropleth.append("path")
-          .datum("FakeUser1Task1dataset.csv") 
-          .attr("class", "line") 
-          .attr("transform", "translate(" + 100 + "," + 100 + ")")
-          .attr("d", line)
-          .style("fill", "none")
-          .style("stroke", "#CC0000")
-          .style("stroke-width", "2");
-        });
-   }
 });
