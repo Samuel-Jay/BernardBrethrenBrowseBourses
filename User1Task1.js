@@ -111,29 +111,31 @@ d3.json("us-states.json", function(json) {
         g.append("g")
          .call(d3.axisLeft(yScale));
 
-        svg_choropleth.append('g')
-        .selectAll("dot")
-        .data("FakeUser1Task1dataset.csv")
-        .enter()
-        .append("circle")
-        .attr("cx", function (d) { return xScale(d[1]); } )
-        .attr("cy", function (d) { return yScale(d[2]); } )
-        .attr("r", 3)
-        .attr("transform", "translate(" + 100 + "," + 100 + ")")
-        .style("fill", "#CC0000");
+        d3.csv("FakeUser1Task1dataset.csv", function (data) {
+          svg_choropleth.append('g')
+          .selectAll("dot")
+          .data("FakeUser1Task1dataset.csv")
+          .enter()
+          .append("circle")
+          .attr("cx", function (d) { return xScale(d[1]); } )
+          .attr("cy", function (d) { return yScale(d[2]); } )
+          .attr("r", 3)
+          .attr("transform", "translate(" + 100 + "," + 100 + ")")
+          .style("fill", "#CC0000");
 
-        var line = d3.line()
-        .x(function(d) { return xScale(d[0]); }) 
-        .y(function(d) { return yScale(d[1]); }) 
-        .curve(d3.curveMonotoneX)
-        
-        svg_choropleth.append("path")
-        .datum("FakeUser1Task1dataset.csv") 
-        .attr("class", "line") 
-        .attr("transform", "translate(" + 100 + "," + 100 + ")")
-        .attr("d", line)
-        .style("fill", "none")
-        .style("stroke", "#CC0000")
-        .style("stroke-width", "2");
+          var line = d3.line()
+          .x(function(d) { return xScale(d[1]); }) 
+          .y(function(d) { return yScale(d[2]); }) 
+          .curve(d3.curveMonotoneX)
+
+          svg_choropleth.append("path")
+          .datum("FakeUser1Task1dataset.csv") 
+          .attr("class", "line") 
+          .attr("transform", "translate(" + 100 + "," + 100 + ")")
+          .attr("d", line)
+          .style("fill", "none")
+          .style("stroke", "#CC0000")
+          .style("stroke-width", "2");
+        });
    }
 });
