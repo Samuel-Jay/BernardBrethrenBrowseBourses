@@ -47,24 +47,6 @@ d3.json("us-states.json", function(json) {
        })
        .on("click", clicked);
 
-   svg_choropleth.append("g")
-       .attr("class", "states-names")
-       .selectAll("text")
-       .data(json.features)
-       .enter()
-       .append("svg:text")
-       .text(function(d) {
-           return d.properties.name;
-       })
-       .attr("x", function(d) {
-           return path.centroid(d)[0];
-       })
-       .attr("y", function(d) {
-           return path.centroid(d)[1];
-       })
-       .attr("text-anchor", "middle")
-       .attr("fill", "white");
-
 
    function clicked(d) {
 
@@ -92,10 +74,66 @@ d3.json("us-states.json", function(json) {
        map.transition()
            .duration(750)
            .attr('transform', 'translate(' + viewboxwidth / 2 + ',' + viewboxheight / 2 + ')scale(' + k + ')translate(' + -x + ',' + -y + ')');
+        
+        var xScale = d3.scaleLinear().domain([0, 100]).range([0, width]);
+        var yScale = d3.scaleLinear().domain([0, 200]).range([height, 0]);
+        
+        // Title
+        svg_choropleth.append('text')
+        .attr('x', viewboxwidth/2 + 100)
+        .attr('y', viewboxheight/8)
+        .attr('text-anchor', 'middle')
+        .style('font-family', 'Helvetica')
+        .style('font-size', 10)
+        .text('Line Chart');
+        
+        // X label
+        svg_choropleth.append('text')
+        .attr('x', viewboxwidth/2 + 100)
+        .attr('y', viewboxheight - 15 + 150)
+        .attr('text-anchor', 'middle')
+        .style('font-family', 'Helvetica')
+        .style('font-size', 10)
+        .text('Independant');
+        
+        // Y label
+        svg_choropleth.append('text')
+        .attr('text-anchor', 'middle')
+        .attr('transform', 'translate(60,' + height + ')rotate(-90)')
+        .style('font-family', 'Helvetica')
+        .style('font-size', 10)
+        .text('Dependant');
 
-       svg_choropleth.selectAll('text')
-           .transition()
-           .duration(750)
-           .attr('transform', 'translate(' + viewboxwidth / 2 + ',' + viewboxheight / 2 + ')scale(' + k + ')translate(' + -x + ',' + -y + ')');
+        g.append("g")
+         .attr("transform", "translate(0," + height + ")")
+         .call(d3.axisBottom(xScale));
+        
+        g.append("g")
+         .call(d3.axisLeft(yScale));
+
+        svg_choropleth.append('g')
+        .selectAll("dot")
+        .data("FakeUser1Task1dataset.csv")
+        .enter()
+        .append("circle")
+        .attr("cx", function (d) { return xScale(d[1]); } )
+        .attr("cy", function (d) { return yScale(d[2]); } )
+        .attr("r", 3)
+        .attr("transform", "translate(" + 100 + "," + 100 + ")")
+        .style("fill", "#CC0000");
+
+        var line = d3.line()
+        .x(function(d) { return xScale(d[0]); }) 
+        .y(function(d) { return yScale(d[1]); }) 
+        .curve(d3.curveMonotoneX)
+        
+        svg_choropleth.append("path")
+        .datum("FakeUser1Task1dataset.csv") 
+        .attr("class", "line") 
+        .attr("transform", "translate(" + 100 + "," + 100 + ")")
+        .attr("d", line)
+        .style("fill", "none")
+        .style("stroke", "#CC0000")
+        .style("stroke-width", "2");
    }
 });
