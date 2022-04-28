@@ -1,3 +1,8 @@
+import {getBarChartState} from './BarChart_StateWise.js';
+import {getBarChartYear} from './BarChart_YearWise.js';
+
+console.clear()
+
 var margin_choropleth = {
     top: 10,
     left: 10,
@@ -21,6 +26,9 @@ var margin_choropleth = {
   var viewboxwidth = width_choropleth * 1;
   var viewboxheight = height_choropleth - 20;
   
+  getBarChartState(null, null)
+  getBarChartYear(null, null)
+
   d3.json("Datasets/us-states.json", function(json) {
      var centered;
      var formatComma = d3.format(',');
@@ -57,45 +65,24 @@ var margin_choropleth = {
              return d.properties.name;
          })
          .attr("x", function(d) {
-             return path.centroid(d)[0];
+            if(isNaN(path.centroid(d)[0]))
+                return 0;
+            else
+                return path.centroid(d)[0];
          })
          .attr("y", function(d) {
-             return path.centroid(d)[1];
+             if(isNaN(path.centroid(d)[1]))
+                return 0;
+             else
+                return path.centroid(d)[1];
          })
          .attr("text-anchor", "middle")
-         .attr("fill", "white");
-  
+         .attr("fill", "white")
+         .on("click", clicked);
   
      function clicked(d) {
-  
-         var x, y, k;
-  
-         if (d && centered !== d) {
-             var centroid = path.centroid(d);
-             x = centroid[0];
-             y = centroid[1];
-             k = 4;
-             centered = d;
-  
-         } else {
-             x = viewboxwidth / 2;
-             y = viewboxheight / 2;
-             k = 1;
-             centered = null;
-         }
-  
-         map.selectAll('path')
-             .classed('active', centered && function(d) {
-                 return d === centered;
-             });
-  
-         map.transition()
-             .duration(750)
-             .attr('transform', 'translate(' + viewboxwidth / 2 + ',' + viewboxheight / 2 + ')scale(' + k + ')translate(' + -x + ',' + -y + ')');
-  
-         svg_choropleth.selectAll('text')
-             .transition()
-             .duration(750)
-             .attr('transform', 'translate(' + viewboxwidth / 2 + ',' + viewboxheight / 2 + ')scale(' + k + ')translate(' + -x + ',' + -y + ')');
+         console.log(d.properties.name)
+         getBarChartState(d.properties.name, null)
+         getBarChartYear(d.properties.name, null)
      }
   });
