@@ -14,7 +14,7 @@ var path = d3.geo.path()               // path generator that will convert GeoJS
 		
 // Define linear scale for output
 var color = d3.scale.linear()
-			  .range(["rgb(255,0,0)","rgb(128,0,0)","rgb(64,0,0)","rgb(0,0,0)"]);
+			  .range(["rgb(213,222,217)","rgb(69,173,168)","rgb(84,36,55)","rgb(217,91,67)"]);
 
 var legendText = ["Poor af", "You aight", "Rich af", "Sure! I guess?"];
 
@@ -69,10 +69,10 @@ svg.selectAll("path")
 	.attr("d", path)
 	.style("stroke", "#fff")
 	.style("stroke-width", "1")
-	.style("fill", function(data) {
+	.style("fill", function(d) {
 
 	// Get data value
-	var value = data.visited;
+	var value = d.properties.visited;
 
 	if (value) {
 	//If value exists…
