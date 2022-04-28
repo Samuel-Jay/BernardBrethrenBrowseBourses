@@ -1,3 +1,33 @@
 body {
-  margin: 0px
+  margin: 0px;
+  background-color: black;
+  color: white;
+}
+.dashboarddiv {
+  display: flex;
+  gap: 1em;
+}
+.dashboarddiv > * {
+  flex-basis: 100%;
+}
+
+.leftup {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.leftup > * {
+  flex-basis: 100%;
+}
+
+.axisWhite line{
+  stroke: #ffffff;
+}
+
+.axisWhite path{
+  stroke: #ffffff;
+}
+
+.axisWhite text{
+  fill: #ffffff;
 }
