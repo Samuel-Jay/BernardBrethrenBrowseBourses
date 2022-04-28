@@ -109,8 +109,6 @@ d3.csv("Datasets/ourData.csv", function(error, data) {
       .attr("font-weight", "bold")
       .attr("text-anchor", "start")
       .text("Amount in Dollars(thousands)");
-      // .attr("x", function(d) { return x1(d.rate)+ x1.rangeBand()/3 })
-      // .attr("y", function(d) { return y(d.value) + 1; }).attr('dy', '-0.4em')
 
   var legend = g.append("g")
       .attr("font-family", "sans-serif")
