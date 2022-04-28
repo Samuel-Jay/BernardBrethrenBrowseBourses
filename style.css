@@ -1,13 +1,19 @@
 body {
-  margin: 0px
+  margin: 0px;
+}
+.dashboarddiv {
+  display: flex;
+  gap: 1em;
+}
+.dashboarddiv > * {
+  flex-basis: 100%;
 }
 
-.dashboarddiv {
-  width: 100%;
-  height: 90%;
+.leftup {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  overflow: auto;
+  flex-direction: column;
+  gap: 1em;
+}
+.leftup > * {
+  flex-basis: 100%;
 }

@@ -4,7 +4,7 @@ var margin_choropleth = {
     bottom: 10,
     right: 10
   },
-  width_choropleth = 857,
+  width_choropleth = 1000,
   width_choropleth = width_choropleth - margin_choropleth.left - margin_choropleth.right,
   mapRatio = .5,
   height_choropleth = width_choropleth * mapRatio;
