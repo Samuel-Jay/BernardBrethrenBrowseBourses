@@ -9,6 +9,7 @@ var margin = {top: 20, right: 20, bottom: 30, left: 50};
 export function getBarChartYear(state, year){
   console.log("Inside getBarChartYear")
   console.log(state)
+  d3.select("#BarChartYear").select("svg").selectAll("*").remove();
   var svg2=d3.select("#BarChartYear").select("svg")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
@@ -34,8 +35,13 @@ export function getBarChartYear(state, year){
 
   var stack = d3.stack()
       // .offset(d3.stackOffsetExpand);
-    
-  d3.csv("Datasets/ourData.csv", function(error, data) {
+  
+  var filename = "Datasets/ourData.csv"
+  if(state == null)
+    filename = "Datasets/ourData.csv"
+  else
+    filename = "Datasets/ourDataNew.csv"
+  d3.csv(filename, function(error, data) {
     if (error) throw error;
     
     data.forEach(function(d){

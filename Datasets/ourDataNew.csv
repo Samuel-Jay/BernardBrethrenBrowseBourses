@@ -1,0 +1,25 @@
+State,Category,SubCat,Value
+CA,TotalIncome,Income,1.3
+CA,Expenditure,Income Tax,0.1
+CA,Expenditure,Other,0.5
+CA,HP,Housing Prices,0.4
+TX,TotalIncome,Income,2.3
+TX,Expenditure,Income Tax,0.25
+TX,Expenditure,Other,1
+TX,HP,Housing Prices,0.5
+NY,TotalIncome,Income,2.6
+NY,Expenditure,Income Tax,0.5
+NY,Expenditure,Other,0.5
+NY,HP,Housing Prices,0.9
+FL,TotalIncome,Income,2
+FL,Expenditure,Income Tax,0.2
+FL,Expenditure,Other,0.5
+FL,HP,Housing Prices,0.5
+MD,TotalIncome,Income,2
+MD,Expenditure,Income Tax,0.2
+MD,Expenditure,Other,0.5
+MD,HP,Housing Prices,0.5
+WA,TotalIncome,Income,2
+WA,Expenditure,Income Tax,0.2
+WA,Expenditure,Other,0.5
+WA,HP,Housing Prices,0.5
