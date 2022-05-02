@@ -26,8 +26,8 @@ var margin_choropleth = {
   var viewboxwidth = width_choropleth * 1;
   var viewboxheight = height_choropleth - 20;
   
-  getBarChartState(null, null)
-  getBarChartYear(null, null)
+  getBarChartState(0)
+  getBarChartYear("All States")
 
   d3.json("Datasets/us-states.json", function(json) {
      var centered;
@@ -82,7 +82,7 @@ var margin_choropleth = {
   
      function clicked(d) {
          console.log(d.properties.name)
-         getBarChartState(d.properties.name, null)
-         getBarChartYear(d.properties.name, null)
+        //  getBarChartState(2021)
+         getBarChartYear(d.properties.name)
      }
   });
