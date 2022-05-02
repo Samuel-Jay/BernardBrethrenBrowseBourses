@@ -1,14 +1,15 @@
-var width=700,
-	height=200,
+var width=600,
+	height=250,
 	radius=100,
 	padding=20;
 var margin = {top: 20, right: 20, bottom: 30, left: 50};
 
 // getBarChartYear(null, null)
 
-export function getBarChartYear(state, year){
+export function getBarChartYear(state){
   console.log("Inside getBarChartYear")
-  console.log(state)
+  console.log("State selected is ", state)
+
   d3.select("#BarChartYear").select("svg").selectAll("*").remove();
   var svg2=d3.select("#BarChartYear").select("svg")
       .attr("width", width + margin.left + margin.right)
@@ -24,7 +25,7 @@ export function getBarChartYear(state, year){
       .padding(0.05);
 
   var y = d3.scaleLinear()
-      .domain([0,3])
+      .domain([0,600])
       .range([height, 0])
       ;
 
@@ -36,21 +37,22 @@ export function getBarChartYear(state, year){
   var stack = d3.stack()
       // .offset(d3.stackOffsetExpand);
   
-  var filename = "Datasets/ourData.csv"
-  if(state == null)
-    filename = "Datasets/ourData.csv"
-  else
-    filename = "Datasets/ourDataNew.csv"
-  d3.csv(filename, function(error, data) {
+
+  d3.csv("Datasets/BarChartYearWiseDataset.csv", function(error, data) {
     if (error) throw error;
     
     data.forEach(function(d){
-      d.Value = +d.Value;
+      d.Value = +d.Value/1000;
     })
     
-    console.log("data", data);
+    // console.log("data", data);
     
-    x0.domain(data.map(function(d) { return d.State; })); // x_axis
+    var data = data.filter(function(d){
+        return d.State == state;
+    })
+    console.log("data after filtering", data);
+
+    x0.domain(data.map(function(d) { return d.Year; })); // x_axis
     x1.domain(data.map(function(d) { return d.Category; })) 
       .rangeRound([0, x0.bandwidth()])
       .padding(0.2);
@@ -59,10 +61,10 @@ export function getBarChartYear(state, year){
     var keys = z.domain()
     // console.log("keys", keys);
     var groupData = d3.nest()
-      .key(function(d) { return d.Category + d.State; }) // d.Cat+d.State
+      .key(function(d) { return d.Category + d.Year; })
       .rollup(function(d, i){
         
-        var d2 = {Category: d[0].Category, State: d[0].State}
+        var d2 = {Category: d[0].Category, Year: d[0].Year}
         d.forEach(function(d){
           d2[d.SubCat] = d.Value
         })
@@ -93,7 +95,7 @@ export function getBarChartYear(state, year){
       .data(function(d) { return d; })
       .enter().append("rect")
         .attr("class", "serie-rect")
-        .attr("transform", function(d) { return "translate(" + x0(d.data.State) + ",0)"; })
+        .attr("transform", function(d) { return "translate(" + x0(d.data.Year) + ",0)"; })
         .attr("x", function(d) { return x1(d.data.Category); })
         .attr("y", function(d) { return y(d[1]); })
         .attr("height", function(d) { return y(d[0]) - y(d[1]); })

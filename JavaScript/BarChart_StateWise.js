@@ -1,14 +1,19 @@
-var width=700,
-	height=200,
+var width=2000,
+	height=250,
 	radius=100,
 	padding=20;
 var margin = {top: 20, right: 20, bottom: 30, left: 50};
 
 // getBarChartState(null, null)
 
-export function getBarChartState(state, year){
+export function getBarChartState(year){
+
   console.log("Inside getBarChartState")
-  console.log(state)
+  if(year == 0)
+    console.log("Year selected is All years", )
+  else
+    console.log("Year selected is ", year)
+
   d3.select("#BarChartState").select("svg").selectAll("*").remove();
   var svg=d3.select("#BarChartState").select("svg")
       .attr("width", width + margin.left + margin.right)
@@ -24,7 +29,7 @@ export function getBarChartState(state, year){
       .padding(0.05);
 
   var y = d3.scaleLinear()
-      .domain([0,3])
+      .domain([0,700])
       .range([height, 0])
       ;
 
@@ -36,20 +41,18 @@ export function getBarChartState(state, year){
   var stack = d3.stack()
       // .offset(d3.stackOffsetExpand);
   
-  var filename = "Datasets/ourData.csv"
-  if(state == null)
-    filename = "Datasets/ourData.csv"
-  else
-    filename = "Datasets/ourDataNew.csv"
-  d3.csv(filename, function(error, data) {
+  d3.csv("Datasets/BarChartStateWiseDataset.csv", function(error, data) {
     if (error) throw error;
     
     data.forEach(function(d){
-      d.Value = +d.Value;
+      d.Value = +d.Value/1000;
     })
-    
-    console.log("data", data);
-    
+
+    // console.log("data", data);
+    var data = data.filter(function(d){
+        return d.Year == year;
+    })
+    console.log("data after filtering", data);
     x0.domain(data.map(function(d) { return d.State; })); // x_axis
     x1.domain(data.map(function(d) { return d.Category; })) 
       .rangeRound([0, x0.bandwidth()])
@@ -61,7 +64,7 @@ export function getBarChartState(state, year){
     var groupData = d3.nest()
       .key(function(d) { return d.Category + d.State; }) // d.Cat+d.State
       .rollup(function(d, i){
-        
+
         var d2 = {Category: d[0].Category, State: d[0].State}
         d.forEach(function(d){
           d2[d.SubCat] = d.Value

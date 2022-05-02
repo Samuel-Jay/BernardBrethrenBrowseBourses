@@ -26,16 +26,17 @@ var margin_choropleth = {
   var viewboxwidth = width_choropleth * 1;
   var viewboxheight = height_choropleth - 20;
   
-  getBarChartState(null, null)
-  getBarChartYear(null, null)
+  getBarChartState(0)
+  getBarChartYear("All States")
 
   d3.json("Datasets/us-states.json", function(json) {
      var centered;
      var formatComma = d3.format(',');
-     var fill = d3.scaleLog()
-         .domain([10, 500])
-         .range(["brown", "steelblue"]);
-  
+
+     var fill = d3.scaleLinear()
+         .domain([0, 72])
+         .range(["orange", "red"]);
+
      var svg_choropleth = d3.select("#usamap")
          .append("svg")
          .attr("preserveAspectRatio", "xMidYMid meet")
@@ -51,9 +52,8 @@ var margin_choropleth = {
          .style("stroke", "#fff")
          .style("stroke-width", "0.1")
          .style("fill", function(d) {
-             return fill(path.area(d));
-         })
-         .on("click", clicked);
+            return fill(parseInt(d.id));})
+        .on("click", clicked);
   
      svg_choropleth.append("g")
          .attr("class", "states-names")
@@ -82,7 +82,7 @@ var margin_choropleth = {
   
      function clicked(d) {
          console.log(d.properties.name)
-         getBarChartState(d.properties.name, null)
-         getBarChartYear(d.properties.name, null)
+        //  getBarChartState(2021)
+         getBarChartYear(d.properties.name)
      }
   });
