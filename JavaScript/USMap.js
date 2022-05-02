@@ -1,5 +1,6 @@
 import {getBarChartState} from './BarChart_StateWise.js';
 import {getBarChartYear} from './BarChart_YearWise.js';
+import {getEducationLevels} from './EducationLevels.js';
 
 console.clear()
 
@@ -28,6 +29,7 @@ var margin_choropleth = {
   
   getBarChartState(null, null)
   getBarChartYear(null, null)
+  getEducationLevels("All States")
 
   d3.json("Datasets/us-states.json", function(json) {
      var centered;
@@ -84,5 +86,6 @@ var margin_choropleth = {
          console.log(d.properties.name)
          getBarChartState(d.properties.name, null)
          getBarChartYear(d.properties.name, null)
+         getEducationLevels(d.properties.name)
      }
   });
