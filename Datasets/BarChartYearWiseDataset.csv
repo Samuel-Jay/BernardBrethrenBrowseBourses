@@ -1,0 +1,2081 @@
+State,Year,Category,SubCat,Value
+Alabama,2012,TotalIncome,Income,23660.43597
+Alabama,2012,Expenditure,Income Tax,2803.791099
+Alabama,2012,Expenditure,Other,1181.355132
+Alabama,2012,HP,Housing Prices,160391.5612
+Alabama,2013,TotalIncome,Income,23627.33021
+Alabama,2013,Expenditure,Income Tax,2854.046904
+Alabama,2013,Expenditure,Other,1320.148687
+Alabama,2013,HP,Housing Prices,158119.3413
+Alabama,2014,TotalIncome,Income,23496.15214
+Alabama,2014,Expenditure,Income Tax,2976.881141
+Alabama,2014,Expenditure,Other,1542.44374
+Alabama,2014,HP,Housing Prices,145065.9144
+Alabama,2015,TotalIncome,Income,24280.55673
+Alabama,2015,Expenditure,Income Tax,3124.802852
+Alabama,2015,Expenditure,Other,1354.200248
+Alabama,2015,HP,Housing Prices,164116.813
+Alabama,2016,TotalIncome,Income,25527.87876
+Alabama,2016,Expenditure,Income Tax,3599.391255
+Alabama,2016,Expenditure,Other,1393.913118
+Alabama,2016,HP,Housing Prices,164919.542
+Alabama,2017,TotalIncome,Income,27987.95306
+Alabama,2017,Expenditure,Income Tax,3875.041103
+Alabama,2017,Expenditure,Other,1768.245823
+Alabama,2017,HP,Housing Prices,183814.7269
+Alabama,2018,TotalIncome,Income,29928.97183
+Alabama,2018,Expenditure,Income Tax,4455.646025
+Alabama,2018,Expenditure,Other,1353.793863
+Alabama,2018,HP,Housing Prices,176102.1447
+Alabama,2019,TotalIncome,Income,28384.53028
+Alabama,2019,Expenditure,Income Tax,8721.802376
+Alabama,2019,Expenditure,Other,2362.521008
+Alabama,2019,HP,Housing Prices,177685.8872
+Alabama,2020,TotalIncome,Income,32059.80243
+Alabama,2020,Expenditure,Income Tax,10962.35625
+Alabama,2020,Expenditure,Other,2604.684194
+Alabama,2020,HP,Housing Prices,204318.2137
+Alabama,2021,TotalIncome,Income,32853.61916
+Alabama,2021,Expenditure,Income Tax,7961.464884
+Alabama,2021,Expenditure,Other,2189.91772
+Alabama,2021,HP,Housing Prices,211011.8345
+Alaska,2012,TotalIncome,Income,28916.25709
+Alaska,2012,Expenditure,Income Tax,3056.526267
+Alaska,2012,Expenditure,Other,1474.038122
+Alaska,2012,HP,Housing Prices,251114.0355
+Alaska,2013,TotalIncome,Income,28810.44263
+Alaska,2013,Expenditure,Income Tax,2923.381673
+Alaska,2013,Expenditure,Other,1430.973307
+Alaska,2013,HP,Housing Prices,235069.8081
+Alaska,2014,TotalIncome,Income,33590.22576
+Alaska,2014,Expenditure,Income Tax,4917.428951
+Alaska,2014,Expenditure,Other,2034.446215
+Alaska,2014,HP,Housing Prices,269009.2081
+Alaska,2015,TotalIncome,Income,30405.77792
+Alaska,2015,Expenditure,Income Tax,4044.562011
+Alaska,2015,Expenditure,Other,1643.83972
+Alaska,2015,HP,Housing Prices,264970.8789
+Alaska,2016,TotalIncome,Income,33546.77425
+Alaska,2016,Expenditure,Income Tax,4671.13003
+Alaska,2016,Expenditure,Other,1746.748835
+Alaska,2016,HP,Housing Prices,282536.0858
+Alaska,2017,TotalIncome,Income,33015.62444
+Alaska,2017,Expenditure,Income Tax,3973.748881
+Alaska,2017,Expenditure,Other,1544.55103
+Alaska,2017,HP,Housing Prices,273485.3674
+Alaska,2018,TotalIncome,Income,32203.14197
+Alaska,2018,Expenditure,Income Tax,3784.058599
+Alaska,2018,Expenditure,Other,1333.402573
+Alaska,2018,HP,Housing Prices,280894.7603
+Alaska,2019,TotalIncome,Income,33412.14532
+Alaska,2019,Expenditure,Income Tax,8363.024977
+Alaska,2019,Expenditure,Other,2467.674841
+Alaska,2019,HP,Housing Prices,343599.7767
+Alaska,2020,TotalIncome,Income,35141.71641
+Alaska,2020,Expenditure,Income Tax,10145.72985
+Alaska,2020,Expenditure,Other,2656.597409
+Alaska,2020,HP,Housing Prices,356640.9332
+Alaska,2021,TotalIncome,Income,35196.22527
+Alaska,2021,Expenditure,Income Tax,5821.432268
+Alaska,2021,Expenditure,Other,2330.674784
+Alaska,2021,HP,Housing Prices,369824.1796
+Arizona,2012,TotalIncome,Income,24377.05592
+Arizona,2012,Expenditure,Income Tax,2757.557258
+Arizona,2012,Expenditure,Other,1282.918039
+Arizona,2012,HP,Housing Prices,187216.7459
+Arizona,2013,TotalIncome,Income,22939.07011
+Arizona,2013,Expenditure,Income Tax,2411.064715
+Arizona,2013,Expenditure,Other,1177.336672
+Arizona,2013,HP,Housing Prices,202292.0448
+Arizona,2014,TotalIncome,Income,24878.15722
+Arizona,2014,Expenditure,Income Tax,2965.239691
+Arizona,2014,Expenditure,Other,1257.167526
+Arizona,2014,HP,Housing Prices,196247.3684
+Arizona,2015,TotalIncome,Income,24121.80964
+Arizona,2015,Expenditure,Income Tax,2901.392058
+Arizona,2015,Expenditure,Other,1457.160101
+Arizona,2015,HP,Housing Prices,202005.1334
+Arizona,2016,TotalIncome,Income,26363.81656
+Arizona,2016,Expenditure,Income Tax,3607.606909
+Arizona,2016,Expenditure,Other,1375.598273
+Arizona,2016,HP,Housing Prices,209967.7229
+Arizona,2017,TotalIncome,Income,29706.87076
+Arizona,2017,Expenditure,Income Tax,3987.124585
+Arizona,2017,Expenditure,Other,1603.878738
+Arizona,2017,HP,Housing Prices,231173.2347
+Arizona,2018,TotalIncome,Income,28541.09019
+Arizona,2018,Expenditure,Income Tax,3455.965312
+Arizona,2018,Expenditure,Other,1611.752891
+Arizona,2018,HP,Housing Prices,250116.3512
+Arizona,2019,TotalIncome,Income,31270.21975
+Arizona,2019,Expenditure,Income Tax,10189.05938
+Arizona,2019,Expenditure,Other,2500.46999
+Arizona,2019,HP,Housing Prices,296284.0083
+Arizona,2020,TotalIncome,Income,35566.6238
+Arizona,2020,Expenditure,Income Tax,12387.01781
+Arizona,2020,Expenditure,Other,2722.74528
+Arizona,2020,HP,Housing Prices,300397.0139
+Arizona,2021,TotalIncome,Income,36048.29989
+Arizona,2021,Expenditure,Income Tax,8575.582189
+Arizona,2021,Expenditure,Other,2601.708905
+Arizona,2021,HP,Housing Prices,367769.4021
+Arkansas,2012,TotalIncome,Income,20682.13643
+Arkansas,2012,Expenditure,Income Tax,1850.744186
+Arkansas,2012,Expenditure,Other,1371.157623
+Arkansas,2012,HP,Housing Prices,137593.4096
+Arkansas,2013,TotalIncome,Income,20722.9348
+Arkansas,2013,Expenditure,Income Tax,2085.980176
+Arkansas,2013,Expenditure,Other,1297.017181
+Arkansas,2013,HP,Housing Prices,133553.8197
+Arkansas,2014,TotalIncome,Income,20243.20442
+Arkansas,2014,Expenditure,Income Tax,1806.357735
+Arkansas,2014,Expenditure,Other,1337.843923
+Arkansas,2014,HP,Housing Prices,126389.3528
+Arkansas,2015,TotalIncome,Income,22860.58947
+Arkansas,2015,Expenditure,Income Tax,2730.640068
+Arkansas,2015,Expenditure,Other,1295.943294
+Arkansas,2015,HP,Housing Prices,145150.2893
+Arkansas,2016,TotalIncome,Income,25153.58901
+Arkansas,2016,Expenditure,Income Tax,3460.627791
+Arkansas,2016,Expenditure,Other,1463.913631
+Arkansas,2016,HP,Housing Prices,160219.6521
+Arkansas,2017,TotalIncome,Income,28489.13632
+Arkansas,2017,Expenditure,Income Tax,4570.104634
+Arkansas,2017,Expenditure,Other,1579.02003
+Arkansas,2017,HP,Housing Prices,161824.1744
+Arkansas,2018,TotalIncome,Income,27835.88464
+Arkansas,2018,Expenditure,Income Tax,4006.573103
+Arkansas,2018,Expenditure,Other,1623.26897
+Arkansas,2018,HP,Housing Prices,170253.7118
+Arkansas,2019,TotalIncome,Income,28100.34707
+Arkansas,2019,Expenditure,Income Tax,9860.096287
+Arkansas,2019,Expenditure,Other,2422.49528
+Arkansas,2019,HP,Housing Prices,182478.5333
+Arkansas,2020,TotalIncome,Income,32287.85221
+Arkansas,2020,Expenditure,Income Tax,12332.91654
+Arkansas,2020,Expenditure,Other,2653.200735
+Arkansas,2020,HP,Housing Prices,194588.572
+Arkansas,2021,TotalIncome,Income,31204.3663
+Arkansas,2021,Expenditure,Income Tax,7125.41558
+Arkansas,2021,Expenditure,Other,2798.897464
+Arkansas,2021,HP,Housing Prices,184453.0391
+California,2012,TotalIncome,Income,26379.51925
+California,2012,Expenditure,Income Tax,3971.959266
+California,2012,Expenditure,Other,1161.30763
+California,2012,HP,Housing Prices,433328.742
+California,2013,TotalIncome,Income,27198.12996
+California,2013,Expenditure,Income Tax,3890.289769
+California,2013,Expenditure,Other,1223.548612
+California,2013,HP,Housing Prices,453712.2608
+California,2014,TotalIncome,Income,30686.07283
+California,2014,Expenditure,Income Tax,5050.94848
+California,2014,Expenditure,Other,1429.131394
+California,2014,HP,Housing Prices,472837.3446
+California,2015,TotalIncome,Income,29175.09463
+California,2015,Expenditure,Income Tax,4520.976759
+California,2015,Expenditure,Other,1351.056604
+California,2015,HP,Housing Prices,491573.712
+California,2016,TotalIncome,Income,31073.9158
+California,2016,Expenditure,Income Tax,5387.733374
+California,2016,Expenditure,Other,1343.838556
+California,2016,HP,Housing Prices,504154.5104
+California,2017,TotalIncome,Income,32517.92156
+California,2017,Expenditure,Income Tax,5323.34443
+California,2017,Expenditure,Other,1482.416117
+California,2017,HP,Housing Prices,561582.1566
+California,2018,TotalIncome,Income,33761.82111
+California,2018,Expenditure,Income Tax,5625.726575
+California,2018,Expenditure,Other,1377.676953
+California,2018,HP,Housing Prices,554167.2185
+California,2019,TotalIncome,Income,35232.77869
+California,2019,Expenditure,Income Tax,15915.22021
+California,2019,Expenditure,Other,2215.897293
+California,2019,HP,Housing Prices,615246.6211
+California,2020,TotalIncome,Income,39390.68655
+California,2020,Expenditure,Income Tax,17879.19314
+California,2020,Expenditure,Other,2451.129867
+California,2020,HP,Housing Prices,643067.6032
+California,2021,TotalIncome,Income,38210.60693
+California,2021,Expenditure,Income Tax,12392.60599
+California,2021,Expenditure,Other,2350.929782
+California,2021,HP,Housing Prices,681156.996
+Colorado,2012,TotalIncome,Income,28969.57917
+Colorado,2012,Expenditure,Income Tax,4125.654135
+Colorado,2012,Expenditure,Other,1533.371738
+Colorado,2012,HP,Housing Prices,299302.099
+Colorado,2013,TotalIncome,Income,29909.34435
+Colorado,2013,Expenditure,Income Tax,4124.728603
+Colorado,2013,Expenditure,Other,1719.394678
+Colorado,2013,HP,Housing Prices,294898.3663
+Colorado,2014,TotalIncome,Income,38044.04765
+Colorado,2014,Expenditure,Income Tax,7296.104244
+Colorado,2014,Expenditure,Other,1797.147431
+Colorado,2014,HP,Housing Prices,312899.7633
+Colorado,2015,TotalIncome,Income,32091.61266
+Colorado,2015,Expenditure,Income Tax,5035.307127
+Colorado,2015,Expenditure,Other,1686.387025
+Colorado,2015,HP,Housing Prices,322065.7362
+Colorado,2016,TotalIncome,Income,32984.10916
+Colorado,2016,Expenditure,Income Tax,5249.202606
+Colorado,2016,Expenditure,Other,1672.346361
+Colorado,2016,HP,Housing Prices,291778.3175
+Colorado,2017,TotalIncome,Income,35190.90821
+Colorado,2017,Expenditure,Income Tax,5661.492632
+Colorado,2017,Expenditure,Other,2041.540211
+Colorado,2017,HP,Housing Prices,332562.6756
+Colorado,2018,TotalIncome,Income,37921.13232
+Colorado,2018,Expenditure,Income Tax,6277.132321
+Colorado,2018,Expenditure,Other,2293.745336
+Colorado,2018,HP,Housing Prices,335223.8857
+Colorado,2019,TotalIncome,Income,39823.11136
+Colorado,2019,Expenditure,Income Tax,16094.9195
+Colorado,2019,Expenditure,Other,3159.344365
+Colorado,2019,HP,Housing Prices,390187.512
+Colorado,2020,TotalIncome,Income,43045.16036
+Colorado,2020,Expenditure,Income Tax,20072.71083
+Colorado,2020,Expenditure,Other,3163.454784
+Colorado,2020,HP,Housing Prices,548161.9099
+Colorado,2021,TotalIncome,Income,43876.43261
+Colorado,2021,Expenditure,Income Tax,16811.84967
+Colorado,2021,Expenditure,Other,3806.139962
+Colorado,2021,HP,Housing Prices,471860.9123
+Connecticut,2012,TotalIncome,Income,34288.58565
+Connecticut,2012,Expenditure,Income Tax,6141.834875
+Connecticut,2012,Expenditure,Other,1633.739762
+Connecticut,2012,HP,Housing Prices,391357.7837
+Connecticut,2013,TotalIncome,Income,35950.34401
+Connecticut,2013,Expenditure,Income Tax,6417.748848
+Connecticut,2013,Expenditure,Other,1835.031797
+Connecticut,2013,HP,Housing Prices,389882.4484
+Connecticut,2014,TotalIncome,Income,34855.69632
+Connecticut,2014,Expenditure,Income Tax,6465.435294
+Connecticut,2014,Expenditure,Other,1912.196324
+Connecticut,2014,HP,Housing Prices,342231.7533
+Connecticut,2015,TotalIncome,Income,36233.56835
+Connecticut,2015,Expenditure,Income Tax,6646.122302
+Connecticut,2015,Expenditure,Other,2058.757031
+Connecticut,2015,HP,Housing Prices,368547.2161
+Connecticut,2016,TotalIncome,Income,38174.14665
+Connecticut,2016,Expenditure,Income Tax,7405.166126
+Connecticut,2016,Expenditure,Other,2169.823593
+Connecticut,2016,HP,Housing Prices,404434.9319
+Connecticut,2017,TotalIncome,Income,38712.93712
+Connecticut,2017,Expenditure,Income Tax,6915.928296
+Connecticut,2017,Expenditure,Other,2086.541092
+Connecticut,2017,HP,Housing Prices,339321.5448
+Connecticut,2018,TotalIncome,Income,38883.84787
+Connecticut,2018,Expenditure,Income Tax,6761.529164
+Connecticut,2018,Expenditure,Other,2203.102225
+Connecticut,2018,HP,Housing Prices,347645.4083
+Connecticut,2019,TotalIncome,Income,41810.5504
+Connecticut,2019,Expenditure,Income Tax,21061.937
+Connecticut,2019,Expenditure,Other,3274.892898
+Connecticut,2019,HP,Housing Prices,388516.7445
+Connecticut,2020,TotalIncome,Income,47903.45383
+Connecticut,2020,Expenditure,Income Tax,25463.12071
+Connecticut,2020,Expenditure,Other,3555.056069
+Connecticut,2020,HP,Housing Prices,416293.0377
+Connecticut,2021,TotalIncome,Income,46165.15748
+Connecticut,2021,Expenditure,Income Tax,19784.05184
+Connecticut,2021,Expenditure,Other,3656.893045
+Connecticut,2021,HP,Housing Prices,421397.2744
+Delaware,2012,TotalIncome,Income,25107.33648
+Delaware,2012,Expenditure,Income Tax,3305.47385
+Delaware,2012,Expenditure,Other,1137.18557
+Delaware,2012,HP,Housing Prices,267486.7358
+Delaware,2013,TotalIncome,Income,25310.96131
+Delaware,2013,Expenditure,Income Tax,3139.294754
+Delaware,2013,Expenditure,Other,1197.587213
+Delaware,2013,HP,Housing Prices,246106.6622
+Delaware,2014,TotalIncome,Income,30439.60387
+Delaware,2014,Expenditure,Income Tax,4928.757637
+Delaware,2014,Expenditure,Other,1470.783096
+Delaware,2014,HP,Housing Prices,283237.0456
+Delaware,2015,TotalIncome,Income,30080.22974
+Delaware,2015,Expenditure,Income Tax,4704.64003
+Delaware,2015,Expenditure,Other,1332.753237
+Delaware,2015,HP,Housing Prices,249524.352
+Delaware,2016,TotalIncome,Income,31076.5291
+Delaware,2016,Expenditure,Income Tax,4891.521693
+Delaware,2016,Expenditure,Other,1458.208995
+Delaware,2016,HP,Housing Prices,247354.8289
+Delaware,2017,TotalIncome,Income,31206.54686
+Delaware,2017,Expenditure,Income Tax,4683.538339
+Delaware,2017,Expenditure,Other,1550.053781
+Delaware,2017,HP,Housing Prices,245655.6102
+Delaware,2018,TotalIncome,Income,34639.14587
+Delaware,2018,Expenditure,Income Tax,5441.921931
+Delaware,2018,Expenditure,Other,1762.406266
+Delaware,2018,HP,Housing Prices,262739.2266
+Delaware,2019,TotalIncome,Income,36740.69755
+Delaware,2019,Expenditure,Income Tax,15966.60596
+Delaware,2019,Expenditure,Other,3986.42279
+Delaware,2019,HP,Housing Prices,236082.1383
+Delaware,2020,TotalIncome,Income,41136.88619
+Delaware,2020,Expenditure,Income Tax,18829.98694
+Delaware,2020,Expenditure,Other,3050.754975
+Delaware,2020,HP,Housing Prices,253558.8996
+Delaware,2021,TotalIncome,Income,36384.79194
+Delaware,2021,Expenditure,Income Tax,8331.787733
+Delaware,2021,Expenditure,Other,3157.094408
+Delaware,2021,HP,Housing Prices,295018.9558
+District of Columbia,2012,TotalIncome,Income,41890.1734
+District of Columbia,2012,Expenditure,Income Tax,9051.382364
+District of Columbia,2012,Expenditure,Other,1409.177844
+District of Columbia,2012,HP,Housing Prices,493875.244
+District of Columbia,2013,TotalIncome,Income,44772.79752
+District of Columbia,2013,Expenditure,Income Tax,9519.895035
+District of Columbia,2013,Expenditure,Other,1520.969858
+District of Columbia,2013,HP,Housing Prices,547485.444
+District of Columbia,2014,TotalIncome,Income,46045.46592
+District of Columbia,2014,Expenditure,Income Tax,9896.174721
+District of Columbia,2014,Expenditure,Other,1640.089219
+District of Columbia,2014,HP,Housing Prices,736880.2115
+District of Columbia,2015,TotalIncome,Income,47872.31363
+District of Columbia,2015,Expenditure,Income Tax,9645.993592
+District of Columbia,2015,Expenditure,Other,1730.391954
+District of Columbia,2015,HP,Housing Prices,629350.4444
+District of Columbia,2016,TotalIncome,Income,48412.11399
+District of Columbia,2016,Expenditure,Income Tax,10341.70679
+District of Columbia,2016,Expenditure,Other,1631.248823
+District of Columbia,2016,HP,Housing Prices,630784.9725
+District of Columbia,2017,TotalIncome,Income,51059.01684
+District of Columbia,2017,Expenditure,Income Tax,11042.04922
+District of Columbia,2017,Expenditure,Other,1809.264896
+District of Columbia,2017,HP,Housing Prices,625958.8934
+District of Columbia,2018,TotalIncome,Income,58392.27431
+District of Columbia,2018,Expenditure,Income Tax,13214.93995
+District of Columbia,2018,Expenditure,Other,1841.45377
+District of Columbia,2018,HP,Housing Prices,683556.6439
+District of Columbia,2019,TotalIncome,Income,62619.62733
+District of Columbia,2019,Expenditure,Income Tax,30437.04914
+District of Columbia,2019,Expenditure,Other,3029.468354
+District of Columbia,2019,HP,Housing Prices,737172.5673
+District of Columbia,2020,TotalIncome,Income,66276.39783
+District of Columbia,2020,Expenditure,Income Tax,36008.27217
+District of Columbia,2020,Expenditure,Other,3420.030435
+District of Columbia,2020,HP,Housing Prices,767180.8094
+District of Columbia,2021,TotalIncome,Income,68255.95685
+District of Columbia,2021,Expenditure,Income Tax,34701.65302
+District of Columbia,2021,Expenditure,Other,3047.25089
+District of Columbia,2021,HP,Housing Prices,815077.0052
+Florida,2012,TotalIncome,Income,25726.42708
+Florida,2012,Expenditure,Income Tax,2568.434629
+Florida,2012,Expenditure,Other,1384.380395
+Florida,2012,HP,Housing Prices,200619.9922
+Florida,2013,TotalIncome,Income,25344.6683
+Florida,2013,Expenditure,Income Tax,2390.485578
+Florida,2013,Expenditure,Other,1396.83537
+Florida,2013,HP,Housing Prices,212755.7108
+Florida,2014,TotalIncome,Income,28311.22433
+Florida,2014,Expenditure,Income Tax,3413.765976
+Florida,2014,Expenditure,Other,1661.686646
+Florida,2014,HP,Housing Prices,209899.6093
+Florida,2015,TotalIncome,Income,26947.81678
+Florida,2015,Expenditure,Income Tax,3230.268429
+Florida,2015,Expenditure,Other,1384.248163
+Florida,2015,HP,Housing Prices,221838.2096
+Florida,2016,TotalIncome,Income,28276.42236
+Florida,2016,Expenditure,Income Tax,3490.328797
+Florida,2016,Expenditure,Other,1652.425638
+Florida,2016,HP,Housing Prices,228892.2448
+Florida,2017,TotalIncome,Income,29408.52479
+Florida,2017,Expenditure,Income Tax,3312.181434
+Florida,2017,Expenditure,Other,1665.101528
+Florida,2017,HP,Housing Prices,240793.7095
+Florida,2018,TotalIncome,Income,30551.17343
+Florida,2018,Expenditure,Income Tax,3523.217062
+Florida,2018,Expenditure,Other,1597.229162
+Florida,2018,HP,Housing Prices,259043.9756
+Florida,2019,TotalIncome,Income,32054.61224
+Florida,2019,Expenditure,Income Tax,8339.160297
+Florida,2019,Expenditure,Other,2430.804824
+Florida,2019,HP,Housing Prices,283050.9245
+Florida,2020,TotalIncome,Income,35557.75156
+Florida,2020,Expenditure,Income Tax,9934.945671
+Florida,2020,Expenditure,Other,2341.758772
+Florida,2020,HP,Housing Prices,285506.8719
+Florida,2021,TotalIncome,Income,33284.06722
+Florida,2021,Expenditure,Income Tax,3876.675026
+Florida,2021,Expenditure,Other,2387.277404
+Florida,2021,HP,Housing Prices,302776.4032
+Georgia,2012,TotalIncome,Income,24532.90405
+Georgia,2012,Expenditure,Income Tax,3458.122181
+Georgia,2012,Expenditure,Other,1289.525541
+Georgia,2012,HP,Housing Prices,195683.6016
+Georgia,2013,TotalIncome,Income,24754.72315
+Georgia,2013,Expenditure,Income Tax,3194.687726
+Georgia,2013,Expenditure,Other,1337.844991
+Georgia,2013,HP,Housing Prices,171380.6365
+Georgia,2014,TotalIncome,Income,28026.45159
+Georgia,2014,Expenditure,Income Tax,4435.903179
+Georgia,2014,Expenditure,Other,1472.933526
+Georgia,2014,HP,Housing Prices,183738.0751
+Georgia,2015,TotalIncome,Income,26600.76701
+Georgia,2015,Expenditure,Income Tax,3919.75614
+Georgia,2015,Expenditure,Other,1386.287764
+Georgia,2015,HP,Housing Prices,183688.432
+Georgia,2016,TotalIncome,Income,25890.34683
+Georgia,2016,Expenditure,Income Tax,3931.248144
+Georgia,2016,Expenditure,Other,1366.339641
+Georgia,2016,HP,Housing Prices,185122.9288
+Georgia,2017,TotalIncome,Income,28871.59172
+Georgia,2017,Expenditure,Income Tax,4400.236784
+Georgia,2017,Expenditure,Other,1464.324239
+Georgia,2017,HP,Housing Prices,197036.5527
+Georgia,2018,TotalIncome,Income,30050.10667
+Georgia,2018,Expenditure,Income Tax,4509.646905
+Georgia,2018,Expenditure,Other,1510.025
+Georgia,2018,HP,Housing Prices,218474.5424
+Georgia,2019,TotalIncome,Income,30625.06686
+Georgia,2019,Expenditure,Income Tax,12194.16018
+Georgia,2019,Expenditure,Other,2325.176096
+Georgia,2019,HP,Housing Prices,236850.7692
+Georgia,2020,TotalIncome,Income,33140.76411
+Georgia,2020,Expenditure,Income Tax,14493.86674
+Georgia,2020,Expenditure,Other,2538.92685
+Georgia,2020,HP,Housing Prices,240783.119
+Georgia,2021,TotalIncome,Income,33656.83968
+Georgia,2021,Expenditure,Income Tax,9073.820254
+Georgia,2021,Expenditure,Other,2090.441854
+Georgia,2021,HP,Housing Prices,260211.0574
+Hawaii,2012,TotalIncome,Income,28084.94275
+Hawaii,2012,Expenditure,Income Tax,4475.003595
+Hawaii,2012,Expenditure,Other,978.5099558
+Hawaii,2012,HP,Housing Prices,471130.3221
+Hawaii,2013,TotalIncome,Income,27012.61903
+Hawaii,2013,Expenditure,Income Tax,4012.446875
+Hawaii,2013,Expenditure,Other,1103.45
+Hawaii,2013,HP,Housing Prices,441688.9995
+Hawaii,2014,TotalIncome,Income,28997.54975
+Hawaii,2014,Expenditure,Income Tax,4257.937811
+Hawaii,2014,Expenditure,Other,1276.382255
+Hawaii,2014,HP,Housing Prices,460349.4828
+Hawaii,2015,TotalIncome,Income,30621.89039
+Hawaii,2015,Expenditure,Income Tax,4700.955451
+Hawaii,2015,Expenditure,Other,1472.983587
+Hawaii,2015,HP,Housing Prices,452122.949
+Hawaii,2016,TotalIncome,Income,31186.65702
+Hawaii,2016,Expenditure,Income Tax,5214.00225
+Hawaii,2016,Expenditure,Other,1255.120219
+Hawaii,2016,HP,Housing Prices,467506.4013
+Hawaii,2017,TotalIncome,Income,33766.66367
+Hawaii,2017,Expenditure,Income Tax,5577.955755
+Hawaii,2017,Expenditure,Other,1221.652132
+Hawaii,2017,HP,Housing Prices,527991.0216
+Hawaii,2018,TotalIncome,Income,36459.50727
+Hawaii,2018,Expenditure,Income Tax,6289.081784
+Hawaii,2018,Expenditure,Other,1181.277459
+Hawaii,2018,HP,Housing Prices,535739.6166
+Hawaii,2019,TotalIncome,Income,38910.75349
+Hawaii,2019,Expenditure,Income Tax,20149.56459
+Hawaii,2019,Expenditure,Other,2372.913059
+Hawaii,2019,HP,Housing Prices,678083.3061
+Hawaii,2020,TotalIncome,Income,38584.42869
+Hawaii,2020,Expenditure,Income Tax,18620.20198
+Hawaii,2020,Expenditure,Other,2214.147568
+Hawaii,2020,HP,Housing Prices,654839.2871
+Hawaii,2021,TotalIncome,Income,36533.71434
+Hawaii,2021,Expenditure,Income Tax,11486.9424
+Hawaii,2021,Expenditure,Other,2184.115191
+Hawaii,2021,HP,Housing Prices,719221.6155
+Idaho,2012,TotalIncome,Income,20358.68807
+Idaho,2012,Expenditure,Income Tax,2179.054629
+Idaho,2012,Expenditure,Other,1662.224354
+Idaho,2012,HP,Housing Prices,190744.4423
+Idaho,2013,TotalIncome,Income,22110.11141
+Idaho,2013,Expenditure,Income Tax,2501.872237
+Idaho,2013,Expenditure,Other,1428.422635
+Idaho,2013,HP,Housing Prices,185215.0138
+Idaho,2014,TotalIncome,Income,22268.00959
+Idaho,2014,Expenditure,Income Tax,2667.813699
+Idaho,2014,Expenditure,Other,1688.968493
+Idaho,2014,HP,Housing Prices,176075.4717
+Idaho,2015,TotalIncome,Income,25806.71216
+Idaho,2015,Expenditure,Income Tax,3804.247204
+Idaho,2015,Expenditure,Other,1599.947054
+Idaho,2015,HP,Housing Prices,192918.9501
+Idaho,2016,TotalIncome,Income,26368.63216
+Idaho,2016,Expenditure,Income Tax,3921.227398
+Idaho,2016,Expenditure,Other,1648.873016
+Idaho,2016,HP,Housing Prices,205489.4936
+Idaho,2017,TotalIncome,Income,26718.44511
+Idaho,2017,Expenditure,Income Tax,3643.644776
+Idaho,2017,Expenditure,Other,2153.255721
+Idaho,2017,HP,Housing Prices,207430.0268
+Idaho,2018,TotalIncome,Income,27917.18207
+Idaho,2018,Expenditure,Income Tax,3809.164148
+Idaho,2018,Expenditure,Other,1806.024605
+Idaho,2018,HP,Housing Prices,222602.3688
+Idaho,2019,TotalIncome,Income,28017.39113
+Idaho,2019,Expenditure,Income Tax,9538.989919
+Idaho,2019,Expenditure,Other,2579.84543
+Idaho,2019,HP,Housing Prices,297995.7329
+Idaho,2020,TotalIncome,Income,33475.74019
+Idaho,2020,Expenditure,Income Tax,13205.92696
+Idaho,2020,Expenditure,Other,3031.298692
+Idaho,2020,HP,Housing Prices,320971.6665
+Idaho,2021,TotalIncome,Income,31773.58914
+Idaho,2021,Expenditure,Income Tax,6275.866622
+Idaho,2021,Expenditure,Other,2738.90382
+Idaho,2021,HP,Housing Prices,381391.0515
+Illinois,2012,TotalIncome,Income,26907.29725
+Illinois,2012,Expenditure,Income Tax,4152.23523
+Illinois,2012,Expenditure,Other,1368.126508
+Illinois,2012,HP,Housing Prices,229865.4815
+Illinois,2013,TotalIncome,Income,29426.57878
+Illinois,2013,Expenditure,Income Tax,4718.344079
+Illinois,2013,Expenditure,Other,1498.952138
+Illinois,2013,HP,Housing Prices,219742.0092
+Illinois,2014,TotalIncome,Income,31129.38178
+Illinois,2014,Expenditure,Income Tax,5498.572668
+Illinois,2014,Expenditure,Other,1590.68872
+Illinois,2014,HP,Housing Prices,213889.6799
+Illinois,2015,TotalIncome,Income,30395.3625
+Illinois,2015,Expenditure,Income Tax,5055.402975
+Illinois,2015,Expenditure,Other,1730.731062
+Illinois,2015,HP,Housing Prices,233344.8242
+Illinois,2016,TotalIncome,Income,33081.90443
+Illinois,2016,Expenditure,Income Tax,5821.244624
+Illinois,2016,Expenditure,Other,1760.439993
+Illinois,2016,HP,Housing Prices,238012.4378
+Illinois,2017,TotalIncome,Income,34071.93326
+Illinois,2017,Expenditure,Income Tax,5494.905416
+Illinois,2017,Expenditure,Other,1901.095538
+Illinois,2017,HP,Housing Prices,244207.1007
+Illinois,2018,TotalIncome,Income,35919.14942
+Illinois,2018,Expenditure,Income Tax,6036.283067
+Illinois,2018,Expenditure,Other,1986.58289
+Illinois,2018,HP,Housing Prices,252204.7457
+Illinois,2019,TotalIncome,Income,37215.66146
+Illinois,2019,Expenditure,Income Tax,17786.48894
+Illinois,2019,Expenditure,Other,3140.944388
+Illinois,2019,HP,Housing Prices,267459.6886
+Illinois,2020,TotalIncome,Income,40428.00359
+Illinois,2020,Expenditure,Income Tax,19749.85865
+Illinois,2020,Expenditure,Other,3025.421179
+Illinois,2020,HP,Housing Prices,271326.975
+Illinois,2021,TotalIncome,Income,41774.11489
+Illinois,2021,Expenditure,Income Tax,18021.22664
+Illinois,2021,Expenditure,Other,3461.348011
+Illinois,2021,HP,Housing Prices,291029.7675
+Indiana,2012,TotalIncome,Income,24244.37815
+Indiana,2012,Expenditure,Income Tax,3342.133113
+Indiana,2012,Expenditure,Other,1556.74404
+Indiana,2012,HP,Housing Prices,159347.4077
+Indiana,2013,TotalIncome,Income,24016.66899
+Indiana,2013,Expenditure,Income Tax,3019.577778
+Indiana,2013,Expenditure,Other,1611.506799
+Indiana,2013,HP,Housing Prices,163080.8175
+Indiana,2014,TotalIncome,Income,26515.8314
+Indiana,2014,Expenditure,Income Tax,3986.019767
+Indiana,2014,Expenditure,Other,1357.50814
+Indiana,2014,HP,Housing Prices,167575.436
+Indiana,2015,TotalIncome,Income,25422.00098
+Indiana,2015,Expenditure,Income Tax,3588.196423
+Indiana,2015,Expenditure,Other,1656.566829
+Indiana,2015,HP,Housing Prices,159922.7988
+Indiana,2016,TotalIncome,Income,26306.78143
+Indiana,2016,Expenditure,Income Tax,3945.071987
+Indiana,2016,Expenditure,Other,2017.22671
+Indiana,2016,HP,Housing Prices,167224.5793
+Indiana,2017,TotalIncome,Income,29771.16027
+Indiana,2017,Expenditure,Income Tax,4569.142458
+Indiana,2017,Expenditure,Other,1888.449022
+Indiana,2017,HP,Housing Prices,177191.8359
+Indiana,2018,TotalIncome,Income,29448.11966
+Indiana,2018,Expenditure,Income Tax,4138.149831
+Indiana,2018,Expenditure,Other,1948.33322
+Indiana,2018,HP,Housing Prices,180125.6725
+Indiana,2019,TotalIncome,Income,30989.55406
+Indiana,2019,Expenditure,Income Tax,10830.23357
+Indiana,2019,Expenditure,Other,2620.5053
+Indiana,2019,HP,Housing Prices,180702.2222
+Indiana,2020,TotalIncome,Income,32973.50566
+Indiana,2020,Expenditure,Income Tax,14674.8997
+Indiana,2020,Expenditure,Other,3049.121418
+Indiana,2020,HP,Housing Prices,224030.1628
+Indiana,2021,TotalIncome,Income,36237.73688
+Indiana,2021,Expenditure,Income Tax,11854.61775
+Indiana,2021,Expenditure,Other,2775.173964
+Indiana,2021,HP,Housing Prices,233796.6536
+Iowa,2012,TotalIncome,Income,25151.62043
+Iowa,2012,Expenditure,Income Tax,3266.062634
+Iowa,2012,Expenditure,Other,1403.951613
+Iowa,2012,HP,Housing Prices,150159.1089
+Iowa,2013,TotalIncome,Income,26105.0238
+Iowa,2013,Expenditure,Income Tax,3297.778199
+Iowa,2013,Expenditure,Other,1425.050041
+Iowa,2013,HP,Housing Prices,157171.3496
+Iowa,2014,TotalIncome,Income,29154.86194
+Iowa,2014,Expenditure,Income Tax,4253.670182
+Iowa,2014,Expenditure,Other,1987.286673
+Iowa,2014,HP,Housing Prices,165558.4383
+Iowa,2015,TotalIncome,Income,28978.9898
+Iowa,2015,Expenditure,Income Tax,4300.362297
+Iowa,2015,Expenditure,Other,1684.908954
+Iowa,2015,HP,Housing Prices,174087.8262
+Iowa,2016,TotalIncome,Income,30902.69049
+Iowa,2016,Expenditure,Income Tax,5305.080206
+Iowa,2016,Expenditure,Other,1733.276607
+Iowa,2016,HP,Housing Prices,166402.1277
+Iowa,2017,TotalIncome,Income,31866.52645
+Iowa,2017,Expenditure,Income Tax,5019.657935
+Iowa,2017,Expenditure,Other,1770.106297
+Iowa,2017,HP,Housing Prices,172368.4366
+Iowa,2018,TotalIncome,Income,32048.61178
+Iowa,2018,Expenditure,Income Tax,4755.684794
+Iowa,2018,Expenditure,Other,1958.481873
+Iowa,2018,HP,Housing Prices,182268.2763
+Iowa,2019,TotalIncome,Income,32449.92831
+Iowa,2019,Expenditure,Income Tax,12660.31937
+Iowa,2019,Expenditure,Other,2743.296555
+Iowa,2019,HP,Housing Prices,194028.3417
+Iowa,2020,TotalIncome,Income,33450.36588
+Iowa,2020,Expenditure,Income Tax,12039.20577
+Iowa,2020,Expenditure,Other,3018.944882
+Iowa,2020,HP,Housing Prices,219963.2091
+Iowa,2021,TotalIncome,Income,35214.72417
+Iowa,2021,Expenditure,Income Tax,9848.786475
+Iowa,2021,Expenditure,Other,3161.496273
+Iowa,2021,HP,Housing Prices,207078.1567
+Kansas,2012,TotalIncome,Income,24471.31039
+Kansas,2012,Expenditure,Income Tax,2946.270768
+Kansas,2012,Expenditure,Other,1754.458116
+Kansas,2012,HP,Housing Prices,152422.2055
+Kansas,2013,TotalIncome,Income,25994.63525
+Kansas,2013,Expenditure,Income Tax,3381.067975
+Kansas,2013,Expenditure,Other,1586.039594
+Kansas,2013,HP,Housing Prices,160952.3822
+Kansas,2014,TotalIncome,Income,26655.97111
+Kansas,2014,Expenditure,Income Tax,3410.02
+Kansas,2014,Expenditure,Other,1772.135556
+Kansas,2014,HP,Housing Prices,165256.2763
+Kansas,2015,TotalIncome,Income,27113.30107
+Kansas,2015,Expenditure,Income Tax,3631.708846
+Kansas,2015,Expenditure,Other,1683.244347
+Kansas,2015,HP,Housing Prices,205375.6855
+Kansas,2016,TotalIncome,Income,29063.62381
+Kansas,2016,Expenditure,Income Tax,4369.89323
+Kansas,2016,Expenditure,Other,1628.341209
+Kansas,2016,HP,Housing Prices,188347.9789
+Kansas,2017,TotalIncome,Income,29739.41295
+Kansas,2017,Expenditure,Income Tax,3939.975446
+Kansas,2017,Expenditure,Other,1704.197321
+Kansas,2017,HP,Housing Prices,175411.2748
+Kansas,2018,TotalIncome,Income,32118.22444
+Kansas,2018,Expenditure,Income Tax,4614.413015
+Kansas,2018,Expenditure,Other,1506.288623
+Kansas,2018,HP,Housing Prices,200268.3878
+Kansas,2019,TotalIncome,Income,33446.85443
+Kansas,2019,Expenditure,Income Tax,14034.69431
+Kansas,2019,Expenditure,Other,3028.247905
+Kansas,2019,HP,Housing Prices,201498.5373
+Kansas,2020,TotalIncome,Income,36321.56346
+Kansas,2020,Expenditure,Income Tax,15348.14914
+Kansas,2020,Expenditure,Other,2771.024198
+Kansas,2020,HP,Housing Prices,199812.3561
+Kansas,2021,TotalIncome,Income,36381.57005
+Kansas,2021,Expenditure,Income Tax,10827.43043
+Kansas,2021,Expenditure,Other,2802.736232
+Kansas,2021,HP,Housing Prices,206613.7125
+Kentucky,2012,TotalIncome,Income,21720.38351
+Kentucky,2012,Expenditure,Income Tax,2540.009966
+Kentucky,2012,Expenditure,Other,1349.18866
+Kentucky,2012,HP,Housing Prices,157099.1345
+Kentucky,2013,TotalIncome,Income,22263.27742
+Kentucky,2013,Expenditure,Income Tax,2504.37851
+Kentucky,2013,Expenditure,Other,1291.089854
+Kentucky,2013,HP,Housing Prices,149027.3182
+Kentucky,2014,TotalIncome,Income,22656.9253
+Kentucky,2014,Expenditure,Income Tax,2888.953012
+Kentucky,2014,Expenditure,Other,1091.219277
+Kentucky,2014,HP,Housing Prices,143399.7202
+Kentucky,2015,TotalIncome,Income,25761.93387
+Kentucky,2015,Expenditure,Income Tax,3910.948189
+Kentucky,2015,Expenditure,Other,1412.59941
+Kentucky,2015,HP,Housing Prices,164934.1509
+Kentucky,2016,TotalIncome,Income,24868.90708
+Kentucky,2016,Expenditure,Income Tax,3673.746226
+Kentucky,2016,Expenditure,Other,1403.911792
+Kentucky,2016,HP,Housing Prices,167102.3432
+Kentucky,2017,TotalIncome,Income,26365.96217
+Kentucky,2017,Expenditure,Income Tax,3597.284824
+Kentucky,2017,Expenditure,Other,1477.162439
+Kentucky,2017,HP,Housing Prices,172516.5061
+Kentucky,2018,TotalIncome,Income,29063.60155
+Kentucky,2018,Expenditure,Income Tax,4268.020894
+Kentucky,2018,Expenditure,Other,1533.505345
+Kentucky,2018,HP,Housing Prices,179140.1414
+Kentucky,2019,TotalIncome,Income,32070.51351
+Kentucky,2019,Expenditure,Income Tax,13825.75988
+Kentucky,2019,Expenditure,Other,1898.839917
+Kentucky,2019,HP,Housing Prices,174165.097
+Kentucky,2020,TotalIncome,Income,33830.92343
+Kentucky,2020,Expenditure,Income Tax,13621.23724
+Kentucky,2020,Expenditure,Other,2444.093387
+Kentucky,2020,HP,Housing Prices,192389.5943
+Kentucky,2021,TotalIncome,Income,30577.28051
+Kentucky,2021,Expenditure,Income Tax,6003.458003
+Kentucky,2021,Expenditure,Other,2218.243529
+Kentucky,2021,HP,Housing Prices,217279.4155
+Louisiana,2012,TotalIncome,Income,21835.02164
+Louisiana,2012,Expenditure,Income Tax,2269.177836
+Louisiana,2012,Expenditure,Other,1247.538259
+Louisiana,2012,HP,Housing Prices,163736.7556
+Louisiana,2013,TotalIncome,Income,21773.9179
+Louisiana,2013,Expenditure,Income Tax,2053.397738
+Louisiana,2013,Expenditure,Other,1310.927237
+Louisiana,2013,HP,Housing Prices,165275.537
+Louisiana,2014,TotalIncome,Income,24890.09001
+Louisiana,2014,Expenditure,Income Tax,3691.890295
+Louisiana,2014,Expenditure,Other,1486.447257
+Louisiana,2014,HP,Housing Prices,186227.8788
+Louisiana,2015,TotalIncome,Income,23671.79028
+Louisiana,2015,Expenditure,Income Tax,3016.543904
+Louisiana,2015,Expenditure,Other,1314.876304
+Louisiana,2015,HP,Housing Prices,177761.3977
+Louisiana,2016,TotalIncome,Income,27180.64755
+Louisiana,2016,Expenditure,Income Tax,3863.481456
+Louisiana,2016,Expenditure,Other,1588.96798
+Louisiana,2016,HP,Housing Prices,186219.1688
+Louisiana,2017,TotalIncome,Income,26021.819
+Louisiana,2017,Expenditure,Income Tax,3449.107471
+Louisiana,2017,Expenditure,Other,1515.471365
+Louisiana,2017,HP,Housing Prices,184758.2342
+Louisiana,2018,TotalIncome,Income,26785.32778
+Louisiana,2018,Expenditure,Income Tax,3509.932416
+Louisiana,2018,Expenditure,Other,1433.246198
+Louisiana,2018,HP,Housing Prices,184301.8609
+Louisiana,2019,TotalIncome,Income,28908.56918
+Louisiana,2019,Expenditure,Income Tax,8508.003877
+Louisiana,2019,Expenditure,Other,2231.903077
+Louisiana,2019,HP,Housing Prices,200323.2287
+Louisiana,2020,TotalIncome,Income,31517.47216
+Louisiana,2020,Expenditure,Income Tax,10061.02297
+Louisiana,2020,Expenditure,Other,2488.338919
+Louisiana,2020,HP,Housing Prices,209995.1218
+Louisiana,2021,TotalIncome,Income,30331.80249
+Louisiana,2021,Expenditure,Income Tax,4883.962427
+Louisiana,2021,Expenditure,Other,2446.216806
+Louisiana,2021,HP,Housing Prices,199179.2196
+Maine,2012,TotalIncome,Income,26865.70323
+Maine,2012,Expenditure,Income Tax,3887.530143
+Maine,2012,Expenditure,Other,1442.296768
+Maine,2012,HP,Housing Prices,198254.6078
+Maine,2013,TotalIncome,Income,26589.88496
+Maine,2013,Expenditure,Income Tax,3544.296529
+Maine,2013,Expenditure,Other,1594.355372
+Maine,2013,HP,Housing Prices,201305.9076
+Maine,2014,TotalIncome,Income,28698.65603
+Maine,2014,Expenditure,Income Tax,3880.722832
+Maine,2014,Expenditure,Other,1679.703888
+Maine,2014,HP,Housing Prices,190906.4011
+Maine,2015,TotalIncome,Income,29023.55369
+Maine,2015,Expenditure,Income Tax,4120.139409
+Maine,2015,Expenditure,Other,1900.160591
+Maine,2015,HP,Housing Prices,215385.4146
+Maine,2016,TotalIncome,Income,29337.62812
+Maine,2016,Expenditure,Income Tax,4224.795163
+Maine,2016,Expenditure,Other,1952.015117
+Maine,2016,HP,Housing Prices,226212.2883
+Maine,2017,TotalIncome,Income,30773.21252
+Maine,2017,Expenditure,Income Tax,4605.917031
+Maine,2017,Expenditure,Other,1743.243086
+Maine,2017,HP,Housing Prices,226624.6325
+Maine,2018,TotalIncome,Income,29738.84574
+Maine,2018,Expenditure,Income Tax,3914.663566
+Maine,2018,Expenditure,Other,1734.851938
+Maine,2018,HP,Housing Prices,209806.5457
+Maine,2019,TotalIncome,Income,32565.0899
+Maine,2019,Expenditure,Income Tax,9880.281623
+Maine,2019,Expenditure,Other,3099.97136
+Maine,2019,HP,Housing Prices,222734.0126
+Maine,2020,TotalIncome,Income,36575.87175
+Maine,2020,Expenditure,Income Tax,12071.28251
+Maine,2020,Expenditure,Other,3473.815247
+Maine,2020,HP,Housing Prices,228252.0486
+Maine,2021,TotalIncome,Income,36531.51944
+Maine,2021,Expenditure,Income Tax,8045.289815
+Maine,2021,Expenditure,Other,2802.578704
+Maine,2021,HP,Housing Prices,256050.2404
+Maryland,2012,TotalIncome,Income,33229.16386
+Maryland,2012,Expenditure,Income Tax,4081.216005
+Maryland,2012,Expenditure,Other,1564.319695
+Maryland,2012,HP,Housing Prices,350944.1417
+Maryland,2013,TotalIncome,Income,33139.31773
+Maryland,2013,Expenditure,Income Tax,5180.572889
+Maryland,2013,Expenditure,Other,1580.038438
+Maryland,2013,HP,Housing Prices,345061.576
+Maryland,2014,TotalIncome,Income,37280.66062
+Maryland,2014,Expenditure,Income Tax,6715.358199
+Maryland,2014,Expenditure,Other,1706.59879
+Maryland,2014,HP,Housing Prices,340007.7587
+Maryland,2015,TotalIncome,Income,37173.65763
+Maryland,2015,Expenditure,Income Tax,6452.259843
+Maryland,2015,Expenditure,Other,1795.087197
+Maryland,2015,HP,Housing Prices,374722.2543
+Maryland,2016,TotalIncome,Income,36878.08599
+Maryland,2016,Expenditure,Income Tax,7155.654321
+Maryland,2016,Expenditure,Other,1497.753086
+Maryland,2016,HP,Housing Prices,345557.5483
+Maryland,2017,TotalIncome,Income,40249.77515
+Maryland,2017,Expenditure,Income Tax,7974.077346
+Maryland,2017,Expenditure,Other,1909.950549
+Maryland,2017,HP,Housing Prices,368446.0816
+Maryland,2018,TotalIncome,Income,40303.46259
+Maryland,2018,Expenditure,Income Tax,7525.241009
+Maryland,2018,Expenditure,Other,2006.776354
+Maryland,2018,HP,Housing Prices,386348.844
+Maryland,2019,TotalIncome,Income,41256.01594
+Maryland,2019,Expenditure,Income Tax,22295.38734
+Maryland,2019,Expenditure,Other,3276.68216
+Maryland,2019,HP,Housing Prices,356474.9385
+Maryland,2020,TotalIncome,Income,46663.92799
+Maryland,2020,Expenditure,Income Tax,26615.82022
+Maryland,2020,Expenditure,Other,3235.966803
+Maryland,2020,HP,Housing Prices,389410.482
+Maryland,2021,TotalIncome,Income,50724.05174
+Maryland,2021,Expenditure,Income Tax,29282.97437
+Maryland,2021,Expenditure,Other,2993.805609
+Maryland,2021,HP,Housing Prices,407018.7841
+Massachusetts,2012,TotalIncome,Income,31978.86001
+Massachusetts,2012,Expenditure,Income Tax,5255.07551
+Massachusetts,2012,Expenditure,Other,1611.237888
+Massachusetts,2012,HP,Housing Prices,406735.3254
+Massachusetts,2013,TotalIncome,Income,31530.80933
+Massachusetts,2013,Expenditure,Income Tax,4866.876268
+Massachusetts,2013,Expenditure,Other,1598.903313
+Massachusetts,2013,HP,Housing Prices,367204.8851
+Massachusetts,2014,TotalIncome,Income,38240.03571
+Massachusetts,2014,Expenditure,Income Tax,7720.334524
+Massachusetts,2014,Expenditure,Other,1749.847619
+Massachusetts,2014,HP,Housing Prices,361913.2879
+Massachusetts,2015,TotalIncome,Income,35078.83738
+Massachusetts,2015,Expenditure,Income Tax,6212.862281
+Massachusetts,2015,Expenditure,Other,1738.80787
+Massachusetts,2015,HP,Housing Prices,436392.7215
+Massachusetts,2016,TotalIncome,Income,37266.12511
+Massachusetts,2016,Expenditure,Income Tax,7089.195906
+Massachusetts,2016,Expenditure,Other,1670.807506
+Massachusetts,2016,HP,Housing Prices,465125.2595
+Massachusetts,2017,TotalIncome,Income,37593.77894
+Massachusetts,2017,Expenditure,Income Tax,6479.313396
+Massachusetts,2017,Expenditure,Other,1799.791896
+Massachusetts,2017,HP,Housing Prices,440544.8888
+Massachusetts,2018,TotalIncome,Income,40936.82721
+Massachusetts,2018,Expenditure,Income Tax,7428.197761
+Massachusetts,2018,Expenditure,Other,2041.079506
+Massachusetts,2018,HP,Housing Prices,449935.2885
+Massachusetts,2019,TotalIncome,Income,45024.61727
+Massachusetts,2019,Expenditure,Income Tax,23623.96082
+Massachusetts,2019,Expenditure,Other,3522.51904
+Massachusetts,2019,HP,Housing Prices,473396.0772
+Massachusetts,2020,TotalIncome,Income,49349.51963
+Massachusetts,2020,Expenditure,Income Tax,27518.89827
+Massachusetts,2020,Expenditure,Other,3501.190958
+Massachusetts,2020,HP,Housing Prices,492655.8833
+Massachusetts,2021,TotalIncome,Income,50436.96596
+Massachusetts,2021,Expenditure,Income Tax,24071.04601
+Massachusetts,2021,Expenditure,Other,3644.772455
+Massachusetts,2021,HP,Housing Prices,554534.7681
+Michigan,2012,TotalIncome,Income,24928.67961
+Michigan,2012,Expenditure,Income Tax,3105.556833
+Michigan,2012,Expenditure,Other,1151.567462
+Michigan,2012,HP,Housing Prices,150184.5032
+Michigan,2013,TotalIncome,Income,26695.74493
+Michigan,2013,Expenditure,Income Tax,3458.817354
+Michigan,2013,Expenditure,Other,1317.415395
+Michigan,2013,HP,Housing Prices,153768.1692
+Michigan,2014,TotalIncome,Income,30706.35758
+Michigan,2014,Expenditure,Income Tax,5020.264928
+Michigan,2014,Expenditure,Other,1538.522306
+Michigan,2014,HP,Housing Prices,173664.2354
+Michigan,2015,TotalIncome,Income,27836.99975
+Michigan,2015,Expenditure,Income Tax,4130.534334
+Michigan,2015,Expenditure,Other,1449.800148
+Michigan,2015,HP,Housing Prices,157788.319
+Michigan,2016,TotalIncome,Income,29522.11531
+Michigan,2016,Expenditure,Income Tax,4485.234305
+Michigan,2016,Expenditure,Other,1591.5855
+Michigan,2016,HP,Housing Prices,172777.8794
+Michigan,2017,TotalIncome,Income,30307.01381
+Michigan,2017,Expenditure,Income Tax,4241.331117
+Michigan,2017,Expenditure,Other,1702.501406
+Michigan,2017,HP,Housing Prices,181838.9825
+Michigan,2018,TotalIncome,Income,32362.70206
+Michigan,2018,Expenditure,Income Tax,4785.269841
+Michigan,2018,Expenditure,Other,1678.065834
+Michigan,2018,HP,Housing Prices,184031.571
+Michigan,2019,TotalIncome,Income,34054.20052
+Michigan,2019,Expenditure,Income Tax,12831.52451
+Michigan,2019,Expenditure,Other,2603.161868
+Michigan,2019,HP,Housing Prices,215530.8546
+Michigan,2020,TotalIncome,Income,39013.42796
+Michigan,2020,Expenditure,Income Tax,15830.36678
+Michigan,2020,Expenditure,Other,2872.679817
+Michigan,2020,HP,Housing Prices,217460.882
+Michigan,2021,TotalIncome,Income,41864.37057
+Michigan,2021,Expenditure,Income Tax,17525.20953
+Michigan,2021,Expenditure,Other,2644.60643
+Michigan,2021,HP,Housing Prices,234403.3322
+Minnesota,2012,TotalIncome,Income,28609.39008
+Minnesota,2012,Expenditure,Income Tax,4007.735637
+Minnesota,2012,Expenditure,Other,1581.54505
+Minnesota,2012,HP,Housing Prices,219140.9682
+Minnesota,2013,TotalIncome,Income,29732.25731
+Minnesota,2013,Expenditure,Income Tax,4120.124896
+Minnesota,2013,Expenditure,Other,1690.176901
+Minnesota,2013,HP,Housing Prices,225830.9318
+Minnesota,2014,TotalIncome,Income,32093.99296
+Minnesota,2014,Expenditure,Income Tax,5082.125264
+Minnesota,2014,Expenditure,Other,2019.574243
+Minnesota,2014,HP,Housing Prices,243066.7271
+Minnesota,2015,TotalIncome,Income,33239.24346
+Minnesota,2015,Expenditure,Income Tax,5364.823786
+Minnesota,2015,Expenditure,Other,1757.264633
+Minnesota,2015,HP,Housing Prices,237524.5638
+Minnesota,2016,TotalIncome,Income,33556.12907
+Minnesota,2016,Expenditure,Income Tax,5856.697419
+Minnesota,2016,Expenditure,Other,1931.582734
+Minnesota,2016,HP,Housing Prices,222714.3749
+Minnesota,2017,TotalIncome,Income,34244.87198
+Minnesota,2017,Expenditure,Income Tax,5230.948526
+Minnesota,2017,Expenditure,Other,2057.025957
+Minnesota,2017,HP,Housing Prices,240723.6862
+Minnesota,2018,TotalIncome,Income,34886.31066
+Minnesota,2018,Expenditure,Income Tax,5401.022378
+Minnesota,2018,Expenditure,Other,1952.770513
+Minnesota,2018,HP,Housing Prices,257461.6659
+Minnesota,2019,TotalIncome,Income,38205.72957
+Minnesota,2019,Expenditure,Income Tax,17970.06348
+Minnesota,2019,Expenditure,Other,3309.642174
+Minnesota,2019,HP,Housing Prices,269312.8176
+Minnesota,2020,TotalIncome,Income,40810.96965
+Minnesota,2020,Expenditure,Income Tax,18762.8282
+Minnesota,2020,Expenditure,Other,3393.634454
+Minnesota,2020,HP,Housing Prices,296457.9977
+Minnesota,2021,TotalIncome,Income,45972.85457
+Minnesota,2021,Expenditure,Income Tax,21216.29559
+Minnesota,2021,Expenditure,Other,3543.639981
+Minnesota,2021,HP,Housing Prices,317089.5748
+Mississippi,2012,TotalIncome,Income,21265.71626
+Mississippi,2012,Expenditure,Income Tax,2175.336283
+Mississippi,2012,Expenditure,Other,1295.482301
+Mississippi,2012,HP,Housing Prices,127229.583
+Mississippi,2013,TotalIncome,Income,20762.99464
+Mississippi,2013,Expenditure,Income Tax,2272.069705
+Mississippi,2013,Expenditure,Other,1194.01555
+Mississippi,2013,HP,Housing Prices,121383.6971
+Mississippi,2014,TotalIncome,Income,25929.41069
+Mississippi,2014,Expenditure,Income Tax,4267.731298
+Mississippi,2014,Expenditure,Other,1457.621374
+Mississippi,2014,HP,Housing Prices,125128.3136
+Mississippi,2015,TotalIncome,Income,20625.90831
+Mississippi,2015,Expenditure,Income Tax,2297.200308
+Mississippi,2015,Expenditure,Other,1274.888615
+Mississippi,2015,HP,Housing Prices,119440.7126
+Mississippi,2016,TotalIncome,Income,22477.99721
+Mississippi,2016,Expenditure,Income Tax,3001.525098
+Mississippi,2016,Expenditure,Other,1352.865588
+Mississippi,2016,HP,Housing Prices,132667.2233
+Mississippi,2017,TotalIncome,Income,23302.60527
+Mississippi,2017,Expenditure,Income Tax,2665.350015
+Mississippi,2017,Expenditure,Other,1361.906722
+Mississippi,2017,HP,Housing Prices,134136.1135
+Mississippi,2018,TotalIncome,Income,23593.18957
+Mississippi,2018,Expenditure,Income Tax,2553.174963
+Mississippi,2018,Expenditure,Other,1363.156781
+Mississippi,2018,HP,Housing Prices,138555.9903
+Mississippi,2019,TotalIncome,Income,24397.17401
+Mississippi,2019,Expenditure,Income Tax,7023.601883
+Mississippi,2019,Expenditure,Other,2075.549043
+Mississippi,2019,HP,Housing Prices,146503.2039
+Mississippi,2020,TotalIncome,Income,26888.33106
+Mississippi,2020,Expenditure,Income Tax,7750.564811
+Mississippi,2020,Expenditure,Other,2283.008977
+Mississippi,2020,HP,Housing Prices,149422.9084
+Mississippi,2021,TotalIncome,Income,26735.86311
+Mississippi,2021,Expenditure,Income Tax,3547.645743
+Mississippi,2021,Expenditure,Other,2082.223038
+Mississippi,2021,HP,Housing Prices,151081.16
+Missouri,2012,TotalIncome,Income,25348.80359
+Missouri,2012,Expenditure,Income Tax,3397.104902
+Missouri,2012,Expenditure,Other,1425.519608
+Missouri,2012,HP,Housing Prices,177998.9065
+Missouri,2013,TotalIncome,Income,26780.59444
+Missouri,2013,Expenditure,Income Tax,3620.584735
+Missouri,2013,Expenditure,Other,1336.256792
+Missouri,2013,HP,Housing Prices,174887.4585
+Missouri,2014,TotalIncome,Income,25234.41957
+Missouri,2014,Expenditure,Income Tax,3440.29445
+Missouri,2014,Expenditure,Other,1800.952023
+Missouri,2014,HP,Housing Prices,178477.0642
+Missouri,2015,TotalIncome,Income,29761.72717
+Missouri,2015,Expenditure,Income Tax,4446.204713
+Missouri,2015,Expenditure,Other,1571.166053
+Missouri,2015,HP,Housing Prices,193311.2304
+Missouri,2016,TotalIncome,Income,30523.64614
+Missouri,2016,Expenditure,Income Tax,4859.395731
+Missouri,2016,Expenditure,Other,2032.446634
+Missouri,2016,HP,Housing Prices,179761.8403
+Missouri,2017,TotalIncome,Income,28755.90967
+Missouri,2017,Expenditure,Income Tax,4063.878233
+Missouri,2017,Expenditure,Other,1673.656586
+Missouri,2017,HP,Housing Prices,180074.7408
+Missouri,2018,TotalIncome,Income,32132.00126
+Missouri,2018,Expenditure,Income Tax,4728.976111
+Missouri,2018,Expenditure,Other,1750.359598
+Missouri,2018,HP,Housing Prices,199335.0379
+Missouri,2019,TotalIncome,Income,32992.45916
+Missouri,2019,Expenditure,Income Tax,11772.24376
+Missouri,2019,Expenditure,Other,2794.537452
+Missouri,2019,HP,Housing Prices,211980.7011
+Missouri,2020,TotalIncome,Income,34083.53196
+Missouri,2020,Expenditure,Income Tax,12055.04133
+Missouri,2020,Expenditure,Other,2920.832773
+Missouri,2020,HP,Housing Prices,210124.7286
+Missouri,2021,TotalIncome,Income,35964.9068
+Missouri,2021,Expenditure,Income Tax,8579.582155
+Missouri,2021,Expenditure,Other,2876.630742
+Missouri,2021,HP,Housing Prices,224401.0605
+Montana,2012,TotalIncome,Income,21593.21369
+Montana,2012,Expenditure,Income Tax,2237.949199
+Montana,2012,Expenditure,Other,1324.374931
+Montana,2012,HP,Housing Prices,200814.658
+Montana,2013,TotalIncome,Income,24228.15674
+Montana,2013,Expenditure,Income Tax,2745.533146
+Montana,2013,Expenditure,Other,1377.997191
+Montana,2013,HP,Housing Prices,219795.6269
+Montana,2014,TotalIncome,Income,24811.28913
+Montana,2014,Expenditure,Income Tax,3235.541436
+Montana,2014,Expenditure,Other,1569.138122
+Montana,2014,HP,Housing Prices,229674.3243
+Montana,2015,TotalIncome,Income,28737.48738
+Montana,2015,Expenditure,Income Tax,4063.981615
+Montana,2015,Expenditure,Other,1889.060923
+Montana,2015,HP,Housing Prices,220686.6815
+Montana,2016,TotalIncome,Income,28607.36958
+Montana,2016,Expenditure,Income Tax,4234.978485
+Montana,2016,Expenditure,Other,1753.159741
+Montana,2016,HP,Housing Prices,255927.1749
+Montana,2017,TotalIncome,Income,29997.81494
+Montana,2017,Expenditure,Income Tax,4051.89385
+Montana,2017,Expenditure,Other,1882.424319
+Montana,2017,HP,Housing Prices,246896.48
+Montana,2018,TotalIncome,Income,32076.43989
+Montana,2018,Expenditure,Income Tax,4631.38645
+Montana,2018,Expenditure,Other,1687.53944
+Montana,2018,HP,Housing Prices,258884.3849
+Montana,2019,TotalIncome,Income,30428.46282
+Montana,2019,Expenditure,Income Tax,10035.5631
+Montana,2019,Expenditure,Other,2745.665075
+Montana,2019,HP,Housing Prices,314596.5044
+Montana,2020,TotalIncome,Income,33646.48574
+Montana,2020,Expenditure,Income Tax,12268.45054
+Montana,2020,Expenditure,Other,3209.807707
+Montana,2020,HP,Housing Prices,357178.8755
+Montana,2021,TotalIncome,Income,34970.06077
+Montana,2021,Expenditure,Income Tax,9521.344474
+Montana,2021,Expenditure,Other,2709.600076
+Montana,2021,HP,Housing Prices,399685
+Nebraska,2012,TotalIncome,Income,26758.80614
+Nebraska,2012,Expenditure,Income Tax,3635.585792
+Nebraska,2012,Expenditure,Other,1619.424744
+Nebraska,2012,HP,Housing Prices,156805.8229
+Nebraska,2013,TotalIncome,Income,25884.19328
+Nebraska,2013,Expenditure,Income Tax,3094.620168
+Nebraska,2013,Expenditure,Other,1559.252773
+Nebraska,2013,HP,Housing Prices,153113.7154
+Nebraska,2014,TotalIncome,Income,29087.10496
+Nebraska,2014,Expenditure,Income Tax,4139.843137
+Nebraska,2014,Expenditure,Other,2244.88466
+Nebraska,2014,HP,Housing Prices,169301.8576
+Nebraska,2015,TotalIncome,Income,27731.44509
+Nebraska,2015,Expenditure,Income Tax,3944.559938
+Nebraska,2015,Expenditure,Other,1792.768755
+Nebraska,2015,HP,Housing Prices,158900.5454
+Nebraska,2016,TotalIncome,Income,28403.75874
+Nebraska,2016,Expenditure,Income Tax,4541.658142
+Nebraska,2016,Expenditure,Other,1525.901108
+Nebraska,2016,HP,Housing Prices,164035.2155
+Nebraska,2017,TotalIncome,Income,29582.66637
+Nebraska,2017,Expenditure,Income Tax,4174.698463
+Nebraska,2017,Expenditure,Other,1803.932188
+Nebraska,2017,HP,Housing Prices,171391.7703
+Nebraska,2018,TotalIncome,Income,31035.67859
+Nebraska,2018,Expenditure,Income Tax,4436.913988
+Nebraska,2018,Expenditure,Other,2307.543685
+Nebraska,2018,HP,Housing Prices,180934.4459
+Nebraska,2019,TotalIncome,Income,33860.24669
+Nebraska,2019,Expenditure,Income Tax,12678.81635
+Nebraska,2019,Expenditure,Other,3126.746003
+Nebraska,2019,HP,Housing Prices,211932.8571
+Nebraska,2020,TotalIncome,Income,35776.54151
+Nebraska,2020,Expenditure,Income Tax,13666.12691
+Nebraska,2020,Expenditure,Other,3228.412691
+Nebraska,2020,HP,Housing Prices,207924.0308
+Nebraska,2021,TotalIncome,Income,36592.39315
+Nebraska,2021,Expenditure,Income Tax,8756.247456
+Nebraska,2021,Expenditure,Other,2934.780296
+Nebraska,2021,HP,Housing Prices,230289.3991
+Nevada,2012,TotalIncome,Income,23490.12677
+Nevada,2012,Expenditure,Income Tax,2063.426187
+Nevada,2012,Expenditure,Other,1237.376123
+Nevada,2012,HP,Housing Prices,201709.3663
+Nevada,2013,TotalIncome,Income,23747.403
+Nevada,2013,Expenditure,Income Tax,2045.939299
+Nevada,2013,Expenditure,Other,1270.346683
+Nevada,2013,HP,Housing Prices,190087.628
+Nevada,2014,TotalIncome,Income,26577.70067
+Nevada,2014,Expenditure,Income Tax,2841.232063
+Nevada,2014,Expenditure,Other,1634.496637
+Nevada,2014,HP,Housing Prices,229027.741
+Nevada,2015,TotalIncome,Income,24992.54682
+Nevada,2015,Expenditure,Income Tax,2705.035155
+Nevada,2015,Expenditure,Other,1294.873999
+Nevada,2015,HP,Housing Prices,239143.8846
+Nevada,2016,TotalIncome,Income,27517.96497
+Nevada,2016,Expenditure,Income Tax,3348.087156
+Nevada,2016,Expenditure,Other,1321.983736
+Nevada,2016,HP,Housing Prices,256118.6511
+Nevada,2017,TotalIncome,Income,27958.44244
+Nevada,2017,Expenditure,Income Tax,2863.452868
+Nevada,2017,Expenditure,Other,1520.781789
+Nevada,2017,HP,Housing Prices,256475.0196
+Nevada,2018,TotalIncome,Income,29088.4075
+Nevada,2018,Expenditure,Income Tax,3257.254583
+Nevada,2018,Expenditure,Other,1458.396667
+Nevada,2018,HP,Housing Prices,248754.3182
+Nevada,2019,TotalIncome,Income,31921.94669
+Nevada,2019,Expenditure,Income Tax,8096.655311
+Nevada,2019,Expenditure,Other,2384.503808
+Nevada,2019,HP,Housing Prices,300842.4352
+Nevada,2020,TotalIncome,Income,35405.51243
+Nevada,2020,Expenditure,Income Tax,9279.314435
+Nevada,2020,Expenditure,Other,2876.708242
+Nevada,2020,HP,Housing Prices,329964.8867
+Nevada,2021,TotalIncome,Income,32764.04118
+Nevada,2021,Expenditure,Income Tax,4424.195378
+Nevada,2021,Expenditure,Other,2250.170168
+Nevada,2021,HP,Housing Prices,389147.2585
+New Hampshire,2012,TotalIncome,Income,31476.73174
+New Hampshire,2012,Expenditure,Income Tax,3420.566864
+New Hampshire,2012,Expenditure,Other,1706.12594
+New Hampshire,2012,HP,Housing Prices,277508.5632
+New Hampshire,2013,TotalIncome,Income,32310.94372
+New Hampshire,2013,Expenditure,Income Tax,3550.25889
+New Hampshire,2013,Expenditure,Other,1666.86595
+New Hampshire,2013,HP,Housing Prices,261297.0257
+New Hampshire,2014,TotalIncome,Income,33928.29319
+New Hampshire,2014,Expenditure,Income Tax,4397.423211
+New Hampshire,2014,Expenditure,Other,1973.175393
+New Hampshire,2014,HP,Housing Prices,267479.5127
+New Hampshire,2015,TotalIncome,Income,36006.96264
+New Hampshire,2015,Expenditure,Income Tax,5125.702165
+New Hampshire,2015,Expenditure,Other,2093.800279
+New Hampshire,2015,HP,Housing Prices,302121.77
+New Hampshire,2016,TotalIncome,Income,36147.74283
+New Hampshire,2016,Expenditure,Income Tax,5036.590806
+New Hampshire,2016,Expenditure,Other,2157.615385
+New Hampshire,2016,HP,Housing Prices,303894.0969
+New Hampshire,2017,TotalIncome,Income,38080.30192
+New Hampshire,2017,Expenditure,Income Tax,4870.636322
+New Hampshire,2017,Expenditure,Other,2127.94419
+New Hampshire,2017,HP,Housing Prices,302469.7818
+New Hampshire,2018,TotalIncome,Income,38531.4195
+New Hampshire,2018,Expenditure,Income Tax,4888.392364
+New Hampshire,2018,Expenditure,Other,2167.285189
+New Hampshire,2018,HP,Housing Prices,331989.5296
+New Hampshire,2019,TotalIncome,Income,40842.28659
+New Hampshire,2019,Expenditure,Income Tax,12932.63086
+New Hampshire,2019,Expenditure,Other,3588.575047
+New Hampshire,2019,HP,Housing Prices,315895.1157
+New Hampshire,2020,TotalIncome,Income,45564.88877
+New Hampshire,2020,Expenditure,Income Tax,17025.93357
+New Hampshire,2020,Expenditure,Other,4144.179712
+New Hampshire,2020,HP,Housing Prices,312535.3659
+New Hampshire,2021,TotalIncome,Income,45064.09248
+New Hampshire,2021,Expenditure,Income Tax,11489.34901
+New Hampshire,2021,Expenditure,Other,3716.684431
+New Hampshire,2021,HP,Housing Prices,372017.4737
+New Jersey,2012,TotalIncome,Income,32844.85993
+New Jersey,2012,Expenditure,Income Tax,5347.506833
+New Jersey,2012,Expenditure,Other,1494.09224
+New Jersey,2012,HP,Housing Prices,376564.7571
+New Jersey,2013,TotalIncome,Income,33678.38101
+New Jersey,2013,Expenditure,Income Tax,5422.354208
+New Jersey,2013,Expenditure,Other,1645.785571
+New Jersey,2013,HP,Housing Prices,382017.5384
+New Jersey,2014,TotalIncome,Income,34615.3838
+New Jersey,2014,Expenditure,Income Tax,5884.602993
+New Jersey,2014,Expenditure,Other,2048.893486
+New Jersey,2014,HP,Housing Prices,436064.2674
+New Jersey,2015,TotalIncome,Income,32994.49267
+New Jersey,2015,Expenditure,Income Tax,5488.042506
+New Jersey,2015,Expenditure,Other,1828.263734
+New Jersey,2015,HP,Housing Prices,405152.141
+New Jersey,2016,TotalIncome,Income,35648.93337
+New Jersey,2016,Expenditure,Income Tax,6510.50155
+New Jersey,2016,Expenditure,Other,1649.402893
+New Jersey,2016,HP,Housing Prices,394314.3071
+New Jersey,2017,TotalIncome,Income,37589.47799
+New Jersey,2017,Expenditure,Income Tax,6594.678207
+New Jersey,2017,Expenditure,Other,1803.17284
+New Jersey,2017,HP,Housing Prices,375452.4384
+New Jersey,2018,TotalIncome,Income,37530.91428
+New Jersey,2018,Expenditure,Income Tax,6247.6276
+New Jersey,2018,Expenditure,Other,1906.41765
+New Jersey,2018,HP,Housing Prices,395235.6828
+New Jersey,2019,TotalIncome,Income,43131.03549
+New Jersey,2019,Expenditure,Income Tax,23612.54058
+New Jersey,2019,Expenditure,Other,3506.941403
+New Jersey,2019,HP,Housing Prices,419433.7588
+New Jersey,2020,TotalIncome,Income,46025.43246
+New Jersey,2020,Expenditure,Income Tax,25196.95637
+New Jersey,2020,Expenditure,Other,3629.904712
+New Jersey,2020,HP,Housing Prices,433073.007
+New Jersey,2021,TotalIncome,Income,47350.12409
+New Jersey,2021,Expenditure,Income Tax,21146.26073
+New Jersey,2021,Expenditure,Other,3095.425083
+New Jersey,2021,HP,Housing Prices,463410.3083
+New Mexico,2012,TotalIncome,Income,23707.04186
+New Mexico,2012,Expenditure,Income Tax,2098.229723
+New Mexico,2012,Expenditure,Other,1376.138148
+New Mexico,2012,HP,Housing Prices,197965.211
+New Mexico,2013,TotalIncome,Income,28615.33777
+New Mexico,2013,Expenditure,Income Tax,4350.391582
+New Mexico,2013,Expenditure,Other,1421.966436
+New Mexico,2013,HP,Housing Prices,190629.06
+New Mexico,2014,TotalIncome,Income,23596.23282
+New Mexico,2014,Expenditure,Income Tax,2852.305987
+New Mexico,2014,Expenditure,Other,1268.847007
+New Mexico,2014,HP,Housing Prices,191909.2527
+New Mexico,2015,TotalIncome,Income,23637.05094
+New Mexico,2015,Expenditure,Income Tax,2818.404342
+New Mexico,2015,Expenditure,Other,1320.234153
+New Mexico,2015,HP,Housing Prices,191779.3987
+New Mexico,2016,TotalIncome,Income,23839.5549
+New Mexico,2016,Expenditure,Income Tax,2833.214656
+New Mexico,2016,Expenditure,Other,1203.315075
+New Mexico,2016,HP,Housing Prices,185595.9043
+New Mexico,2017,TotalIncome,Income,27678.93717
+New Mexico,2017,Expenditure,Income Tax,4021.37487
+New Mexico,2017,Expenditure,Other,1247.512252
+New Mexico,2017,HP,Housing Prices,187061.7728
+New Mexico,2018,TotalIncome,Income,26321.92375
+New Mexico,2018,Expenditure,Income Tax,3080.567424
+New Mexico,2018,Expenditure,Other,1240.148584
+New Mexico,2018,HP,Housing Prices,195249.8492
+New Mexico,2019,TotalIncome,Income,30125.38173
+New Mexico,2019,Expenditure,Income Tax,11604.71614
+New Mexico,2019,Expenditure,Other,1974.380544
+New Mexico,2019,HP,Housing Prices,190402.7241
+New Mexico,2020,TotalIncome,Income,29727.01814
+New Mexico,2020,Expenditure,Income Tax,7435.69271
+New Mexico,2020,Expenditure,Other,2486.07534
+New Mexico,2020,HP,Housing Prices,223343.7092
+New Mexico,2021,TotalIncome,Income,29789.4331
+New Mexico,2021,Expenditure,Income Tax,2625.406897
+New Mexico,2021,Expenditure,Other,2165.582759
+New Mexico,2021,HP,Housing Prices,244746.9269
+New York,2012,TotalIncome,Income,27025.4478
+New York,2012,Expenditure,Income Tax,4333.152712
+New York,2012,Expenditure,Other,1130.964232
+New York,2012,HP,Housing Prices,380476.8061
+New York,2013,TotalIncome,Income,28396.19486
+New York,2013,Expenditure,Income Tax,4568.759515
+New York,2013,Expenditure,Other,1155.824229
+New York,2013,HP,Housing Prices,348937.7883
+New York,2014,TotalIncome,Income,31577.9279
+New York,2014,Expenditure,Income Tax,5757.098167
+New York,2014,Expenditure,Other,1303.358045
+New York,2014,HP,Housing Prices,382875.5026
+New York,2015,TotalIncome,Income,31755.78091
+New York,2015,Expenditure,Income Tax,5640.594955
+New York,2015,Expenditure,Other,1295.975025
+New York,2015,HP,Housing Prices,389468.199
+New York,2016,TotalIncome,Income,33330.73012
+New York,2016,Expenditure,Income Tax,6155.028387
+New York,2016,Expenditure,Other,1410.796852
+New York,2016,HP,Housing Prices,413198.0493
+New York,2017,TotalIncome,Income,35940.08548
+New York,2017,Expenditure,Income Tax,6599.17216
+New York,2017,Expenditure,Other,1486.466104
+New York,2017,HP,Housing Prices,383046.051
+New York,2018,TotalIncome,Income,36567.35065
+New York,2018,Expenditure,Income Tax,6695.394388
+New York,2018,Expenditure,Other,1691.322734
+New York,2018,HP,Housing Prices,400152.7241
+New York,2019,TotalIncome,Income,38588.92331
+New York,2019,Expenditure,Income Tax,19230.43456
+New York,2019,Expenditure,Other,2303.618143
+New York,2019,HP,Housing Prices,483229.6894
+New York,2020,TotalIncome,Income,40918.67496
+New York,2020,Expenditure,Income Tax,20407.35605
+New York,2020,Expenditure,Other,2359.75728
+New York,2020,HP,Housing Prices,484341.7006
+New York,2021,TotalIncome,Income,39713.15014
+New York,2021,Expenditure,Income Tax,15377.10071
+New York,2021,Expenditure,Other,2557.679418
+New York,2021,HP,Housing Prices,492165.8983
+North Carolina,2012,TotalIncome,Income,24621.7887
+North Carolina,2012,Expenditure,Income Tax,3600.027507
+North Carolina,2012,Expenditure,Other,1456.847212
+North Carolina,2012,HP,Housing Prices,193533.3987
+North Carolina,2013,TotalIncome,Income,23603.41809
+North Carolina,2013,Expenditure,Income Tax,3793.814516
+North Carolina,2013,Expenditure,Other,1446.719506
+North Carolina,2013,HP,Housing Prices,187760.1219
+North Carolina,2014,TotalIncome,Income,25614.86467
+North Carolina,2014,Expenditure,Income Tax,4605.032258
+North Carolina,2014,Expenditure,Other,1749.562549
+North Carolina,2014,HP,Housing Prices,182607.5532
+North Carolina,2015,TotalIncome,Income,27215.07965
+North Carolina,2015,Expenditure,Income Tax,4210.234576
+North Carolina,2015,Expenditure,Other,1495.674263
+North Carolina,2015,HP,Housing Prices,191778.0334
+North Carolina,2016,TotalIncome,Income,27976.29769
+North Carolina,2016,Expenditure,Income Tax,4249.279991
+North Carolina,2016,Expenditure,Other,1669.76054
+North Carolina,2016,HP,Housing Prices,200258.4196
+North Carolina,2017,TotalIncome,Income,29623.46805
+North Carolina,2017,Expenditure,Income Tax,4436.408158
+North Carolina,2017,Expenditure,Other,1869.298279
+North Carolina,2017,HP,Housing Prices,195439.7144
+North Carolina,2018,TotalIncome,Income,30255.97642
+North Carolina,2018,Expenditure,Income Tax,4499.200596
+North Carolina,2018,Expenditure,Other,1986.570506
+North Carolina,2018,HP,Housing Prices,206716.745
+North Carolina,2019,TotalIncome,Income,30453.97223
+North Carolina,2019,Expenditure,Income Tax,11380.30762
+North Carolina,2019,Expenditure,Other,2574.956088
+North Carolina,2019,HP,Housing Prices,217681.9609
+North Carolina,2020,TotalIncome,Income,33876.62076
+North Carolina,2020,Expenditure,Income Tax,12994.31164
+North Carolina,2020,Expenditure,Other,2840.827489
+North Carolina,2020,HP,Housing Prices,220273.3333
+North Carolina,2021,TotalIncome,Income,33831.49722
+North Carolina,2021,Expenditure,Income Tax,7229.111812
+North Carolina,2021,Expenditure,Other,2677.837961
+North Carolina,2021,HP,Housing Prices,250331.1314
+North Dakota,2012,TotalIncome,Income,30251.62435
+North Dakota,2012,Expenditure,Income Tax,3607.546472
+North Dakota,2012,Expenditure,Other,1771.290017
+North Dakota,2012,HP,Housing Prices,181957.5215
+North Dakota,2013,TotalIncome,Income,30224.04319
+North Dakota,2013,Expenditure,Income Tax,3589.035299
+North Dakota,2013,Expenditure,Other,1670.292774
+North Dakota,2013,HP,Housing Prices,178873.7143
+North Dakota,2014,TotalIncome,Income,32066.56899
+North Dakota,2014,Expenditure,Income Tax,4622.167852
+North Dakota,2014,Expenditure,Other,2191.83926
+North Dakota,2014,HP,Housing Prices,182686.9848
+North Dakota,2015,TotalIncome,Income,31140.58039
+North Dakota,2015,Expenditure,Income Tax,4324.315204
+North Dakota,2015,Expenditure,Other,2141.80786
+North Dakota,2015,HP,Housing Prices,220238.8383
+North Dakota,2016,TotalIncome,Income,31496.36255
+North Dakota,2016,Expenditure,Income Tax,4400.233006
+North Dakota,2016,Expenditure,Other,1879.99658
+North Dakota,2016,HP,Housing Prices,203346.0985
+North Dakota,2017,TotalIncome,Income,31523.82392
+North Dakota,2017,Expenditure,Income Tax,3795.107143
+North Dakota,2017,Expenditure,Other,1873.107558
+North Dakota,2017,HP,Housing Prices,206047.3359
+North Dakota,2018,TotalIncome,Income,31462.70115
+North Dakota,2018,Expenditure,Income Tax,3750.988095
+North Dakota,2018,Expenditure,Other,1853.813218
+North Dakota,2018,HP,Housing Prices,195047.0037
+North Dakota,2019,TotalIncome,Income,35553.21828
+North Dakota,2019,Expenditure,Income Tax,11434.19533
+North Dakota,2019,Expenditure,Other,3109.99374
+North Dakota,2019,HP,Housing Prices,227938.886
+North Dakota,2020,TotalIncome,Income,38299.54801
+North Dakota,2020,Expenditure,Income Tax,11974.30907
+North Dakota,2020,Expenditure,Other,2938.023225
+North Dakota,2020,HP,Housing Prices,240655.0839
+North Dakota,2021,TotalIncome,Income,35393.90187
+North Dakota,2021,Expenditure,Income Tax,5568.247557
+North Dakota,2021,Expenditure,Other,3004.075326
+North Dakota,2021,HP,Housing Prices,239498.1563
+Ohio,2012,TotalIncome,Income,24713.20124
+Ohio,2012,Expenditure,Income Tax,3046.732851
+Ohio,2012,Expenditure,Other,1337.423347
+Ohio,2012,HP,Housing Prices,158320.0287
+Ohio,2013,TotalIncome,Income,24561.56588
+Ohio,2013,Expenditure,Income Tax,2834.221618
+Ohio,2013,Expenditure,Other,1446.312245
+Ohio,2013,HP,Housing Prices,155867.5013
+Ohio,2014,TotalIncome,Income,27930.31932
+Ohio,2014,Expenditure,Income Tax,4310.02986
+Ohio,2014,Expenditure,Other,1540.123705
+Ohio,2014,HP,Housing Prices,160491.955
+Ohio,2015,TotalIncome,Income,26558.40958
+Ohio,2015,Expenditure,Income Tax,3644.399273
+Ohio,2015,Expenditure,Other,1502.794302
+Ohio,2015,HP,Housing Prices,157239.1612
+Ohio,2016,TotalIncome,Income,27136.03578
+Ohio,2016,Expenditure,Income Tax,3799.951498
+Ohio,2016,Expenditure,Other,1647.961199
+Ohio,2016,HP,Housing Prices,178267.5115
+Ohio,2017,TotalIncome,Income,30326.69848
+Ohio,2017,Expenditure,Income Tax,4262.83157
+Ohio,2017,Expenditure,Other,1736.569826
+Ohio,2017,HP,Housing Prices,178332.3986
+Ohio,2018,TotalIncome,Income,32252.80488
+Ohio,2018,Expenditure,Income Tax,4514.148687
+Ohio,2018,Expenditure,Other,1865.248124
+Ohio,2018,HP,Housing Prices,195273.0882
+Ohio,2019,TotalIncome,Income,33772.04792
+Ohio,2019,Expenditure,Income Tax,12117.44748
+Ohio,2019,Expenditure,Other,2990.885286
+Ohio,2019,HP,Housing Prices,204315.0361
+Ohio,2020,TotalIncome,Income,37757.44892
+Ohio,2020,Expenditure,Income Tax,13770.69717
+Ohio,2020,Expenditure,Other,3130.800728
+Ohio,2020,HP,Housing Prices,214577.1406
+Ohio,2021,TotalIncome,Income,34496.76797
+Ohio,2021,Expenditure,Income Tax,6969.63573
+Ohio,2021,Expenditure,Other,2972.18133
+Ohio,2021,HP,Housing Prices,210338.2107
+Oklahoma,2012,TotalIncome,Income,25470.21914
+Oklahoma,2012,Expenditure,Income Tax,2944.003666
+Oklahoma,2012,Expenditure,Other,1348.240326
+Oklahoma,2012,HP,Housing Prices,173970.2534
+Oklahoma,2013,TotalIncome,Income,23874.89238
+Oklahoma,2013,Expenditure,Income Tax,2414.23942
+Oklahoma,2013,Expenditure,Other,1078.61185
+Oklahoma,2013,HP,Housing Prices,151659.3079
+Oklahoma,2014,TotalIncome,Income,25123.3263
+Oklahoma,2014,Expenditure,Income Tax,3117.115331
+Oklahoma,2014,Expenditure,Other,1298.618847
+Oklahoma,2014,HP,Housing Prices,157776.8898
+Oklahoma,2015,TotalIncome,Income,25044.95776
+Oklahoma,2015,Expenditure,Income Tax,3087.96346
+Oklahoma,2015,Expenditure,Other,1437.074086
+Oklahoma,2015,HP,Housing Prices,148032.8703
+Oklahoma,2016,TotalIncome,Income,27982.28974
+Oklahoma,2016,Expenditure,Income Tax,3968.550978
+Oklahoma,2016,Expenditure,Other,1713.236526
+Oklahoma,2016,HP,Housing Prices,156841.6389
+Oklahoma,2017,TotalIncome,Income,28676.06134
+Oklahoma,2017,Expenditure,Income Tax,4083.10592
+Oklahoma,2017,Expenditure,Other,1500.041013
+Oklahoma,2017,HP,Housing Prices,147486.5352
+Oklahoma,2018,TotalIncome,Income,27126.8802
+Oklahoma,2018,Expenditure,Income Tax,3278.923856
+Oklahoma,2018,Expenditure,Other,1571.66364
+Oklahoma,2018,HP,Housing Prices,162933.6461
+Oklahoma,2019,TotalIncome,Income,29030.87604
+Oklahoma,2019,Expenditure,Income Tax,9183.602392
+Oklahoma,2019,Expenditure,Other,2481.435665
+Oklahoma,2019,HP,Housing Prices,165474.0648
+Oklahoma,2020,TotalIncome,Income,33527.93093
+Oklahoma,2020,Expenditure,Income Tax,12281.89413
+Oklahoma,2020,Expenditure,Other,2697.376344
+Oklahoma,2020,HP,Housing Prices,178310.8013
+Oklahoma,2021,TotalIncome,Income,29759.567
+Oklahoma,2021,Expenditure,Income Tax,4106.000747
+Oklahoma,2021,Expenditure,Other,2366.899589
+Oklahoma,2021,HP,Housing Prices,193638.8591
+Oregon,2012,TotalIncome,Income,25694.4226
+Oregon,2012,Expenditure,Income Tax,3518.068173
+Oregon,2012,Expenditure,Other,1787.473446
+Oregon,2012,HP,Housing Prices,276218.7667
+Oregon,2013,TotalIncome,Income,25275.07937
+Oregon,2013,Expenditure,Income Tax,3463.883321
+Oregon,2013,Expenditure,Other,1636.149232
+Oregon,2013,HP,Housing Prices,257575.7665
+Oregon,2014,TotalIncome,Income,25586.36
+Oregon,2014,Expenditure,Income Tax,3746.702105
+Oregon,2014,Expenditure,Other,1772.549474
+Oregon,2014,HP,Housing Prices,262604.4023
+Oregon,2015,TotalIncome,Income,28758.83392
+Oregon,2015,Expenditure,Income Tax,4713.012394
+Oregon,2015,Expenditure,Other,1624.798513
+Oregon,2015,HP,Housing Prices,294694.498
+Oregon,2016,TotalIncome,Income,28601.14703
+Oregon,2016,Expenditure,Income Tax,4785.693444
+Oregon,2016,Expenditure,Other,1684.792725
+Oregon,2016,HP,Housing Prices,301083.1665
+Oregon,2017,TotalIncome,Income,31888.48973
+Oregon,2017,Expenditure,Income Tax,5593.044826
+Oregon,2017,Expenditure,Other,1588.822189
+Oregon,2017,HP,Housing Prices,330908.1984
+Oregon,2018,TotalIncome,Income,33581.4062
+Oregon,2018,Expenditure,Income Tax,5710.686813
+Oregon,2018,Expenditure,Other,1953.229984
+Oregon,2018,HP,Housing Prices,327992.3739
+Oregon,2019,TotalIncome,Income,35062.79313
+Oregon,2019,Expenditure,Income Tax,15741.97282
+Oregon,2019,Expenditure,Other,2868.867497
+Oregon,2019,HP,Housing Prices,390827.8911
+Oregon,2020,TotalIncome,Income,41847.03004
+Oregon,2020,Expenditure,Income Tax,24196.17284
+Oregon,2020,Expenditure,Other,3075.992977
+Oregon,2020,HP,Housing Prices,469496.6346
+Oregon,2021,TotalIncome,Income,40744.20585
+Oregon,2021,Expenditure,Income Tax,16484.00325
+Oregon,2021,Expenditure,Other,2994.18996
+Oregon,2021,HP,Housing Prices,478245.6626
+Pennsylvania,2012,TotalIncome,Income,26834.38798
+Pennsylvania,2012,Expenditure,Income Tax,3453.228955
+Pennsylvania,2012,Expenditure,Other,1162.348608
+Pennsylvania,2012,HP,Housing Prices,222369.3532
+Pennsylvania,2013,TotalIncome,Income,26811.98178
+Pennsylvania,2013,Expenditure,Income Tax,3362.635621
+Pennsylvania,2013,Expenditure,Other,1350.466882
+Pennsylvania,2013,HP,Housing Prices,200813.5214
+Pennsylvania,2014,TotalIncome,Income,29365.081
+Pennsylvania,2014,Expenditure,Income Tax,4374.893939
+Pennsylvania,2014,Expenditure,Other,1602.934149
+Pennsylvania,2014,HP,Housing Prices,217674.0562
+Pennsylvania,2015,TotalIncome,Income,29982.46518
+Pennsylvania,2015,Expenditure,Income Tax,4389.436566
+Pennsylvania,2015,Expenditure,Other,1520.677725
+Pennsylvania,2015,HP,Housing Prices,228512.5706
+Pennsylvania,2016,TotalIncome,Income,31832.00469
+Pennsylvania,2016,Expenditure,Income Tax,4923.041208
+Pennsylvania,2016,Expenditure,Other,1786.271522
+Pennsylvania,2016,HP,Housing Prices,225209.299
+Pennsylvania,2017,TotalIncome,Income,32019.23038
+Pennsylvania,2017,Expenditure,Income Tax,4555.171288
+Pennsylvania,2017,Expenditure,Other,1725.017918
+Pennsylvania,2017,HP,Housing Prices,215323.1224
+Pennsylvania,2018,TotalIncome,Income,35381.50832
+Pennsylvania,2018,Expenditure,Income Tax,5512.256712
+Pennsylvania,2018,Expenditure,Other,1941.674728
+Pennsylvania,2018,HP,Housing Prices,236265.9635
+Pennsylvania,2019,TotalIncome,Income,34789.22195
+Pennsylvania,2019,Expenditure,Income Tax,13515.52755
+Pennsylvania,2019,Expenditure,Other,2830.263227
+Pennsylvania,2019,HP,Housing Prices,253018.4356
+Pennsylvania,2020,TotalIncome,Income,40365.97136
+Pennsylvania,2020,Expenditure,Income Tax,16474.01708
+Pennsylvania,2020,Expenditure,Other,2888.185632
+Pennsylvania,2020,HP,Housing Prices,255886.2315
+Pennsylvania,2021,TotalIncome,Income,41329.77344
+Pennsylvania,2021,Expenditure,Income Tax,14652.59731
+Pennsylvania,2021,Expenditure,Other,2995.842119
+Pennsylvania,2021,HP,Housing Prices,289644.6338
+Rhode Island,2012,TotalIncome,Income,27159.59387
+Rhode Island,2012,Expenditure,Income Tax,3587.474233
+Rhode Island,2012,Expenditure,Other,1343.805521
+Rhode Island,2012,HP,Housing Prices,280179.7684
+Rhode Island,2013,TotalIncome,Income,30277.41218
+Rhode Island,2013,Expenditure,Income Tax,4372.845083
+Rhode Island,2013,Expenditure,Other,1463.241806
+Rhode Island,2013,HP,Housing Prices,284882.5827
+Rhode Island,2014,TotalIncome,Income,32624.34701
+Rhode Island,2014,Expenditure,Income Tax,5015.58209
+Rhode Island,2014,Expenditure,Other,1912.024876
+Rhode Island,2014,HP,Housing Prices,306645.3211
+Rhode Island,2015,TotalIncome,Income,34765.13558
+Rhode Island,2015,Expenditure,Income Tax,5649.164095
+Rhode Island,2015,Expenditure,Other,1750.695185
+Rhode Island,2015,HP,Housing Prices,279762.6003
+Rhode Island,2016,TotalIncome,Income,33145.60484
+Rhode Island,2016,Expenditure,Income Tax,5417.337716
+Rhode Island,2016,Expenditure,Other,1442.104498
+Rhode Island,2016,HP,Housing Prices,272758.2082
+Rhode Island,2017,TotalIncome,Income,33574.56221
+Rhode Island,2017,Expenditure,Income Tax,4811.675316
+Rhode Island,2017,Expenditure,Other,1672.403194
+Rhode Island,2017,HP,Housing Prices,285688.0741
+Rhode Island,2018,TotalIncome,Income,36318.99458
+Rhode Island,2018,Expenditure,Income Tax,5731.742045
+Rhode Island,2018,Expenditure,Other,1714.321598
+Rhode Island,2018,HP,Housing Prices,321019.046
+Rhode Island,2019,TotalIncome,Income,38960.7533
+Rhode Island,2019,Expenditure,Income Tax,15805.13522
+Rhode Island,2019,Expenditure,Other,2773.184037
+Rhode Island,2019,HP,Housing Prices,358309.671
+Rhode Island,2020,TotalIncome,Income,40943.86822
+Rhode Island,2020,Expenditure,Income Tax,16375.87364
+Rhode Island,2020,Expenditure,Other,2517.899225
+Rhode Island,2020,HP,Housing Prices,329248.863
+Rhode Island,2021,TotalIncome,Income,41802.24813
+Rhode Island,2021,Expenditure,Income Tax,14647.28861
+Rhode Island,2021,Expenditure,Other,2831.976762
+Rhode Island,2021,HP,Housing Prices,377363.6515
+South Carolina,2012,TotalIncome,Income,20657.87253
+South Carolina,2012,Expenditure,Income Tax,2102.664703
+South Carolina,2012,Expenditure,Other,1333.239798
+South Carolina,2012,HP,Housing Prices,144690.6059
+South Carolina,2013,TotalIncome,Income,22699.09895
+South Carolina,2013,Expenditure,Income Tax,2536.144527
+South Carolina,2013,Expenditure,Other,1368.514219
+South Carolina,2013,HP,Housing Prices,167731.0308
+South Carolina,2014,TotalIncome,Income,23293.83333
+South Carolina,2014,Expenditure,Income Tax,2692.611959
+South Carolina,2014,Expenditure,Other,1462.087786
+South Carolina,2014,HP,Housing Prices,161507.8284
+South Carolina,2015,TotalIncome,Income,26007.40307
+South Carolina,2015,Expenditure,Income Tax,3668.698745
+South Carolina,2015,Expenditure,Other,1410.004184
+South Carolina,2015,HP,Housing Prices,167198.442
+South Carolina,2016,TotalIncome,Income,26779.29923
+South Carolina,2016,Expenditure,Income Tax,3812.842528
+South Carolina,2016,Expenditure,Other,1607.872207
+South Carolina,2016,HP,Housing Prices,183870.9439
+South Carolina,2017,TotalIncome,Income,31309.3169
+South Carolina,2017,Expenditure,Income Tax,4944.8084
+South Carolina,2017,Expenditure,Other,1678.678584
+South Carolina,2017,HP,Housing Prices,202233.099
+South Carolina,2018,TotalIncome,Income,31179.6994
+South Carolina,2018,Expenditure,Income Tax,4706.003508
+South Carolina,2018,Expenditure,Other,1623.640477
+South Carolina,2018,HP,Housing Prices,188753.8874
+South Carolina,2019,TotalIncome,Income,32041.23531
+South Carolina,2019,Expenditure,Income Tax,11053.72854
+South Carolina,2019,Expenditure,Other,3096.664234
+South Carolina,2019,HP,Housing Prices,213171.4647
+South Carolina,2020,TotalIncome,Income,33771.82581
+South Carolina,2020,Expenditure,Income Tax,12593.27926
+South Carolina,2020,Expenditure,Other,2675.886936
+South Carolina,2020,HP,Housing Prices,198933.7779
+South Carolina,2021,TotalIncome,Income,33815.77288
+South Carolina,2021,Expenditure,Income Tax,7759.301627
+South Carolina,2021,Expenditure,Other,2406.85208
+South Carolina,2021,HP,Housing Prices,241209.2755
+South Dakota,2012,TotalIncome,Income,23210.10435
+South Dakota,2012,Expenditure,Income Tax,1849.428382
+South Dakota,2012,Expenditure,Other,1637.527418
+South Dakota,2012,HP,Housing Prices,164235.6433
+South Dakota,2013,TotalIncome,Income,24979.35436
+South Dakota,2013,Expenditure,Income Tax,2199.173957
+South Dakota,2013,Expenditure,Other,1533.137335
+South Dakota,2013,HP,Housing Prices,152735.477
+South Dakota,2014,TotalIncome,Income,27849.74304
+South Dakota,2014,Expenditure,Income Tax,3379.408994
+South Dakota,2014,Expenditure,Other,1808.567452
+South Dakota,2014,HP,Housing Prices,166412.7463
+South Dakota,2015,TotalIncome,Income,29312.2555
+South Dakota,2015,Expenditure,Income Tax,3902.170184
+South Dakota,2015,Expenditure,Other,2111.029636
+South Dakota,2015,HP,Housing Prices,180728.6341
+South Dakota,2016,TotalIncome,Income,28998.68053
+South Dakota,2016,Expenditure,Income Tax,3785.0176
+South Dakota,2016,Expenditure,Other,1789.377067
+South Dakota,2016,HP,Housing Prices,202725.5083
+South Dakota,2017,TotalIncome,Income,29814.7404
+South Dakota,2017,Expenditure,Income Tax,3507.087816
+South Dakota,2017,Expenditure,Other,2104.864435
+South Dakota,2017,HP,Housing Prices,185302.5525
+South Dakota,2018,TotalIncome,Income,31640.03305
+South Dakota,2018,Expenditure,Income Tax,3769.347324
+South Dakota,2018,Expenditure,Other,2141.543022
+South Dakota,2018,HP,Housing Prices,181214.091
+South Dakota,2019,TotalIncome,Income,32774.64549
+South Dakota,2019,Expenditure,Income Tax,8004.794682
+South Dakota,2019,Expenditure,Other,3245.803053
+South Dakota,2019,HP,Housing Prices,196983.8157
+South Dakota,2020,TotalIncome,Income,32869.0618
+South Dakota,2020,Expenditure,Income Tax,7716.348552
+South Dakota,2020,Expenditure,Other,3795.358018
+South Dakota,2020,HP,Housing Prices,215004.0719
+South Dakota,2021,TotalIncome,Income,34973.28356
+South Dakota,2021,Expenditure,Income Tax,5095.835011
+South Dakota,2021,Expenditure,Other,3126.72651
+South Dakota,2021,HP,Housing Prices,222180.1634
+Tennessee,2012,TotalIncome,Income,22644.00038
+Tennessee,2012,Expenditure,Income Tax,1853.812144
+Tennessee,2012,Expenditure,Other,1429.644402
+Tennessee,2012,HP,Housing Prices,191212.3624
+Tennessee,2013,TotalIncome,Income,22973.35623
+Tennessee,2013,Expenditure,Income Tax,1899.920755
+Tennessee,2013,Expenditure,Other,1479.390189
+Tennessee,2013,HP,Housing Prices,179602.5289
+Tennessee,2014,TotalIncome,Income,23660.12688
+Tennessee,2014,Expenditure,Income Tax,2753.946237
+Tennessee,2014,Expenditure,Other,1667.756989
+Tennessee,2014,HP,Housing Prices,192052.3958
+Tennessee,2015,TotalIncome,Income,26706.00065
+Tennessee,2015,Expenditure,Income Tax,3040.474213
+Tennessee,2015,Expenditure,Other,1733.273111
+Tennessee,2015,HP,Housing Prices,195105.5443
+Tennessee,2016,TotalIncome,Income,28456.32771
+Tennessee,2016,Expenditure,Income Tax,3533.41792
+Tennessee,2016,Expenditure,Other,1747.984044
+Tennessee,2016,HP,Housing Prices,190500.1576
+Tennessee,2017,TotalIncome,Income,29145.02178
+Tennessee,2017,Expenditure,Income Tax,3285.482456
+Tennessee,2017,Expenditure,Other,1609.796431
+Tennessee,2017,HP,Housing Prices,204230.8869
+Tennessee,2018,TotalIncome,Income,31989.62457
+Tennessee,2018,Expenditure,Income Tax,3948.653642
+Tennessee,2018,Expenditure,Other,1652.546108
+Tennessee,2018,HP,Housing Prices,196643.9369
+Tennessee,2019,TotalIncome,Income,30937.76947
+Tennessee,2019,Expenditure,Income Tax,7250.464214
+Tennessee,2019,Expenditure,Other,2477.21328
+Tennessee,2019,HP,Housing Prices,223853.547
+Tennessee,2020,TotalIncome,Income,33735.91384
+Tennessee,2020,Expenditure,Income Tax,9870.829096
+Tennessee,2020,Expenditure,Other,2802.225282
+Tennessee,2020,HP,Housing Prices,260853.1028
+Tennessee,2021,TotalIncome,Income,31758.42719
+Tennessee,2021,Expenditure,Income Tax,3440.101711
+Tennessee,2021,Expenditure,Other,2464.898289
+Tennessee,2021,HP,Housing Prices,265060.8139
+Texas,2012,TotalIncome,Income,24082.60574
+Texas,2012,Expenditure,Income Tax,2391.431483
+Texas,2012,Expenditure,Other,1242.225048
+Texas,2012,HP,Housing Prices,158308.9914
+Texas,2013,TotalIncome,Income,23968.40638
+Texas,2013,Expenditure,Income Tax,2140.859625
+Texas,2013,Expenditure,Other,1231.478039
+Texas,2013,HP,Housing Prices,150921.6216
+Texas,2014,TotalIncome,Income,26283.51769
+Texas,2014,Expenditure,Income Tax,3217.44941
+Texas,2014,Expenditure,Other,1538.676909
+Texas,2014,HP,Housing Prices,168981.2055
+Texas,2015,TotalIncome,Income,26205.759
+Texas,2015,Expenditure,Income Tax,3082.138301
+Texas,2015,Expenditure,Other,1445.229856
+Texas,2015,HP,Housing Prices,174577.0259
+Texas,2016,TotalIncome,Income,28144.45599
+Texas,2016,Expenditure,Income Tax,3627.867831
+Texas,2016,Expenditure,Other,1390.280954
+Texas,2016,HP,Housing Prices,192712.4326
+Texas,2017,TotalIncome,Income,28993.71866
+Texas,2017,Expenditure,Income Tax,3336.318442
+Texas,2017,Expenditure,Other,1687.31718
+Texas,2017,HP,Housing Prices,203647.3965
+Texas,2018,TotalIncome,Income,29244.87102
+Texas,2018,Expenditure,Income Tax,3285.870935
+Texas,2018,Expenditure,Other,1686.835425
+Texas,2018,HP,Housing Prices,210274.2296
+Texas,2019,TotalIncome,Income,30994.31548
+Texas,2019,Expenditure,Income Tax,8322.55261
+Texas,2019,Expenditure,Other,2574.176179
+Texas,2019,HP,Housing Prices,227043.7396
+Texas,2020,TotalIncome,Income,35210.87427
+Texas,2020,Expenditure,Income Tax,10986.40744
+Texas,2020,Expenditure,Other,2772.137272
+Texas,2020,HP,Housing Prices,229449.9455
+Texas,2021,TotalIncome,Income,34410.73583
+Texas,2021,Expenditure,Income Tax,5734.754323
+Texas,2021,Expenditure,Other,2596.956522
+Texas,2021,HP,Housing Prices,263684.8512
+Utah,2012,TotalIncome,Income,22587.16994
+Utah,2012,Expenditure,Income Tax,2878.064791
+Utah,2012,Expenditure,Other,1392.948167
+Utah,2012,HP,Housing Prices,244919.4489
+Utah,2013,TotalIncome,Income,22667.3417
+Utah,2013,Expenditure,Income Tax,2683.760055
+Utah,2013,Expenditure,Other,1387.470608
+Utah,2013,HP,Housing Prices,262698.6181
+Utah,2014,TotalIncome,Income,23435.66791
+Utah,2014,Expenditure,Income Tax,3098.871128
+Utah,2014,Expenditure,Other,1619.560099
+Utah,2014,HP,Housing Prices,265091.0285
+Utah,2015,TotalIncome,Income,24031.45433
+Utah,2015,Expenditure,Income Tax,3367.372767
+Utah,2015,Expenditure,Other,1593.848332
+Utah,2015,HP,Housing Prices,247853.8713
+Utah,2016,TotalIncome,Income,25197.53961
+Utah,2016,Expenditure,Income Tax,3962.776623
+Utah,2016,Expenditure,Other,1655.93474
+Utah,2016,HP,Housing Prices,266392.1187
+Utah,2017,TotalIncome,Income,29753.68591
+Utah,2017,Expenditure,Income Tax,4853.588715
+Utah,2017,Expenditure,Other,1689.006197
+Utah,2017,HP,Housing Prices,296263.2152
+Utah,2018,TotalIncome,Income,29659.93411
+Utah,2018,Expenditure,Income Tax,4691.186424
+Utah,2018,Expenditure,Other,1830.722848
+Utah,2018,HP,Housing Prices,306738.0685
+Utah,2019,TotalIncome,Income,29761.30463
+Utah,2019,Expenditure,Income Tax,14515.89562
+Utah,2019,Expenditure,Other,2397.027693
+Utah,2019,HP,Housing Prices,333412.5869
+Utah,2020,TotalIncome,Income,35403.01147
+Utah,2020,Expenditure,Income Tax,16886.73827
+Utah,2020,Expenditure,Other,2985.239138
+Utah,2020,HP,Housing Prices,367720.6682
+Utah,2021,TotalIncome,Income,34663.36553
+Utah,2021,Expenditure,Income Tax,13799.59522
+Utah,2021,Expenditure,Other,2575.237543
+Utah,2021,HP,Housing Prices,439820.5969
+Vermont,2012,TotalIncome,Income,26844.52337
+Vermont,2012,Expenditure,Income Tax,3263.367582
+Vermont,2012,Expenditure,Other,1419.504451
+Vermont,2012,HP,Housing Prices,241772.0412
+Vermont,2013,TotalIncome,Income,28642.8785
+Vermont,2013,Expenditure,Income Tax,3484.145084
+Vermont,2013,Expenditure,Other,1620.452438
+Vermont,2013,HP,Housing Prices,238739.8733
+Vermont,2014,TotalIncome,Income,31346.38433
+Vermont,2014,Expenditure,Income Tax,4374.450249
+Vermont,2014,Expenditure,Other,2048.830846
+Vermont,2014,HP,Housing Prices,229368.4295
+Vermont,2015,TotalIncome,Income,32028.24794
+Vermont,2015,Expenditure,Income Tax,4595.668109
+Vermont,2015,Expenditure,Other,1649.657291
+Vermont,2015,HP,Housing Prices,257994.7935
+Vermont,2016,TotalIncome,Income,33467.05894
+Vermont,2016,Expenditure,Income Tax,5415.497624
+Vermont,2016,Expenditure,Other,1589.813688
+Vermont,2016,HP,Housing Prices,242129.066
+Vermont,2017,TotalIncome,Income,35232.91963
+Vermont,2017,Expenditure,Income Tax,5511.938363
+Vermont,2017,Expenditure,Other,1847.706114
+Vermont,2017,HP,Housing Prices,246103.6938
+Vermont,2018,TotalIncome,Income,36472.7748
+Vermont,2018,Expenditure,Income Tax,5865.047571
+Vermont,2018,Expenditure,Other,2312.606275
+Vermont,2018,HP,Housing Prices,255204.9832
+Vermont,2019,TotalIncome,Income,35772.63527
+Vermont,2019,Expenditure,Income Tax,12443.6401
+Vermont,2019,Expenditure,Other,3272.143478
+Vermont,2019,HP,Housing Prices,281473.3645
+Vermont,2020,TotalIncome,Income,41830.01178
+Vermont,2020,Expenditure,Income Tax,15476.97027
+Vermont,2020,Expenditure,Other,3514.702187
+Vermont,2020,HP,Housing Prices,285353.4088
+Vermont,2021,TotalIncome,Income,43651.21808
+Vermont,2021,Expenditure,Income Tax,14805.01209
+Vermont,2021,Expenditure,Other,3499.460326
+Vermont,2021,HP,Housing Prices,305318.8889
+Virginia,2012,TotalIncome,Income,29946.81993
+Virginia,2012,Expenditure,Income Tax,4701.856399
+Virginia,2012,Expenditure,Other,1483.670895
+Virginia,2012,HP,Housing Prices,303284.4053
+Virginia,2013,TotalIncome,Income,32477.20157
+Virginia,2013,Expenditure,Income Tax,5328.987503
+Virginia,2013,Expenditure,Other,1715.14418
+Virginia,2013,HP,Housing Prices,329705.2646
+Virginia,2014,TotalIncome,Income,33262.96996
+Virginia,2014,Expenditure,Income Tax,5339.223715
+Virginia,2014,Expenditure,Other,1764.229249
+Virginia,2014,HP,Housing Prices,316462.7464
+Virginia,2015,TotalIncome,Income,33493.59625
+Virginia,2015,Expenditure,Income Tax,5536.037759
+Virginia,2015,Expenditure,Other,1778.221866
+Virginia,2015,HP,Housing Prices,344672.4815
+Virginia,2016,TotalIncome,Income,33492.47553
+Virginia,2016,Expenditure,Income Tax,5876.129212
+Virginia,2016,Expenditure,Other,1753.915031
+Virginia,2016,HP,Housing Prices,333765.8674
+Virginia,2017,TotalIncome,Income,35432.84518
+Virginia,2017,Expenditure,Income Tax,5984.679376
+Virginia,2017,Expenditure,Other,2056.687464
+Virginia,2017,HP,Housing Prices,327650.0265
+Virginia,2018,TotalIncome,Income,36626.40548
+Virginia,2018,Expenditure,Income Tax,6038.884708
+Virginia,2018,Expenditure,Other,1822.586093
+Virginia,2018,HP,Housing Prices,353693.4042
+Virginia,2019,TotalIncome,Income,40269.7227
+Virginia,2019,Expenditure,Income Tax,18536.46079
+Virginia,2019,Expenditure,Other,2696.761468
+Virginia,2019,HP,Housing Prices,364110.6827
+Virginia,2020,TotalIncome,Income,44861.86368
+Virginia,2020,Expenditure,Income Tax,23945.79701
+Virginia,2020,Expenditure,Other,3151.743284
+Virginia,2020,HP,Housing Prices,384673.6291
+Virginia,2021,TotalIncome,Income,44342.16767
+Virginia,2021,Expenditure,Income Tax,18151.05652
+Virginia,2021,Expenditure,Other,3354.194822
+Virginia,2021,HP,Housing Prices,414517.0521
+Washington,2012,TotalIncome,Income,28522.32022
+Washington,2012,Expenditure,Income Tax,3077.235367
+Washington,2012,Expenditure,Other,1567.799319
+Washington,2012,HP,Housing Prices,293454.0137
+Washington,2013,TotalIncome,Income,29703.44
+Washington,2013,Expenditure,Income Tax,3151.914483
+Washington,2013,Expenditure,Other,1446.659862
+Washington,2013,HP,Housing Prices,299060.5899
+Washington,2014,TotalIncome,Income,31206.70711
+Washington,2014,Expenditure,Income Tax,4170.693241
+Washington,2014,Expenditure,Other,1499.967938
+Washington,2014,HP,Housing Prices,301862.6156
+Washington,2015,TotalIncome,Income,30126.14964
+Washington,2015,Expenditure,Income Tax,3809.863464
+Washington,2015,Expenditure,Other,1747.875691
+Washington,2015,HP,Housing Prices,343363.283
+Washington,2016,TotalIncome,Income,32470.87981
+Washington,2016,Expenditure,Income Tax,4392.130829
+Washington,2016,Expenditure,Other,1643.581221
+Washington,2016,HP,Housing Prices,389170.7404
+Washington,2017,TotalIncome,Income,34528.28555
+Washington,2017,Expenditure,Income Tax,4440.202703
+Washington,2017,Expenditure,Other,1538.153055
+Washington,2017,HP,Housing Prices,411770.9616
+Washington,2018,TotalIncome,Income,37394.37068
+Washington,2018,Expenditure,Income Tax,5143.258345
+Washington,2018,Expenditure,Other,1471.109434
+Washington,2018,HP,Housing Prices,403151.5667
+Washington,2019,TotalIncome,Income,39246.49812
+Washington,2019,Expenditure,Income Tax,13118.97972
+Washington,2019,Expenditure,Other,2597.84787
+Washington,2019,HP,Housing Prices,448017.6862
+Washington,2020,TotalIncome,Income,42438.69709
+Washington,2020,Expenditure,Income Tax,14242.92955
+Washington,2020,Expenditure,Other,2700.586936
+Washington,2020,HP,Housing Prices,442175.727
+Washington,2021,TotalIncome,Income,42221.29919
+Washington,2021,Expenditure,Income Tax,9313.346491
+Washington,2021,Expenditure,Other,2693.706767
+Washington,2021,HP,Housing Prices,534180.6247
+West Virginia,2012,TotalIncome,Income,22540.54673
+West Virginia,2012,Expenditure,Income Tax,2677.00603
+West Virginia,2012,Expenditure,Other,1471.506533
+West Virginia,2012,HP,Housing Prices,134301.3333
+West Virginia,2013,TotalIncome,Income,23283.73047
+West Virginia,2013,Expenditure,Income Tax,2919.806502
+West Virginia,2013,Expenditure,Other,1389.094913
+West Virginia,2013,HP,Housing Prices,143785.241
+West Virginia,2014,TotalIncome,Income,27995.79831
+West Virginia,2014,Expenditure,Income Tax,4685.123729
+West Virginia,2014,Expenditure,Other,1614.657627
+West Virginia,2014,HP,Housing Prices,140140.7262
+West Virginia,2015,TotalIncome,Income,23821.37231
+West Virginia,2015,Expenditure,Income Tax,3226.543557
+West Virginia,2015,Expenditure,Other,1387.938059
+West Virginia,2015,HP,Housing Prices,150920.9086
+West Virginia,2016,TotalIncome,Income,25194.25363
+West Virginia,2016,Expenditure,Income Tax,3597.222349
+West Virginia,2016,Expenditure,Other,1520.356554
+West Virginia,2016,HP,Housing Prices,155371.5032
+West Virginia,2017,TotalIncome,Income,25381.31164
+West Virginia,2017,Expenditure,Income Tax,3453.048938
+West Virginia,2017,Expenditure,Other,1294.855875
+West Virginia,2017,HP,Housing Prices,156358.2506
+West Virginia,2018,TotalIncome,Income,25803.15808
+West Virginia,2018,Expenditure,Income Tax,3400.126171
+West Virginia,2018,Expenditure,Other,1527.978044
+West Virginia,2018,HP,Housing Prices,152569.4998
+West Virginia,2019,TotalIncome,Income,27106.97052
+West Virginia,2019,Expenditure,Income Tax,9281.516763
+West Virginia,2019,Expenditure,Other,2321.923699
+West Virginia,2019,HP,Housing Prices,184562.1052
+West Virginia,2020,TotalIncome,Income,30356.38713
+West Virginia,2020,Expenditure,Income Tax,10450.85169
+West Virginia,2020,Expenditure,Other,2621.0996
+West Virginia,2020,HP,Housing Prices,185833.358
+West Virginia,2021,TotalIncome,Income,30954.82437
+West Virginia,2021,Expenditure,Income Tax,6559.950712
+West Virginia,2021,Expenditure,Other,2518.364804
+West Virginia,2021,HP,Housing Prices,196134.0358
+Wisconsin,2012,TotalIncome,Income,25959.40764
+Wisconsin,2012,Expenditure,Income Tax,3372.685675
+Wisconsin,2012,Expenditure,Other,1589.91869
+Wisconsin,2012,HP,Housing Prices,196156.1601
+Wisconsin,2013,TotalIncome,Income,27422.36669
+Wisconsin,2013,Expenditure,Income Tax,3643.17534
+Wisconsin,2013,Expenditure,Other,1724.061382
+Wisconsin,2013,HP,Housing Prices,211070.8426
+Wisconsin,2014,TotalIncome,Income,28048.88049
+Wisconsin,2014,Expenditure,Income Tax,4156.389279
+Wisconsin,2014,Expenditure,Other,1870.927065
+Wisconsin,2014,HP,Housing Prices,207018.0217
+Wisconsin,2015,TotalIncome,Income,29933.54029
+Wisconsin,2015,Expenditure,Income Tax,4831.962806
+Wisconsin,2015,Expenditure,Other,1889.94584
+Wisconsin,2015,HP,Housing Prices,210658.3223
+Wisconsin,2016,TotalIncome,Income,28893.5269
+Wisconsin,2016,Expenditure,Income Tax,4241.099958
+Wisconsin,2016,Expenditure,Other,1962.573062
+Wisconsin,2016,HP,Housing Prices,197718.7813
+Wisconsin,2017,TotalIncome,Income,30991.21159
+Wisconsin,2017,Expenditure,Income Tax,4708.367288
+Wisconsin,2017,Expenditure,Other,1841.595031
+Wisconsin,2017,HP,Housing Prices,205831.0938
+Wisconsin,2018,TotalIncome,Income,32859.60566
+Wisconsin,2018,Expenditure,Income Tax,4972.982135
+Wisconsin,2018,Expenditure,Other,1757.279739
+Wisconsin,2018,HP,Housing Prices,226882.0218
+Wisconsin,2019,TotalIncome,Income,32591.76769
+Wisconsin,2019,Expenditure,Income Tax,12670.11659
+Wisconsin,2019,Expenditure,Other,3261.686026
+Wisconsin,2019,HP,Housing Prices,227455.4741
+Wisconsin,2020,TotalIncome,Income,36595.03489
+Wisconsin,2020,Expenditure,Income Tax,16565.25221
+Wisconsin,2020,Expenditure,Other,3196.886042
+Wisconsin,2020,HP,Housing Prices,241158.5194
+Wisconsin,2021,TotalIncome,Income,38000.17776
+Wisconsin,2021,Expenditure,Income Tax,11928.83993
+Wisconsin,2021,Expenditure,Other,3214.315496
+Wisconsin,2021,HP,Housing Prices,258757.7655
+Wyoming,2012,TotalIncome,Income,25662.51274
+Wyoming,2012,Expenditure,Income Tax,2219.052872
+Wyoming,2012,Expenditure,Other,1918.701788
+Wyoming,2012,HP,Housing Prices,209118.3616
+Wyoming,2013,TotalIncome,Income,27157.29216
+Wyoming,2013,Expenditure,Income Tax,2454.545882
+Wyoming,2013,Expenditure,Other,1869.523137
+Wyoming,2013,HP,Housing Prices,187650.5374
+Wyoming,2014,TotalIncome,Income,30157.71028
+Wyoming,2014,Expenditure,Income Tax,3827.570093
+Wyoming,2014,Expenditure,Other,1998.603471
+Wyoming,2014,HP,Housing Prices,188205.7706
+Wyoming,2015,TotalIncome,Income,29766.6953
+Wyoming,2015,Expenditure,Income Tax,3670.752836
+Wyoming,2015,Expenditure,Other,1916.213533
+Wyoming,2015,HP,Housing Prices,203735.9534
+Wyoming,2016,TotalIncome,Income,30249.23665
+Wyoming,2016,Expenditure,Income Tax,4047.752023
+Wyoming,2016,Expenditure,Other,1956.446197
+Wyoming,2016,HP,Housing Prices,231835.0228
+Wyoming,2017,TotalIncome,Income,28303.50787
+Wyoming,2017,Expenditure,Income Tax,2834.445277
+Wyoming,2017,Expenditure,Other,1952.752624
+Wyoming,2017,HP,Housing Prices,222031.3172
+Wyoming,2018,TotalIncome,Income,29153.08044
+Wyoming,2018,Expenditure,Income Tax,3000.209882
+Wyoming,2018,Expenditure,Other,2491.446713
+Wyoming,2018,HP,Housing Prices,232737.5438
+Wyoming,2019,TotalIncome,Income,31967.86567
+Wyoming,2019,Expenditure,Income Tax,7428.806008
+Wyoming,2019,Expenditure,Other,3209.340008
+Wyoming,2019,HP,Housing Prices,298667.94
+Wyoming,2020,TotalIncome,Income,34245.78453
+Wyoming,2020,Expenditure,Income Tax,8412.18232
+Wyoming,2020,Expenditure,Other,3113.35267
+Wyoming,2020,HP,Housing Prices,281924.5384
+Wyoming,2021,TotalIncome,Income,32860.851
+Wyoming,2021,Expenditure,Income Tax,2518.162074
+Wyoming,2021,Expenditure,Other,3322.009341
+Wyoming,2021,HP,Housing Prices,316281.78
+All States,2012,TotalIncome,Income,26153.5239
+All States,2012,Expenditure,Income Tax,3361.786035
+All States,2012,Expenditure,Other,1428.107432
+All States,2012,HP,Housing Prices,232996.2841
+All States,2013,TotalIncome,Income,26877.22848
+All States,2013,Expenditure,Income Tax,3481.466175
+All States,2013,Expenditure,Other,1450.549958
+All States,2013,HP,Housing Prices,230664.0219
+All States,2014,TotalIncome,Income,28982.63912
+All States,2014,Expenditure,Income Tax,4343.725773
+All States,2014,Expenditure,Other,1662.032104
+All States,2014,HP,Housing Prices,240859.9011
+All States,2015,TotalIncome,Income,29057.56368
+All States,2015,Expenditure,Income Tax,4275.948634
+All States,2015,Expenditure,Other,1615.211647
+All States,2015,HP,Housing Prices,247885.9896
+All States,2016,TotalIncome,Income,30157.07343
+All States,2016,Expenditure,Income Tax,4692.506085
+All States,2016,Expenditure,Other,1643.216712
+All States,2016,HP,Housing Prices,253692.6778
+All States,2017,TotalIncome,Income,31628.68132
+All States,2017,Expenditure,Income Tax,4703.343114
+All States,2017,Expenditure,Other,1717.908043
+All States,2017,HP,Housing Prices,258253.2038
+All States,2018,TotalIncome,Income,32862.3062
+All States,2018,Expenditure,Income Tax,4899.425231
+All States,2018,Expenditure,Other,1765.727994
+All States,2018,HP,Housing Prices,267934.4297
+All States,2019,TotalIncome,Income,34520.86461
+All States,2019,Expenditure,Income Tax,13330.79714
+All States,2019,Expenditure,Other,2782.045667
+All States,2019,HP,Housing Prices,294705.7976
+All States,2020,TotalIncome,Income,37852.47288
+All States,2020,Expenditure,Income Tax,15430.00222
+All States,2020,Expenditure,Other,2945.784849
+All States,2020,HP,Housing Prices,310539.2294
+All States,2021,TotalIncome,Income,37793.03544
+All States,2021,Expenditure,Income Tax,11137.83172
+All States,2021,Expenditure,Other,2820.379702
+All States,2021,HP,Housing Prices,334674.392
