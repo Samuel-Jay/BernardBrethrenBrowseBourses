@@ -32,10 +32,11 @@ var margin_choropleth = {
   d3.json("Datasets/us-states.json", function(json) {
      var centered;
      var formatComma = d3.format(',');
-     var fill = d3.scaleLog()
-         .domain([10, 500])
-         .range(["brown", "steelblue"]);
-  
+
+     var fill = d3.scaleLinear()
+         .domain([0, 72])
+         .range(["orange", "red"]);
+
      var svg_choropleth = d3.select("#usamap")
          .append("svg")
          .attr("preserveAspectRatio", "xMidYMid meet")
@@ -51,9 +52,8 @@ var margin_choropleth = {
          .style("stroke", "#fff")
          .style("stroke-width", "0.1")
          .style("fill", function(d) {
-             return fill(path.area(d));
-         })
-         .on("click", clicked);
+            return fill(parseInt(d.id));})
+        .on("click", clicked);
   
      svg_choropleth.append("g")
          .attr("class", "states-names")
