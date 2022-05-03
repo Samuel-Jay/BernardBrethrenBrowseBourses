@@ -30,7 +30,7 @@ export function getPovertyRates(state_select){
 		  .key(function(d) {return d.STATE;})
 		  .key(function(d) {return d.YEAR;})
 		  .rollup (function(v) { return {
-		     POVERTY_LEVEL: d3.sum(v, function(d) {return d.POVERTY_LEVEL; })
+		     POVERTY_LEVEL: d3.mean(v, function(d) {return d.POVERTY_LEVEL; })
 		   }; })
 		  .entries(data);
 
@@ -125,7 +125,7 @@ export function getPovertyRates(state_select){
 		      })
 		      .attr("stroke-opacity", function(d){
 		        if(state_select == "All States"){ return 0.5 }
-		        else if(state_collect.includes(d.key)){ return 0.8 }
+		        else if(state_collect.includes(d.key)){ return 1.0 }
 		        else{ return 0.25 }
 		      })
 		      .attr("stroke", function(d){
