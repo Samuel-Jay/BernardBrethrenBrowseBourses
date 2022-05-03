@@ -1,20 +1,8 @@
 var width=410,
-	height=440,
+	height=560,
 	radius=100,
 	padding=20;
 var margin = {top: 20, right: 20, bottom: 30, left: 50};
-
-// var yearly_people_count = {}
-// yearly_people_count["2012"] = 2013.98
-// yearly_people_count["2013"] = 2026.34
-// yearly_people_count["2014"] = 601.41
-// yearly_people_count["2015"] = 1990.24
-// yearly_people_count["2016"] = 1854.87
-// yearly_people_count["2017"] = 1859.14
-// yearly_people_count["2018"] = 1800.84
-// yearly_people_count["2019"] = 1801.01
-// yearly_people_count["2020"] = 1579.59
-// yearly_people_count["2021"] = 1635.43
 
 var state_collect = []
 
