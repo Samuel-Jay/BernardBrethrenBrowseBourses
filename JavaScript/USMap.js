@@ -82,17 +82,33 @@ getMap(0)
 export function getMap(year){
   d3.csv("Datasets/asec_groupedvalues.csv", function(error, data) {
     if (error) throw error;
-    var dataGroup = d3.nest()
-      .key(function(d) {return d.STATE})
-      // .key(function(d) {return d.YEAR})
-      .rollup(function(v) { return {
-         POVERTY_LEVEL: d3.mean(v, function(d) {return d.POVERTY_LEVEL })
-       } })
-      .entries(data)
+    // console.log("year is ",year)
+    // if(year == 0){
+    //     console.log("year is 0..")
+        var dataGroup = d3.nest()
+        .key(function(d) {return d.STATE})
+        // .key(function(d) {return d.YEAR})
+        .rollup(function(v) { return {
+          POVERTY_LEVEL: d3.mean(v, function(d) {return d.POVERTY_LEVEL })
+        } })
+        .entries(data)
+    // }
+    // else{
+    //     console.log("year is not 0..")
+    //     var data = data.filter(function(d){
+    //       return d.Year == year;
+    //     })
 
+    //     var dataGroup = d3.nest()
+    //     .key(function(d) {return d.STATE})
+    //     // .key(function(d) {return d.YEAR})
+    //     .rollup(function(v) { return {
+    //       POVERTY_LEVEL: d3.mean(v, function(d) {return d.POVERTY_LEVEL })
+    //     } })
+    //     .entries(data)
+    //   }
       poverty_data = dataGroup
-    
-
+      // console.log(poverty_data)
   })
 
 
@@ -104,8 +120,9 @@ export function getMap(year){
          .domain([0, 72])
          .range(["orange", "red"])
 
+     d3.select("#usamap").select("svg").selectAll("*").remove();
      var svg_choropleth = d3.select("#usamap")
-         .append("svg")
+         .select("svg")
          .attr("preserveAspectRatio", "xMidYMid meet")
          .attr("viewBox", "0 0 " + viewboxwidth + " " + viewboxheight + "")
 
@@ -165,9 +182,14 @@ export function getMap(year){
       // recover the option that has been chosen
       var selectedOption = d3.select(this).property("value")
       // run the updateChart function with this selected option
-      if(selectedOption == 'All years')
-          getBarChartState(0)
-      else
-          getBarChartState(selectedOption)
+      if(selectedOption == 'All years'){
+        getMap(0)
+        getBarChartState(0)
+      }
+      else{
+        getMap(selectedOption)
+        getBarChartState(selectedOption)
+      }
     })
-  });
+  })
+};
