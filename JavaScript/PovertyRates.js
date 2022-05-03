@@ -1,4 +1,4 @@
-var width=250,
+var width=390,
 	height=450,
 	radius=100,
 	padding=20;

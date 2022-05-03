@@ -6,6 +6,40 @@ import {getPovertyRates} from './PovertyRates.js';
 
 console.clear()
 
+var state_names = ["Maine", "New Hampshire", "Vermont", "Massachusetts", "Rhode Island", "Connecticut", "New York", "New Jersey", "Pennsylvania", "Ohio", "Indiana", "Illinois", "Michigan", "Wisconsin", "Minnesota", "Iowa", "Missouri", "North Dakota", "South Dakota", "Nebraska", "Kansas", "Delaware", "Maryland", "District of Columbia", "Virginia", "West Virginia", "North Carolina", "South Carolina", "Georgia", "Florida", "Kentucky", "Tennessee", "Alabama", "Mississippi", "Arkansas", "Louisiana", "Oklahoma", "Texas", "Montana", "Idaho", "Wyoming", "Colorado", "New Mexico", "Arizona", "Utah", "Nevada", "Washington", "Oregon", "California", "Alaska", "Hawaii"]
+
+
+
+function getPovertyColor(state){
+  var state_color = "";
+  d3.csv("Datasets/asec_groupedvalues.csv", function(error, data) {
+    var dataGroup = d3.nest()
+      .key(function(d) {return d.STATE;})
+      // .key(function(d) {return d.YEAR;})
+      .rollup (function(v) { return {
+         POVERTY_LEVEL: d3.sum(v, function(d) {return d.POVERTY_LEVEL; })
+       }; })
+      .entries(data);
+
+    // var color = d3.scaleSequential()
+    //   .interpolator(d3.interpolateRgb("purple", "orange"))
+    //   .domain([0, 72])
+    // var fill = d3.scaleLinear()
+    //      .domain([0, 72])
+    //      .range(["orange", "red"]);
+    // var color = d3
+    //   .scaleLinear()
+    //   .range([0, legendheight - margin.top - margin.bottom])
+    //   .domain(colorscale.domain());
+    var colorFn = d3.scaleSequential()
+      .interpolator(d3.interpolateRgb("purple", "orange"))
+      .domain([0, 72])
+
+    state_color = colorFn(45)
+  })
+  return state_color
+}
+
 var margin_choropleth = {
     top: 10,
     left: 10,
@@ -48,6 +82,8 @@ var margin_choropleth = {
          .append("svg")
          .attr("preserveAspectRatio", "xMidYMid meet")
          .attr("viewBox", "0 0 " + viewboxwidth + " " + viewboxheight + "");
+
+
   
      var map = svg_choropleth.append("g")
          .attr("id", "states")
@@ -59,7 +95,8 @@ var margin_choropleth = {
          .style("stroke", "#fff")
          .style("stroke-width", "0.1")
          .style("fill", function(d) {
-            return fill(parseInt(d.id));})
+            // return fill(parseInt(d.id));})
+            return getPovertyColor(d.properties.name)})
         .on("click", clicked);
   
      svg_choropleth.append("g")
@@ -71,6 +108,7 @@ var margin_choropleth = {
          .text(function(d) {
              return d.properties.name;
          })
+         .style("font-size", "12px") 
          .attr("x", function(d) {
             if(isNaN(path.centroid(d)[0]))
                 return 0;
