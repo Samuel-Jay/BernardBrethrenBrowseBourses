@@ -1,5 +1,5 @@
 var width=600,
-	height=220,
+	height=210,
 	radius=100,
 	padding=20;
 var margin = {top: 20, right: 20, bottom: 30, left: 50};
@@ -25,7 +25,7 @@ export function getBarChartYear(state){
       .padding(0.05);
 
   var y = d3.scaleLinear()
-      .domain([0,600])
+      .domain([0,60])
       .range([height, 0])
       ;
 
@@ -51,6 +51,11 @@ export function getBarChartYear(state){
         return d.State == state;
     })
     console.log("data after filtering", data);
+
+    var data = data.filter(function(d){
+      return d.Category != 'HP';
+    })
+    console.log("data after HP filtering", data);
 
     x0.domain(data.map(function(d) { return d.Year; })); // x_axis
     x1.domain(data.map(function(d) { return d.Category; })) 

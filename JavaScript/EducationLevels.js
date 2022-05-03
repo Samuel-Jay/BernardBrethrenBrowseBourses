@@ -1,5 +1,5 @@
 var width=290+290,
-	height=200,
+	height=190,
 	radius=100,
 	padding=20;
 var margin = {top: 20, right: 20, bottom: 30, left: 50};

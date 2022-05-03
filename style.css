@@ -5,7 +5,7 @@ body {
 }
 
 .container {  display: grid;
-  grid-template-columns: 360px 360px 350px;
+  grid-template-columns: 380px 340px 350px;
   grid-template-rows: 260px 260px 250px;
   gap: 1em 1em;
   grid-auto-flow: row;
@@ -39,3 +39,18 @@ body {
 .axisWhite text{
   fill: #ffffff;
 } 
+
+.titlebox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.titlebox div {
+  height: 1px;
+}
+
+.titletext {
+  /* margin-left :45%; */
+  text-align: center;
+}
