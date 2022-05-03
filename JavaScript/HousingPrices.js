@@ -146,7 +146,7 @@ export function getHousingPrices(state_select){
 		      })
 		      .attr("stroke-opacity", function(d){
 		        if(state_select == "All States"){ return 0.5 }
-		        else if(state_collect.includes(d.key)){ return 0.8 }
+		        else if(state_collect.includes(d.key)){ return 1.0 }
 		        else{ return 0.25 }
 		      })
 		      .attr("stroke", function(d){
