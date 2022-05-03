@@ -8,6 +8,16 @@ console.clear()
 
 var state_names = ["Maine", "New Hampshire", "Vermont", "Massachusetts", "Rhode Island", "Connecticut", "New York", "New Jersey", "Pennsylvania", "Ohio", "Indiana", "Illinois", "Michigan", "Wisconsin", "Minnesota", "Iowa", "Missouri", "North Dakota", "South Dakota", "Nebraska", "Kansas", "Delaware", "Maryland", "District of Columbia", "Virginia", "West Virginia", "North Carolina", "South Carolina", "Georgia", "Florida", "Kentucky", "Tennessee", "Alabama", "Mississippi", "Arkansas", "Louisiana", "Oklahoma", "Texas", "Montana", "Idaho", "Wyoming", "Colorado", "New Mexico", "Arizona", "Utah", "Nevada", "Washington", "Oregon", "California", "Alaska", "Hawaii"]
 
+
+var dropDownValues = ['All years', 2021,2020,2019,2018,2017, 2016, 2015, 2014, 2013, 2012]
+d3.select("#selectButton")
+      .selectAll('myOptions')
+        .data(dropDownValues)
+      .enter()
+        .append('option')
+      .text(function (d) { return d; }) // text showed in the menu
+      .attr("value", function (d) { return d; }) // corresponding value returned by the button
+
 var margin_choropleth = {
     top: 10,
     left: 10,
@@ -149,5 +159,15 @@ export function getMap(year){
         getHousingPrices(d.properties.name)
         getPovertyRates(d.properties.name)
      }
-  })
-}
+
+     // When the button is changed, run the updateChart function
+    d3.select("#selectButton").on("change", function(d) {
+      // recover the option that has been chosen
+      var selectedOption = d3.select(this).property("value")
+      // run the updateChart function with this selected option
+      if(selectedOption == 'All years')
+          getBarChartState(0)
+      else
+          getBarChartState(selectedOption)
+    })
+  });
