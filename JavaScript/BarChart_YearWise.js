@@ -1,12 +1,27 @@
+import {getMap} from './USMap.js'
+import {getBarChartState} from './BarChart_StateWise.js'
+
 var width=700,
-	height=260,
-	radius=100,
-	padding=20;
+  height=260,
+  radius=100,
+  padding=20;
 var margin = {top: 20, right: 20, bottom: 30, left: 50};
 
-// getBarChartYear(null, null)
+// getBarChartYear("All States")
 
-export function getBarChartYear(state){
+export function getBarChartYear(state, year, map_view){
+  var year_text = "All Years"
+  if(year!= 0 ){
+    year_text = year
+  }
+
+
+  var width=700,
+    height=260,
+    radius=100,
+    padding=20;
+  var margin = {top: 20, right: 20, bottom: 30, left: 50};
+
   console.log("Inside getBarChartYear")
   console.log("State selected is ", state)
 
@@ -105,7 +120,10 @@ export function getBarChartYear(state){
         .attr("y", function(d) { return y(d[1]); })
         .attr("height", function(d) { return y(d[0]) - y(d[1]); })
         .attr("width", x1.bandwidth())
-        // .on("click", function(d, i){ console.log("serie-rect click d", i, d); });
+        .on("click", function(d){ 
+          getBarChartState(state, d.data.Year, map_view) 
+          getMap(state, d.data.Year, map_view)
+        });
     
     g2.append("g")
         .attr("class", "axis")
@@ -148,5 +166,14 @@ export function getBarChartYear(state){
         .attr("dy", "0.32em")
         .attr('fill', '#ffffff')
         .text(function(d) { return d; });
+
+    g2.append("text")
+        .attr("x", (width / 2))             
+        .attr("y", 0)
+        .attr("text-anchor", "middle")  
+        .style("fill", "#ffffff")
+        .style("font-size", "24px") 
+        .style("text-decoration", "underline")  
+        .text("Income-Expenditure for "+state);
   });
 }

@@ -8,7 +8,7 @@ var margin = {top: 20, right: 20, bottom: 30, left: 50};
 
 var state_collect = []
 
-export function getHousingPrices(state_select){
+export function getHousingPrices(state_select, year, map_view){
   console.log("Inside getHousingPrices")
 
   if(state_select!="All States" && !state_collect.includes(state_select)){
@@ -165,8 +165,8 @@ export function getHousingPrices(state_select){
 		          (d.values)
 		      })
 		      .on("click", function(d){
-		      	getHousingPrices(d.key)
-		      	getMap("Housing", 0)
+		      	getHousingPrices(d.key, year, map_view)
+		      	getMap(d.key, year, "Housing")
 		      })
 
 
@@ -238,7 +238,7 @@ export function getHousingPrices(state_select){
 		      .on('click', function(d,i) {
 		        console.log(d)
 		        edu_select = d;
-		        getHousingPrices(state_select)
+		        getHousingPrices(state_select, year, map_view)
 		      });
 
 		  g4.append("text")
@@ -246,7 +246,7 @@ export function getHousingPrices(state_select){
 		    .attr("y", 0)
 		    .attr("text-anchor", "middle")  
 		    .style("fill", "#ffffff")
-		    .style("font-size", "16px") 
+		    .style("font-size", "24px") 
 		    .style("text-decoration", "underline")  
 		    .text("Housing Prices");
 
@@ -260,7 +260,7 @@ export function getHousingPrices(state_select){
 		    .text("Click to Refresh")
 		    .on('click', function(d,i) {
 		        state_collect = []
-		        getHousingPrices("All States")
+		        getHousingPrices("All States", year, map_view)
 		    })
 		  
 		}

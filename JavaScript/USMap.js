@@ -5,7 +5,7 @@ import {getHousingPrices} from './HousingPrices.js'
 import {getPovertyRates} from './PovertyRates.js'
 
 var width=700,
-  height=260,
+  height=480,
   radius=100,
   padding=20;
 var margin = {top: 20, right: 20, bottom: 30, left: 50};
@@ -47,11 +47,11 @@ var path = d3.geoPath()
 var viewboxwidth = width_choropleth * 1
 var viewboxheight = height_choropleth - 20
 
-getBarChartState(0)
-getBarChartYear("All States")
-getEducationLevels("All States")
-getHousingPrices("All States")
-getPovertyRates("All States")
+getBarChartState("All States", 0, "Housing")
+getBarChartYear("All States", 0, "Housing")
+getEducationLevels("All States", 0, "Housing")
+getHousingPrices("All States", 0, "Housing")
+getPovertyRates("All States", 0, "Housing")
 
 var svg_choropleth = d3.select("#usamap")
   .append("svg")
@@ -71,6 +71,9 @@ var housing_max = 800000
 
 var housingScale = d3.scaleSequential(d3.interpolate("yellow", "green"))
     .domain([housing_min, housing_max])
+
+
+var migration_data
 
 function getPovertyColor(state){
   var poverty_level
@@ -101,17 +104,42 @@ function getHousingColor(state){
     
   return state_color
 }
-  
-getMap("Housing", 0)  
 
-export function getMap(map_view, year){
+function getMigrationReason(state){
+  var migr_reas
+  var state_color = ""
+  for (var row in migration_data) {
+    if(migration_data[row].key==state){
+      migr_reas = migration_data[row].value.MIGRATION_REASON
+    }
+  }
+  
+    
+  return migr_reas
+}
+  
+getMap("All States", 0, "Housing")  
+
+export function getMap(state, year, map_view){
+  var year_text = "All Years"
+  if(year!= 0 ){
+    year_text = year
+  }
   d3.select("#usamap").select("svg").selectAll("*").remove();
 
   d3.csv("Datasets/asec_groupedvalues.csv", function(error, data) {
     if (error) throw error;
 
+    var data = data.filter(function(d) {
+        if(year!=0){
+         return d.YEAR == year; 
+        }
+        else{return true}
+      });
+    var dataGroup
+
     if(map_view=="Poverty"){
-      var dataGroup = d3.nest()
+      dataGroup = d3.nest()
       .key(function(d) {return d.STATE})
       // .key(function(d) {return d.YEAR})
       .rollup(function(v) { return {
@@ -132,6 +160,19 @@ export function getMap(map_view, year){
 
       housing_data = dataGroup
     }
+
+    // if(state!="All States"){
+    //   dataGroup = d3.nest()
+    //   .key(function(d) {return d.STATE})
+    //   // .key(function(d) {return d.YEAR})
+    //   .rollup(function(v) { return {
+    //      MIGRATION_REASON: d3.mode(v, function(d) {return d.MIGRATION_REASON })
+    //    } })
+    //   .entries(data)
+
+    //   migration_data = dataGroup
+
+    // }
 
   })
 
@@ -163,8 +204,14 @@ export function getMap(map_view, year){
          .style("stroke", "#fff")
          .style("stroke-width", "0.1")
          .style("fill", function(d) {
-            // return fill(parseInt(d.id))})
-            return getPovertyColor(d.properties.name)})
+            if(map_view == "Poverty"){
+              return getPovertyColor(d.properties.name)
+            }
+            else{
+              return getHousingColor(d.properties.name)
+            }
+            
+          })
         .on("click", clicked)
 
      svg_choropleth.append("g")
@@ -193,12 +240,36 @@ export function getMap(map_view, year){
          .attr("fill", "white")
          .on("click", clicked)
 
+      
+      svg_choropleth.append("g").append("text")
+        .attr("x", (width / 2))             
+        .attr("y", 20)
+        .attr("text-anchor", "middle")  
+        .style("fill", "#ffffff")
+        .style("font-size", "24px") 
+        .style("text-decoration", "underline")  
+        .text(map_view+" Map View for "+year_text);
+
+      // if(state!="All States"){
+      //   svg_choropleth.append("g").append("text")
+      //   .attr("x", (width - 100))             
+      //   .attr("y", (height - 50))
+      //   .attr("text-anchor", "right")  
+      //   .style("fill", "#ffffff")
+      //   .style("font-size", "16px") 
+      //   // .style("text-decoration", "underline")  
+      //   .text("Most common reason for leaving "+state+" for "+year_text+" "+getMigrationReason(state));
+      // }
+      
+
      function clicked(d) {
-        console.log(d.properties.name)
-        getBarChartYear(d.properties.name)
-        getEducationLevels(d.properties.name)
-        getHousingPrices(d.properties.name)
-        getPovertyRates(d.properties.name)
+        console.log(d.properties.name, year, map_view)
+        getBarChartState(d.properties.name, year, map_view)
+        getBarChartYear(d.properties.name, year, map_view)
+        getEducationLevels(d.properties.name, year, map_view)
+        getHousingPrices(d.properties.name, year, map_view)
+        getPovertyRates(d.properties.name, year, map_view)
+        getMap(d.properties.name, year, map_view)
      }
      // When the button is changed, run the updateChart function
     d3.select("#selectButton").on("change", function(d) {
@@ -206,12 +277,13 @@ export function getMap(map_view, year){
       var selectedOption = d3.select(this).property("value")
       // run the updateChart function with this selected option
       if(selectedOption == 'All years'){
-        getMap(map_view, 0)
-        getBarChartState(0)
+        getMap(state, 0, map_view)
+        getBarChartState(state, 0, map_view)
       }
       else{
-        getMap(map_view, selectedOption)
-        getBarChartState(selectedOption)
+        getMap(state, selectedOption, map_view)
+        getBarChartState(state, selectedOption, map_view)
       }
+      })
   })
-};
+}

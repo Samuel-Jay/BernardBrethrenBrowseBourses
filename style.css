@@ -6,7 +6,7 @@ body {
 
 .container {  display: grid;
   grid-template-columns: 380px 340px 1200px 500px;
-  grid-template-rows: 300px 300px 500px;
+  grid-template-rows: 300px 300px 520px;
   /* grid-template-columns: 190px 170px 600px 250px;
   grid-template-rows: 150px 150px 250px; */
   gap: 1em 1em;

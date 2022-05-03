@@ -1,6 +1,6 @@
 import {getMap} from './USMap.js'
 
-var width=390,
+var width=410,
 	height=450,
 	radius=100,
 	padding=20;
@@ -8,7 +8,7 @@ var margin = {top: 20, right: 20, bottom: 30, left: 50};
 
 var state_collect = []
 
-export function getPovertyRates(state_select){
+export function getPovertyRates(state_select, year, map_view){
   console.log("Inside getPovertyRates")
 
   if(state_select!="All States" && !state_collect.includes(state_select)){
@@ -142,8 +142,8 @@ export function getPovertyRates(state_select){
 		          (d.values)
 		      })
 		      .on("click", function(d){
-			      	getPovertyRates(d.key)
-			        getMap("Poverty", 0)
+			      	getPovertyRates(d.key, year, map_view)
+			        getMap(d.key, year, "Poverty")
 		    	})
 
 
@@ -219,7 +219,7 @@ export function getPovertyRates(state_select){
 		      .on('click', function(d,i) {
 		        console.log(d)
 		        edu_select = d;
-		        getPovertyRates(state_select)
+		        getPovertyRates(state_select, year, map_view)
 		      });
 
 		  g6.append("text")
@@ -227,7 +227,7 @@ export function getPovertyRates(state_select){
 		    .attr("y", 0)
 		    .attr("text-anchor", "middle")  
 		    .style("fill", "#ffffff")
-		    .style("font-size", "16px") 
+		    .style("font-size", "24px") 
 		    .style("text-decoration", "underline")  
 		    .text("Poverty Rates");
 
@@ -241,7 +241,7 @@ export function getPovertyRates(state_select){
 		    .text("Click to Refresh")
 		    .on('click', function(d,i) {
 		        state_collect = []
-		        getPovertyRates("All States")
+		        getPovertyRates("All States", year, map_view)
 		    })
 
 

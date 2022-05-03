@@ -27,7 +27,7 @@ var edu_select = "No Highlight"
 // var g3 = svg3.append("g")
 //       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-export function getEducationLevels(state_select){
+export function getEducationLevels(state_select, year, map_view){
   console.log("Inside getEducationLevels")
   // svg3.remove();
   d3.select("#EducationLevels").select("svg").selectAll("*").remove();
@@ -125,7 +125,7 @@ export function getEducationLevels(state_select){
 		      .attr("stroke", function(d){ return color(d.key) })
 		      .on('click', function(d) {
 		        edu_select = d.key
-		        getEducationLevels(state_select)
+		        getEducationLevels(state_select, year, map_view)
 		    	})
 		      .attr("stroke-width", function(d){
 		        if(edu_select == "No Highlight"){ return 4 }
@@ -189,7 +189,7 @@ export function getEducationLevels(state_select){
 		      .on('click', function(d,i) {
 		        console.log(d)
 		        edu_select = d;
-		        getEducationLevels(state_select)
+		        getEducationLevels(state_select, year, map_view)
 		      })
 
 		  g3.append("text")
@@ -198,7 +198,7 @@ export function getEducationLevels(state_select){
 		    .attr("y", 0)
 		    .attr("text-anchor", "middle")  
 		    .style("fill", "#ffffff")
-		    .style("font-size", "16px") 
+		    .style("font-size", "24px") 
 		    .style("text-decoration", "underline")  
 		    .text("Education Levels for "+state_select);
 
@@ -215,7 +215,7 @@ export function getEducationLevels(state_select){
 		        // console.log("Hello There")
 		        edu_select = "No Highlight"
 		        // update(state_select, data);
-		        getEducationLevels("All States")
+		        getEducationLevels("All States", year, map_view)
 		    })
 		  
 		}
