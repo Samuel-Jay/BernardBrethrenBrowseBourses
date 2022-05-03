@@ -111,7 +111,10 @@ export function getBarChartState(year){
         .attr("class", "axis")
         .attr("transform", "translate(0," + height + ")")
         .attr("class", "axisWhite")
-        .call(d3.axisBottom(x0));
+        .call(d3.axisBottom(x0))
+        .selectAll("text")
+        .attr("transform", "translate(-10,0)rotate(-45)")
+        .style("text-anchor", "end");
 
     g.append("g")
         .attr("class", "axis-left")
