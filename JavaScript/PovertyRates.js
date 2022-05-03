@@ -1,4 +1,6 @@
-var width=390,
+import {getMap} from './USMap.js'
+
+var width=410,
 	height=450,
 	radius=100,
 	padding=20;
@@ -6,7 +8,7 @@ var margin = {top: 20, right: 20, bottom: 30, left: 50};
 
 var state_collect = []
 
-export function getPovertyRates(state_select){
+export function getPovertyRates(state_select, year, map_view){
   console.log("Inside getPovertyRates")
 
   if(state_select!="All States" && !state_collect.includes(state_select)){
@@ -139,8 +141,35 @@ export function getPovertyRates(state_select){
 		          .y(function(d) { return yScale(+d.value.POVERTY_LEVEL); })
 		          (d.values)
 		      })
-		      .on("click", function(d){getPovertyRates(d.key)})
+		      .on("click", function(d){
+			      	getPovertyRates(d.key, year, map_view)
+			        getMap(d.key, year, "Poverty")
+		    	})
 
+
+		var poverty_min = 1.28
+		var poverty_max = 1.57
+
+		var legendheight = height
+		var legendscale = d3.scaleSequential(d3.interpolate("red", "yellow"))
+		    .domain([poverty_min, poverty_max])
+
+		var poverty_axis_quant = [];
+		for (var i = poverty_min; i <= poverty_max; i+=0.01) {
+		    poverty_axis_quant.push(i);
+		}
+
+		var quant_size = height/poverty_axis_quant.length
+
+	    g6.selectAll("newdots")
+	    .data(poverty_axis_quant.reverse())
+	    .enter()
+	    .append("rect")
+	      .attr("x", -50)
+	      .attr("y", function(d,i){ return (i)*(quant_size) }) // 100 is where the first dot appears. 25 is the distance between dots
+	      .attr("width", 50)
+	      .attr("height", quant_size)
+	      .style("fill", function(d){ return legendscale(d)})
 
 		  g6.append("g")
 		    .attr("transform", "translate(0," + height + ")")
@@ -150,12 +179,17 @@ export function getPovertyRates(state_select){
 		  g6.append("g")
         .attr("class", "axisWhite")
 		    .call(d3.axisLeft(yScale)
-		      .ticks(5)
-		      .tickSizeInner(0)
-		      .tickPadding(6)
-		      .tickSize(0, 0)
-		      
-		    )
+				.ticks(5)
+				.tickSizeInner(0)
+				.tickPadding(6)
+				.tickSize(0, 0))
+
+		
+
+
+		
+		
+
 
 		  // Add one dot in the legend for each name.
 		  var size = 8
@@ -185,7 +219,7 @@ export function getPovertyRates(state_select){
 		      .on('click', function(d,i) {
 		        console.log(d)
 		        edu_select = d;
-		        getPovertyRates(state_select)
+		        getPovertyRates(state_select, year, map_view)
 		      });
 
 		  g6.append("text")
@@ -193,7 +227,7 @@ export function getPovertyRates(state_select){
 		    .attr("y", 0)
 		    .attr("text-anchor", "middle")  
 		    .style("fill", "#ffffff")
-		    .style("font-size", "16px") 
+		    .style("font-size", "24px") 
 		    .style("text-decoration", "underline")  
 		    .text("Poverty Rates");
 
@@ -207,8 +241,12 @@ export function getPovertyRates(state_select){
 		    .text("Click to Refresh")
 		    .on('click', function(d,i) {
 		        state_collect = []
-		        getPovertyRates("All States")
+		        getPovertyRates("All States", year, map_view)
 		    })
+
+
+		   	
+
 		  
 		}
 

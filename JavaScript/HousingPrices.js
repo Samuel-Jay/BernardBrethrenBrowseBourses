@@ -1,3 +1,5 @@
+import {getMap} from './USMap.js'
+
 var width=410,
 	height=560,
 	radius=100,
@@ -6,7 +8,7 @@ var margin = {top: 20, right: 20, bottom: 30, left: 50};
 
 var state_collect = []
 
-export function getHousingPrices(state_select){
+export function getHousingPrices(state_select, year, map_view){
   console.log("Inside getHousingPrices")
 
   if(state_select!="All States" && !state_collect.includes(state_select)){
@@ -162,8 +164,36 @@ export function getHousingPrices(state_select){
 		          .y(function(d) { return yScale(+d.value.PROPERTY_VAL); })
 		          (d.values)
 		      })
-		      .on("click", function(d){getHousingPrices(d.key)})
+		      .on("click", function(d){
+		      	getHousingPrices(d.key, year, map_view)
+		      	getMap(d.key, year, "Housing")
+		      })
 
+
+
+		var housing_min = 100000
+		var housing_max = 800000
+
+		var legendheight = height
+		var legendscale = d3.scaleSequential(d3.interpolate("yellow", "green"))
+		    .domain([housing_min, housing_max])
+
+		var housing_axis_quant = [];
+		for (var i = housing_min; i <= housing_max; i+=10000) {
+		    housing_axis_quant.push(i);
+		}
+
+		var quant_size = height/housing_axis_quant.length
+
+	    g4.selectAll("newdots")
+	    .data(housing_axis_quant.reverse())
+	    .enter()
+	    .append("rect")
+	      .attr("x", -50)
+	      .attr("y", function(d,i){ return (i)*(quant_size) }) // 100 is where the first dot appears. 25 is the distance between dots
+	      .attr("width", 50)
+	      .attr("height", quant_size)
+	      .style("fill", function(d){ return legendscale(d)})
 
 		  g4.append("g")
 		    .attr("transform", "translate(0," + height + ")")
@@ -208,7 +238,7 @@ export function getHousingPrices(state_select){
 		      .on('click', function(d,i) {
 		        console.log(d)
 		        edu_select = d;
-		        getHousingPrices(state_select)
+		        getHousingPrices(state_select, year, map_view)
 		      });
 
 		  g4.append("text")
@@ -216,7 +246,7 @@ export function getHousingPrices(state_select){
 		    .attr("y", 0)
 		    .attr("text-anchor", "middle")  
 		    .style("fill", "#ffffff")
-		    .style("font-size", "16px") 
+		    .style("font-size", "24px") 
 		    .style("text-decoration", "underline")  
 		    .text("Housing Prices");
 
@@ -230,7 +260,7 @@ export function getHousingPrices(state_select){
 		    .text("Click to Refresh")
 		    .on('click', function(d,i) {
 		        state_collect = []
-		        getHousingPrices("All States")
+		        getHousingPrices("All States", year, map_view)
 		    })
 		  
 		}

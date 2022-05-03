@@ -4,6 +4,12 @@ import {getEducationLevels} from './EducationLevels.js'
 import {getHousingPrices} from './HousingPrices.js'
 import {getPovertyRates} from './PovertyRates.js'
 
+var width=700,
+  height=480,
+  radius=100,
+  padding=20;
+var margin = {top: 20, right: 20, bottom: 30, left: 50};
+
 console.clear()
 
 var state_names = ["Maine", "New Hampshire", "Vermont", "Massachusetts", "Rhode Island", "Connecticut", "New York", "New Jersey", "Pennsylvania", "Ohio", "Indiana", "Illinois", "Michigan", "Wisconsin", "Minnesota", "Iowa", "Missouri", "North Dakota", "South Dakota", "Nebraska", "Kansas", "Delaware", "Maryland", "District of Columbia", "Virginia", "West Virginia", "North Carolina", "South Carolina", "Georgia", "Florida", "Kentucky", "Tennessee", "Alabama", "Mississippi", "Arkansas", "Louisiana", "Oklahoma", "Texas", "Montana", "Idaho", "Wyoming", "Colorado", "New Mexico", "Arizona", "Utah", "Nevada", "Washington", "Oregon", "California", "Alaska", "Hawaii"]
@@ -41,13 +47,33 @@ var path = d3.geoPath()
 var viewboxwidth = width_choropleth * 1
 var viewboxheight = height_choropleth - 20
 
-getBarChartState(0)
-getBarChartYear("All States")
-getEducationLevels("All States")
-getHousingPrices("All States")
-getPovertyRates("All States")
+getBarChartState("All States", 0, "Housing")
+getBarChartYear("All States", 0, "Housing")
+getEducationLevels("All States", 0, "Housing")
+getHousingPrices("All States", 0, "Housing")
+getPovertyRates("All States", 0, "Housing")
+
+var svg_choropleth = d3.select("#usamap")
+  .append("svg")
+  .attr("preserveAspectRatio", "xMidYMid meet")
+  .attr("viewBox", "0 0 " + viewboxwidth + " " + viewboxheight + "")
 
 var poverty_data
+var poverty_min = 1.28
+var poverty_max = 1.57
+
+var povertyScale = d3.scaleSequential(d3.interpolate("red", "yellow"))
+    .domain([poverty_min, poverty_max])
+
+var housing_data
+var housing_min = 100000
+var housing_max = 800000
+
+var housingScale = d3.scaleSequential(d3.interpolate("yellow", "green"))
+    .domain([housing_min, housing_max])
+
+
+var migration_data
 
 function getPovertyColor(state){
   var poverty_level
@@ -57,68 +83,108 @@ function getPovertyColor(state){
       poverty_level = poverty_data[row].value.POVERTY_LEVEL
     }
   }
-  
-  // var colorFn = d3.scaleSequential()
-  //   .interpolator(d3.interpolateRgb("green", "red"))
-  //   .domain([1.2, 1.7])
-  // var colorFn = d3.scaleLinear()
-  //        .domain([1.2, 1.7])
-  //        .range("green", "red")
-  // var colorFn = d3.scaleSequential(d3.interpolateReds)
-    var colorFn = d3.scaleSequential(d3.interpolate("yellow", "red"))
-    .domain([1.28, 1.57])
-
-  var state_color = colorFn(poverty_level)
-
+  var state_color = povertyScale(poverty_level)
   state_color = d3.color(state_color)
-
   state_color = "#" + ((1 << 24) + (state_color.r << 16) + (state_color.g << 8) + state_color.b).toString(16).slice(1)
     
   return state_color
 }
-  
-getMap(0)  
 
-export function getMap(year){
+function getHousingColor(state){
+  var housing_value
+  var state_color = ""
+  for (var row in housing_data) {
+    if(housing_data[row].key==state){
+      housing_value = housing_data[row].value.PROPERTY_VAL
+    }
+  }
+  var state_color = housingScale(housing_value)
+  state_color = d3.color(state_color)
+  state_color = "#" + ((1 << 24) + (state_color.r << 16) + (state_color.g << 8) + state_color.b).toString(16).slice(1)
+    
+  return state_color
+}
+
+function getMigrationReason(state){
+  var migr_reas
+  var state_color = ""
+  for (var row in migration_data) {
+    if(migration_data[row].key==state){
+      migr_reas = migration_data[row].value.MIGRATION_REASON
+    }
+  }
+  
+    
+  return migr_reas
+}
+  
+getMap("All States", 0, "Housing")  
+
+export function getMap(state, year, map_view){
+  var year_text = "All Years"
+  if(year!= 0 ){
+    year_text = year
+  }
+  d3.select("#usamap").select("svg").selectAll("*").remove();
+
   d3.csv("Datasets/asec_groupedvalues.csv", function(error, data) {
     if (error) throw error;
-    // console.log("year is ",year)
-    // if(year == 0){
-    //     console.log("year is 0..")
-        var dataGroup = d3.nest()
-        .key(function(d) {return d.STATE})
-        // .key(function(d) {return d.YEAR})
-        .rollup(function(v) { return {
-          POVERTY_LEVEL: d3.mean(v, function(d) {return d.POVERTY_LEVEL })
-        } })
-        .entries(data)
-    // }
-    // else{
-    //     console.log("year is not 0..")
-    //     var data = data.filter(function(d){
-    //       return d.Year == year;
-    //     })
 
-    //     var dataGroup = d3.nest()
-    //     .key(function(d) {return d.STATE})
-    //     // .key(function(d) {return d.YEAR})
-    //     .rollup(function(v) { return {
-    //       POVERTY_LEVEL: d3.mean(v, function(d) {return d.POVERTY_LEVEL })
-    //     } })
-    //     .entries(data)
-    //   }
+    var data = data.filter(function(d) {
+        if(year!=0){
+         return d.YEAR == year; 
+        }
+        else{return true}
+      });
+    var dataGroup
+
+    if(map_view=="Poverty"){
+      dataGroup = d3.nest()
+      .key(function(d) {return d.STATE})
+      // .key(function(d) {return d.YEAR})
+      .rollup(function(v) { return {
+         POVERTY_LEVEL: d3.mean(v, function(d) {return d.POVERTY_LEVEL })
+       } })
+      .entries(data)
+
       poverty_data = dataGroup
-      // console.log(poverty_data)
+    }
+    else{
+      dataGroup = d3.nest()
+      .key(function(d) {return d.STATE})
+      // .key(function(d) {return d.YEAR})
+      .rollup(function(v) { return {
+         PROPERTY_VAL: d3.mean(v, function(d) {return d.PROPERTY_VAL })
+       } })
+      .entries(data)
+
+      housing_data = dataGroup
+    }
+
+    // if(state!="All States"){
+    //   dataGroup = d3.nest()
+    //   .key(function(d) {return d.STATE})
+    //   // .key(function(d) {return d.YEAR})
+    //   .rollup(function(v) { return {
+    //      MIGRATION_REASON: d3.mode(v, function(d) {return d.MIGRATION_REASON })
+    //    } })
+    //   .entries(data)
+
+    //   migration_data = dataGroup
+
+    // }
+
   })
 
 
   d3.json("Datasets/us-states.json", function(json) {
-     var centered
-     var formatComma = d3.format(',')
 
-     var fill = d3.scaleLinear()
-         .domain([0, 72])
-         .range(["orange", "red"])
+    var centered
+    var formatComma = d3.format(',')
+
+    var fill = d3.scaleLinear()
+        .domain([0, 72])
+        .range(["orange", "red"])
 
      d3.select("#usamap").select("svg").selectAll("*").remove();
      var svg_choropleth = d3.select("#usamap")
@@ -138,8 +204,14 @@ export function getMap(year){
          .style("stroke", "#fff")
          .style("stroke-width", "0.1")
          .style("fill", function(d) {
-            // return fill(parseInt(d.id))})
-            return getPovertyColor(d.properties.name)})
+            if(map_view == "Poverty"){
+              return getPovertyColor(d.properties.name)
+            }
+            else{
+              return getHousingColor(d.properties.name)
+            }
+            
+          })
         .on("click", clicked)
 
      svg_choropleth.append("g")
@@ -168,28 +240,50 @@ export function getMap(year){
          .attr("fill", "white")
          .on("click", clicked)
 
-     function clicked(d) {
-         console.log(d.properties.name)
-        //  getBarChartState(2021)
-        getBarChartYear(d.properties.name)
-        getEducationLevels(d.properties.name)
-        getHousingPrices(d.properties.name)
-        getPovertyRates(d.properties.name)
-     }
+      
+      svg_choropleth.append("g").append("text")
+        .attr("x", (width / 2))             
+        .attr("y", 20)
+        .attr("text-anchor", "middle")  
+        .style("fill", "#ffffff")
+        .style("font-size", "24px") 
+        .style("text-decoration", "underline")  
+        .text(map_view+" Map View for "+year_text);
 
+      // if(state!="All States"){
+      //   svg_choropleth.append("g").append("text")
+      //   .attr("x", (width - 100))             
+      //   .attr("y", (height - 50))
+      //   .attr("text-anchor", "right")  
+      //   .style("fill", "#ffffff")
+      //   .style("font-size", "16px") 
+      //   // .style("text-decoration", "underline")  
+      //   .text("Most common reason for leaving "+state+" for "+year_text+" "+getMigrationReason(state));
+      // }
+      
+
+     function clicked(d) {
+        console.log(d.properties.name, year, map_view)
+        getBarChartState(d.properties.name, year, map_view)
+        getBarChartYear(d.properties.name, year, map_view)
+        getEducationLevels(d.properties.name, year, map_view)
+        getHousingPrices(d.properties.name, year, map_view)
+        getPovertyRates(d.properties.name, year, map_view)
+        getMap(d.properties.name, year, map_view)
+     }
      // When the button is changed, run the updateChart function
     d3.select("#selectButton").on("change", function(d) {
       // recover the option that has been chosen
       var selectedOption = d3.select(this).property("value")
       // run the updateChart function with this selected option
       if(selectedOption == 'All years'){
-        getMap(0)
-        getBarChartState(0)
+        getMap(state, 0, map_view)
+        getBarChartState(state, 0, map_view)
       }
       else{
-        getMap(selectedOption)
-        getBarChartState(selectedOption)
+        getMap(state, selectedOption, map_view)
+        getBarChartState(state, selectedOption, map_view)
       }
-    })
+      })
   })
-};
+}

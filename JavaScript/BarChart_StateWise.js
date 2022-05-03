@@ -1,13 +1,18 @@
-var width=2200,
-	height=400,
-	radius=100,
-	padding=20;
-var margin = {top: 20, right: 20, bottom: 30, left: 50};
 
 // getBarChartState(null, null)
 
-export function getBarChartState(year){
+export function getBarChartState(state, year, map_view){
+   var width=1850,
+  height=410,
+  radius=100,
+  padding=20;
+var margin = {top: 20, right: 20, bottom: 50, left: 50};
 
+  var year_text = "All Years"
+  if(year!= 0 ){
+    year_text = year
+  }
+  
   console.log("Inside getBarChartState")
   if(year == 0)
     console.log("Year selected is All years", )
@@ -105,7 +110,14 @@ export function getBarChartState(year){
           return y(d[1]); })
         .attr("height", function(d) { return y(d[0]) - y(d[1]); })
         .attr("width", x1.bandwidth())
-        // .on("click", function(d, i){ console.log("serie-rect click d", i, d); });
+        .style("opacity", function(d) {
+          if(d.data.State != state && state!="All States"){
+            return 0.25 
+          }
+          else{
+            return 1.0
+          }
+        })
     
     g.append("g")
         .attr("class", "axis")
@@ -113,8 +125,24 @@ export function getBarChartState(year){
         .attr("class", "axisWhite")
         .call(d3.axisBottom(x0))
         .selectAll("text")
-        .attr("transform", "translate(-10,0)rotate(-10)")
-        .style("text-anchor", "end");
+        .attr("transform", "translate(-10,0)rotate(20)")
+        .style("text-anchor", "start")
+        .style("fill", function(d) {
+          if(d == state){
+            return "#00ff00" 
+          }
+          else{
+            return "#ffffff"
+          }
+        })
+        .attr("font-weight",function(d) {
+          if(d == state){
+            return 500 
+          }
+          else{
+            return 100
+          }
+        })
 
     g.append("g")
         .attr("class", "axis-left")
@@ -151,5 +179,26 @@ export function getBarChartState(year){
         .attr("dy", "0.32em")
         .attr('fill', '#ffffff')
         .text(function(d) { return d; });
+
+    g.append("text")
+        .attr("x", (width / 2))             
+        .attr("y", 0)
+        .attr("text-anchor", "middle")  
+        .style("fill", "#ffffff")
+        .style("font-size", "24px") 
+        .style("text-decoration", "underline")  
+        .text("Income-Expenditure-Housing for "+year_text)
+
+    // g.append("text")
+    //     .attr("x", width / 2)             
+    //     .attr("y", 50)
+    //     .attr("text-anchor", "middle")   
+    //     .style("fill", "#ffffff")
+    //     .style("font-size", "12px") 
+    //     .style("text-decoration", "underline")  
+    //     .text("Click to Refresh")
+    //     .on('click', function(d) {
+    //         getBarChartState("All States", year, map_view)
+    //     })
   });
 }
