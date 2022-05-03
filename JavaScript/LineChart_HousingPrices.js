@@ -46,6 +46,13 @@ d3.csv("Datasets/BarChartStateWiseDataset.csv", function(data) {
 
     var table = d3.nest()
     .key(function(d) {return d.State;})
+    .key(function(d) {return d.Year;})
+    .rollup(function(d) {
+        var value = 0;
+        if (d.Category == "Income") {value += d.Value;}
+        else if (d.Category == "Expenditure" || d.Category == "HP") {value -= d.Value;}
+        NET_EARNINGS: value
+    })
     .entries(data);
 
     svg.append('g')
@@ -53,8 +60,8 @@ d3.csv("Datasets/BarChartStateWiseDataset.csv", function(data) {
     .data(table)
     .enter()
     .append("circle")
-    .attr("cx", function (d) { return xScale(d.values[4]); } )
-    .attr("cy", function (d) { return yScale(d.values[3]); } )
+    .attr("cx", function (d) { return xScale(d.key(Year)); } )
+    .attr("cy", function (d) { return yScale(d.key(Year)[NET_EARNINGS]); } )
     .attr("r", 2)
     .attr("transform", "translate(" + 100 + "," + 100 + ")")
     .style("fill", "#CC0000");
