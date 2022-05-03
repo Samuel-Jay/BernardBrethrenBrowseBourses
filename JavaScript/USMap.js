@@ -1,6 +1,8 @@
 import {getBarChartState} from './BarChart_StateWise.js';
 import {getBarChartYear} from './BarChart_YearWise.js';
 import {getEducationLevels} from './EducationLevels.js';
+import {getHousingPrices} from './HousingPrices.js';
+import {getPovertyRates} from './PovertyRates.js';
 
 console.clear()
 
@@ -30,6 +32,8 @@ var margin_choropleth = {
   getBarChartState(0)
   getBarChartYear("All States")
   getEducationLevels("All States")
+  getHousingPrices("All States")
+  getPovertyRates("All States")
 
 
   d3.json("Datasets/us-states.json", function(json) {
@@ -86,7 +90,9 @@ var margin_choropleth = {
      function clicked(d) {
          console.log(d.properties.name)
         //  getBarChartState(2021)
-         getBarChartYear(d.properties.name)
-          getEducationLevels(d.properties.name)
+        getBarChartYear(d.properties.name)
+        getEducationLevels(d.properties.name)
+        getHousingPrices(d.properties.name)
+        getPovertyRates(d.properties.name)
      }
   });
