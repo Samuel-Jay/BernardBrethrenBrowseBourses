@@ -1,3 +1,5 @@
+import {getMap} from './USMap.js'
+
 var width=410,
 	height=560,
 	radius=100,
@@ -162,8 +164,36 @@ export function getHousingPrices(state_select){
 		          .y(function(d) { return yScale(+d.value.PROPERTY_VAL); })
 		          (d.values)
 		      })
-		      .on("click", function(d){getHousingPrices(d.key)})
+		      .on("click", function(d){
+		      	getHousingPrices(d.key)
+		      	getMap("Housing", 0)
+		      })
 
+
+
+		var housing_min = 100000
+		var housing_max = 800000
+
+		var legendheight = height
+		var legendscale = d3.scaleSequential(d3.interpolate("yellow", "green"))
+		    .domain([housing_min, housing_max])
+
+		var housing_axis_quant = [];
+		for (var i = housing_min; i <= housing_max; i+=10000) {
+		    housing_axis_quant.push(i);
+		}
+
+		var quant_size = height/housing_axis_quant.length
+
+	    g4.selectAll("newdots")
+	    .data(housing_axis_quant.reverse())
+	    .enter()
+	    .append("rect")
+	      .attr("x", -50)
+	      .attr("y", function(d,i){ return (i)*(quant_size) }) // 100 is where the first dot appears. 25 is the distance between dots
+	      .attr("width", 50)
+	      .attr("height", quant_size)
+	      .style("fill", function(d){ return legendscale(d)})
 
 		  g4.append("g")
 		    .attr("transform", "translate(0," + height + ")")

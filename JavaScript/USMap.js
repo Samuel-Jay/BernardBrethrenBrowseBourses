@@ -4,6 +4,12 @@ import {getEducationLevels} from './EducationLevels.js'
 import {getHousingPrices} from './HousingPrices.js'
 import {getPovertyRates} from './PovertyRates.js'
 
+var width=700,
+  height=260,
+  radius=100,
+  padding=20;
+var margin = {top: 20, right: 20, bottom: 30, left: 50};
+
 console.clear()
 
 var state_names = ["Maine", "New Hampshire", "Vermont", "Massachusetts", "Rhode Island", "Connecticut", "New York", "New Jersey", "Pennsylvania", "Ohio", "Indiana", "Illinois", "Michigan", "Wisconsin", "Minnesota", "Iowa", "Missouri", "North Dakota", "South Dakota", "Nebraska", "Kansas", "Delaware", "Maryland", "District of Columbia", "Virginia", "West Virginia", "North Carolina", "South Carolina", "Georgia", "Florida", "Kentucky", "Tennessee", "Alabama", "Mississippi", "Arkansas", "Louisiana", "Oklahoma", "Texas", "Montana", "Idaho", "Wyoming", "Colorado", "New Mexico", "Arizona", "Utah", "Nevada", "Washington", "Oregon", "California", "Alaska", "Hawaii"]
@@ -37,7 +43,24 @@ getEducationLevels("All States")
 getHousingPrices("All States")
 getPovertyRates("All States")
 
+var svg_choropleth = d3.select("#usamap")
+  .append("svg")
+  .attr("preserveAspectRatio", "xMidYMid meet")
+  .attr("viewBox", "0 0 " + viewboxwidth + " " + viewboxheight + "")
+
 var poverty_data
+var poverty_min = 1.28
+var poverty_max = 1.57
+
+var povertyScale = d3.scaleSequential(d3.interpolate("red", "yellow"))
+    .domain([poverty_min, poverty_max])
+
+var housing_data
+var housing_min = 100000
+var housing_max = 800000
+
+var housingScale = d3.scaleSequential(d3.interpolate("yellow", "green"))
+    .domain([housing_min, housing_max])
 
 function getPovertyColor(state){
   var poverty_level
@@ -47,32 +70,37 @@ function getPovertyColor(state){
       poverty_level = poverty_data[row].value.POVERTY_LEVEL
     }
   }
-  
-  // var colorFn = d3.scaleSequential()
-  //   .interpolator(d3.interpolateRgb("green", "red"))
-  //   .domain([1.2, 1.7])
-  // var colorFn = d3.scaleLinear()
-  //        .domain([1.2, 1.7])
-  //        .range("green", "red")
-  // var colorFn = d3.scaleSequential(d3.interpolateReds)
-    var colorFn = d3.scaleSequential(d3.interpolate("yellow", "red"))
-    .domain([1.28, 1.57])
-
-  var state_color = colorFn(poverty_level)
-
+  var state_color = povertyScale(poverty_level)
   state_color = d3.color(state_color)
+  state_color = "#" + ((1 << 24) + (state_color.r << 16) + (state_color.g << 8) + state_color.b).toString(16).slice(1)
+    
+  return state_color
+}
 
+function getHousingColor(state){
+  var housing_value
+  var state_color = ""
+  for (var row in housing_data) {
+    if(housing_data[row].key==state){
+      housing_value = housing_data[row].value.PROPERTY_VAL
+    }
+  }
+  var state_color = housingScale(housing_value)
+  state_color = d3.color(state_color)
   state_color = "#" + ((1 << 24) + (state_color.r << 16) + (state_color.g << 8) + state_color.b).toString(16).slice(1)
     
   return state_color
 }
   
-getMap(0)  
+getMap("Housing", 0)  
 
-export function getMap(year){
+export function getMap(map_view, year){
+  d3.select("#usamap").select("svg").selectAll("*").remove();
+
   d3.csv("Datasets/asec_groupedvalues.csv", function(error, data) {
     if (error) throw error;
-    var dataGroup = d3.nest()
+    if(map_view=="Poverty"){
+      var dataGroup = d3.nest()
       .key(function(d) {return d.STATE})
       // .key(function(d) {return d.YEAR})
       .rollup(function(v) { return {
@@ -81,73 +109,83 @@ export function getMap(year){
       .entries(data)
 
       poverty_data = dataGroup
-    
+    }
+    else{
+      dataGroup = d3.nest()
+      .key(function(d) {return d.STATE})
+      // .key(function(d) {return d.YEAR})
+      .rollup(function(v) { return {
+         PROPERTY_VAL: d3.mean(v, function(d) {return d.PROPERTY_VAL })
+       } })
+      .entries(data)
 
+      housing_data = dataGroup
+    }
   })
 
 
   d3.json("Datasets/us-states.json", function(json) {
-     var centered
-     var formatComma = d3.format(',')
+    var centered
+    var formatComma = d3.format(',')
 
-     var fill = d3.scaleLinear()
-         .domain([0, 72])
-         .range(["orange", "red"])
-
-     var svg_choropleth = d3.select("#usamap")
-         .append("svg")
-         .attr("preserveAspectRatio", "xMidYMid meet")
-         .attr("viewBox", "0 0 " + viewboxwidth + " " + viewboxheight + "")
+    var fill = d3.scaleLinear()
+        .domain([0, 72])
+        .range(["orange", "red"])
 
 
+    var map = svg_choropleth.append("g")
+      .attr("id", "states")
+      .selectAll("path")
+      .data(json.features)
+      .enter()
+      .append("path")
+      .attr("d", path)
+      .style("stroke", "#fff")
+      .style("stroke-width", "0.1")
+      .style("fill", function(d) {
+        if(map_view == "Poverty"){
+          return getPovertyColor(d.properties.name)
+        }
+        else{
+          return getHousingColor(d.properties.name)
+        }
+      })
+      .on("click", clicked)
 
-     var map = svg_choropleth.append("g")
-         .attr("id", "states")
-         .selectAll("path")
-         .data(json.features)
-         .enter()
-         .append("path")
-         .attr("d", path)
-         .style("stroke", "#fff")
-         .style("stroke-width", "0.1")
-         .style("fill", function(d) {
-            // return fill(parseInt(d.id))})
-            return getPovertyColor(d.properties.name)})
-        .on("click", clicked)
+    svg_choropleth.append("g")
+      .attr("class", "states-names")
+      .selectAll("text")
+      .data(json.features)
+      .enter()
+      .append("svg:text")
+      .text(function(d) {
+         return d.properties.name
+      })
+      .style("font-size", "12px") 
+      .attr("x", function(d) {
+        if(isNaN(path.centroid(d)[0]))
+            return 0
+        else
+            return path.centroid(d)[0]
+      })
+      .attr("y", function(d) {
+         if(isNaN(path.centroid(d)[1]))
+            return 0
+         else
+            return path.centroid(d)[1]
+      })
+      .attr("text-anchor", "middle")
+      .attr("fill", "white")
+      .on("click", clicked)
 
-     svg_choropleth.append("g")
-         .attr("class", "states-names")
-         .selectAll("text")
-         .data(json.features)
-         .enter()
-         .append("svg:text")
-         .text(function(d) {
-             return d.properties.name
-         })
-         .style("font-size", "12px") 
-         .attr("x", function(d) {
-            if(isNaN(path.centroid(d)[0]))
-                return 0
-            else
-                return path.centroid(d)[0]
-         })
-         .attr("y", function(d) {
-             if(isNaN(path.centroid(d)[1]))
-                return 0
-             else
-                return path.centroid(d)[1]
-         })
-         .attr("text-anchor", "middle")
-         .attr("fill", "white")
-         .on("click", clicked)
-
-     function clicked(d) {
-         console.log(d.properties.name)
+    function clicked(d) {
+        console.log(d.properties.name)
         //  getBarChartState(2021)
         getBarChartYear(d.properties.name)
         getEducationLevels(d.properties.name)
         getHousingPrices(d.properties.name)
         getPovertyRates(d.properties.name)
      }
+
   })
 }
