@@ -1,5 +1,5 @@
-var width=290+290,
-	height=190,
+var width=700,
+	height=280,
 	radius=100,
 	padding=20;
 var margin = {top: 20, right: 20, bottom: 30, left: 50};
@@ -69,9 +69,10 @@ export function getEducationLevels(state_select){
 		   }; })
 		  .entries(data);
 
+		  var legend_size = 210
 		  var xScale = d3.scaleLinear()
 		    .domain(d3.extent(data, function(d) { return d.YEAR; }))
-		    .range([ 0, width ]);
+		    .range([ 0, width - legend_size]);
 
 		  // Add Y axis
 		  var yScale = d3.scaleLinear()
@@ -86,25 +87,7 @@ export function getEducationLevels(state_select){
 		      }
 		    })])
 		    // .domain([0, 25])
-		    .range([ height, 0 ])
-
-
-		  g3.append("g")
-		    .attr("transform", "translate(0," + height + ")")
-        .attr("class", "axisWhite")
-		    .call(d3.axisBottom(xScale).ticks(10).tickFormat(d3.format("Y")));
-
-		  g3.append("g")
-        .attr("class", "axisWhite")
-		    .call(d3.axisLeft(yScale)
-		      .ticks(5)
-		      .tickSizeInner(0)
-		      .tickPadding(6)
-		      .tickSize(0, 0)
-		      .tickFormat(d => d + "%")
-		    )
-
-		  
+		    .range([ height, 0 ])	  
 
 
 
@@ -115,8 +98,6 @@ export function getEducationLevels(state_select){
 		    .y(function(d) {
 		        return yScale(d.EDU_LEVEL_COUNT);
 		    })
-
-
 
 
 		  var res = ["Pre-School", "Kindergarten", "Elementary", "Middle School", "High School", "High school graduate", "Some college but no degree", "Bachelor's degree", "Associate degree in college", "Professional school degree", "Master's degree", "Doctorate degree"]
@@ -142,10 +123,14 @@ export function getEducationLevels(state_select){
 		    .append("path")
 		      .attr("fill", "none")
 		      .attr("stroke", function(d){ return color(d.key) })
+		      .on('click', function(d) {
+		        edu_select = d.key
+		        getEducationLevels(state_select)
+		    	})
 		      .attr("stroke-width", function(d){
-		        if(edu_select == "No Highlight"){ return 1.5 }
-		        else if(d.key == edu_select){ return 2.5 }
-		        else{ return 0.5 }
+		        if(edu_select == "No Highlight"){ return 4 }
+		        else if(d.key == edu_select){ return 5 }
+		        else{ return 3 }
 		      })
 		      .attr("stroke-opacity", function(d){
 		        if(edu_select == "No Highlight"){ return 0.5 }
@@ -159,8 +144,26 @@ export function getEducationLevels(state_select){
 		          (d.values)
 		      })
 
+
+
+		  g3.append("g")
+		    .attr("transform", "translate(0," + height + ")")
+        .attr("class", "axisWhite")
+		    .call(d3.axisBottom(xScale).ticks(10).tickFormat(d3.format("Y")));
+
+		  g3.append("g")
+        .attr("class", "axisWhite")
+		    .call(d3.axisLeft(yScale)
+		      .ticks(5)
+		      .tickSizeInner(0)
+		      .tickPadding(6)
+		      .tickSize(0, 0)
+		      .tickFormat(d => d + "%")
+		    )
+
 		  // Add one dot in the legend for each name.
-		  var size = 10
+		  var size = 8
+
 		  g3.selectAll("mydots")
 		    .data(res)
 		    .enter()
@@ -187,7 +190,7 @@ export function getEducationLevels(state_select){
 		        console.log(d)
 		        edu_select = d;
 		        getEducationLevels(state_select)
-		      });
+		      })
 
 		  g3.append("text")
 		    .attr("x", (width / 2))             
@@ -200,10 +203,11 @@ export function getEducationLevels(state_select){
 		    .text("Education Levels for "+state_select);
 
 		  g3.append("text")
-		    .attr("x", width)             
+		    .attr("x", width - 50)             
 		    // .attr("y", 0 - (margin.top / 2))
 		    .attr("y", 0)
-		    .attr("text-anchor", "middle")  
+		    .attr("text-anchor", "middle")   
+		    .style("fill", "#ffffff")
 		    .style("font-size", "12px") 
 		    .style("text-decoration", "underline")  
 		    .text("Click to Refresh")
@@ -211,18 +215,10 @@ export function getEducationLevels(state_select){
 		        // console.log("Hello There")
 		        edu_select = "No Highlight"
 		        // update(state_select, data);
-		        getEducationLevels(state_select)
+		        getEducationLevels("All States")
 		    })
 		  
 		}
-
-		// var selectbox = d3.select("#selectbox")
-		//   .on("change", function() {
-		//     update(this.value, data)
-		// })
-
-
-
 
 	});
 }
